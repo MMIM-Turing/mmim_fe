@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'json'
 gem 'figaro'
 gem 'faraday'
+gem 'react-rails'
 
 group :development, :test do
   gem 'simplecov'
