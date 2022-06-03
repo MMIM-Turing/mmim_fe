@@ -17,7 +17,7 @@ RSpec.describe 'landing page' do
 
     it 'sends user to results page' do
       visit '/'
-      click_button "Search"
+      click_button 'Search'
 
       expect(current_path).to eq('/results')
     end
