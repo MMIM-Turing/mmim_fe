@@ -4,6 +4,7 @@ class ResultsController < ApplicationController
   end
 
   def create
+    #some call to backend
     redirect_to '/results'
   end
 end
