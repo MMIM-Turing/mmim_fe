@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
-before_action :current_user
-
+before_action :current_session, only: [:destroy]
+  def new; end
+  
   def create
     user = UsersFacade.find_user(request.env['omniauth.auth'])
   	if user
