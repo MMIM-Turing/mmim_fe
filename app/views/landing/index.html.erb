@@ -1,7 +1,7 @@
 <% provide :head_tags do %>
     <script>
     document.addEventListener("DOMContentLoaded", function(){
-        initMap(<%=raw(@locations[0])%>, <%=raw(@locations[1]) %>)
+        initMap(<%=raw(@locations)%>)
     });
     </script>
 

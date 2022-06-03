@@ -1,13 +1,14 @@
 class LandingController < ApplicationController
   def index
-  	@locations = [34.052235, -118.243683]
-  # 	@locations = [
-  #   ['Los Angeles', 34.052235, -118.243683],
-  #   ['Santa Monica', 34.024212, -118.496475],
-  #   ['Redondo Beach', 33.849182, -118.388405],
-  #   ['Newport Beach', 33.628342, -117.927933],
-  #   ['Long Beach', 33.770050, -118.193739]
-  # ]
+  	# @locations = [34.052235, -118.243683]
+  	@locations = [
+    ['average', 39.672481600, -105.0463299],
+    ['Denver Bullets', 39.736680, -105.008170],
+    ['Machine Gun Tours', 39.739420, -105.139040],
+    ['The Shootist', 39.662628, -104.9954995],
+    ['GMG', 39.655000, -105.083860],
+    ['Triple J Armory', 39.56868, -105.00508]
+  ]
   end
 
 end
