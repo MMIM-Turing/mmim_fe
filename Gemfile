@@ -16,21 +16,25 @@ gem 'figaro'
 gem 'faraday'
 
 group :development, :test do
-  gem 'simplecov'
   gem 'vcr'
   gem 'webmock'
-  gem 'rspec-rails'
   gem 'pry'
-  gem 'launchy'
-  gem 'capybara'
-  gem 'orderly'
-  gem 'shoulda-matchers'
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+end
+
+
+group :test do
+  gem 'rspec-rails'
+  gem 'simplecov'
+  gem 'launchy'
+  gem 'capybara'
+  gem 'orderly'
+  gem 'shoulda-matchers'
 end
 
 

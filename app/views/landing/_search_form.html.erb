@@ -1,0 +1,7 @@
+<%= form_with url: '/results', method: :post, local: true do |form| %>
+  <%= form.label "Address 1" %>
+  <%= form.text_field :address_1 %><br>
+  <%= form.label "Address 2" %>
+  <%= form.text_field :address_2 %><br>
+  <%= form.submit "Find a Place to Meet" %>
+<% end %>
