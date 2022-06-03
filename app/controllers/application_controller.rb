@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  helper_mathod :current_session
+  helper_method :current_session
 
   def current_session 
     session[:authenticated]
