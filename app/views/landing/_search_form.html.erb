@@ -1,0 +1,23 @@
+<%= form_with url: '/results', method: :get, local: true do |form| %>
+<div class="card" style="width: 25rem;">
+  <div class="card-body">
+    <div class="mb-3">
+  <ul>
+    <%= form.text_field :address_1, { class: "form-control", placeholder: 'enter address' } %>
+    <strong><%= form.label "Address 1" %></strong>
+  </ul>
+  <ul>
+    <%= form.text_field :address_2, { class: "form-control", placeholder: 'enter address' } %>
+    <strong><%= form.label "Address 2" %></strong>
+  </ul>
+  <ul>
+  <%= form.text_field :category, { class: "form-control", placeholder: 'eg. coffee, bar, gym' } %>
+  <strong><%= form.label "Category" %></strong>
+</ul>
+<ul>
+  <%= form.submit "Search", class: "btn btn-success" %>
+</ul>
+<% end %>
+    </div>
+  </div>
+</div>

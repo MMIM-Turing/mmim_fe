@@ -1,0 +1,17 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Style/RedundantFetchBlock:
+  Enabled: false
+
+Style/GlobalStdStream:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Rails/FilePath:
+  Enabled: false
