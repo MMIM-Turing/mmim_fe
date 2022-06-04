@@ -1,6 +1,6 @@
 ____ Wrote Tests ____ Implemented ____ Reviewed
 
-Neccesary checkmarks:
+Necessary checkmarks:
 
      All Tests are Passing       Implemented by_[] Reviewed by []
 
@@ -36,6 +36,6 @@ Checklist:
     [] I have commented my code, particularly in hard-to-understand areas
     [] I have fully tested my code
 
-(For Fun!)Please Include a link to a gif of your feelings about this branch
+(For Fun!)Please include a link to a gif of your feelings about this branch
 
 Link:
