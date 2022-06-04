@@ -20,5 +20,12 @@ RSpec.describe 'login page' do
   	expect(page).to have_content('You have successfully logged out!')
   end
 
+  it 'redirects user to login page if not logged in/logged out' do 
+    visit dashboard_path
+
+    expect(current_path).to eq('/login')
+    expect(page).to have_content('Please log in to proceed!')
+  end
+
 
 end
