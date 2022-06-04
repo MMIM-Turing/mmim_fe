@@ -3,7 +3,8 @@ class ResultsController < ApplicationController
   before_action :default_category
 
   def index
-    @locations = LocationsFacade.unregistered_location_search(search_params)
+    @locations = LocationsFacade.address_location_search(search_params)
+    @category = search_params[:category]
   end
 
 

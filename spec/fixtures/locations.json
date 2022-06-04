@@ -6,13 +6,13 @@
       "name": "Some Cafe",
       "place_id": "XXX1",
       "address": "123 st, city, state, 50001",
-      "longtigude": "35.04443068881643",
+      "longitude": "35.04443068881643",
       "latitude": "-85.30914752416172",
-      "rating": "4.1"
+      "rating": "4.1",
       "image_url": "https://iili.io/XDFtwX.jpg",
       "price_rating": "$"
-
-    },
+    }
+  },
     {
     "type": "location",
     "id": "2",
@@ -20,26 +20,26 @@
       "name": "Some Cafe 2",
       "place_id": "XXX2",
       "address": "124 st, city, state, 50003",
-      "longtigude": "35.044178070550295",
+      "longitude": "35.044178070550295",
       "latitude": "-85.30831598890019",
-      "rating": "3.9"
-      "image_url": "https://iili.io/XDdtwu.png"
+      "rating": "3.9",
+      "image_url": "https://iili.io/XDdtwu.png",
       "price_rating": "$$"
-
-    },
+    }
+  },
     {
     "type": "location",
     "id": "3",
     "attributes": {
       "name": "Some Cafe 3",
       "place_id": "XXX2",
-      "address": "125 st, city, state, 50003"
-      "longtigude": "35.04303057435556",
+      "address": "125 st, city, state, 50003",
+      "longitude": "35.04303057435556",
       "latitude": "-85.30856178863158",
-      "rating": "3.9"
-      "image_url": "https://iili.io/XD9dIj.jpg"
+      "rating": "3.9",
+      "image_url": "https://iili.io/XD9dIj.jpg",
       "price_rating": "$$$"
-
+    }
     },
         {
     "type": "location",
@@ -48,12 +48,12 @@
       "name": "Some Cafe 5",
       "place_id": "XXX2",
       "address": "126 st, city, state, 50004",
-      "longtigude": "35.042615245267726",
+      "longitude": "35.042615245267726",
       "latitude": "-85.30668429706623",
-      "rating": "3.9"
-      "image_url": "https://iili.io/XD9Hmb.jpg"
+      "rating": "3.9",
+      "image_url": "https://iili.io/XD9Hmb.jpg",
       "price_rating": "$$"
-
+    }
     },
         {
     "type": "location",
@@ -61,12 +61,12 @@
     "attributes": {
       "name": "Some Cafe 5",
       "place_id": "XXX2",
-      "address": "128 st, city, state, 50005"
-      "longtigude": "35.045094343251435",
+      "address": "128 st, city, state, 50005",
+      "longitude": "35.045094343251435",
       "latitude": "-85.3096077449354",
-      "rating": "3.7"
-      "image_url": "https://iili.io/Xtssz7.jpg"
+      "rating": "3.7",
+      "image_url": "https://iili.io/Xtssz7.jpg",
       "price_rating": "$$$"
-
+    }
     }]
 }

@@ -15,7 +15,7 @@ class Location
     @longitude = attributes[:longitude]
     @latitude = attributes[:latitude]
     @rating = attributes[:rating]
-    @image_url = attributes[:img_url]
+    @image_url = attributes[:image_url]
     @price_rating = attributes[:price_rating]
   end
 end
