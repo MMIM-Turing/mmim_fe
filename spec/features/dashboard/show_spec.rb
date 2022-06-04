@@ -14,10 +14,16 @@ RSpec.describe 'login page' do
     click_on 'Log in with Google'
 
     expect(current_path).to eq dashboard_path
-    expect(page).to_not have_link('Login')
-    expect(page).to have_content('Welcome someone!')
-    # test user's name configured is someone
-    expect(page).to have_content('You have successfully logged in!
-')
+
+    click_on 'Log Out'
+    expect(current_path).to eq root_path
+    expect(page).to have_content('You have successfully logged out!')
+  end
+
+  it 'redirects user to login page if not logged in/logged out' do
+    visit dashboard_path
+
+    expect(current_path).to eq('/login')
+    expect(page).to have_content('Please log in to proceed!')
   end
 end
