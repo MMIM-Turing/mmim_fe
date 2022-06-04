@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'landing page' do
   describe 'navbar' do
+
     it 'has a link to login and redirects to a login page' do
       visit root_path
-
       click_on 'Login'
 
       expect(current_path).to eq('/login')
@@ -27,9 +27,22 @@ RSpec.describe 'landing page' do
 
     it 'sends user to results page' do
       visit '/'
+      fill_in :address_1, with: "123 Easy Street, Denver CO"
+      fill_in :address_2, with: "456 Peasy Street, Denver CO"
       click_button 'Search'
 
       expect(current_path).to eq('/results')
     end
   end
+
+  describe 'sad path empty address fields' do
+    it 'redirects user to landing page with flash message' do
+      visit '/'
+
+      click_button 'Search'
+      expect(current_path).to eq('/')
+      expect(page).to have_content("Please fill out both address fields")
+    end
+  end
+
 end
