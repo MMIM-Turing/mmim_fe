@@ -2,13 +2,18 @@ require 'rails_helper'
 
 RSpec.describe 'landing page' do
   describe 'navbar' do
+<<<<<<< HEAD
    it 'has a link to login and redirects to a login page' do
   	visit root_path
+=======
+    it 'has a link to login and redirects to a login page' do
+      visit root_path
+>>>>>>> 135eb3f9f33599249b10be3bb1b3e6f75b86c2a0
 
-  	click_on 'Login'
+      click_on 'Login'
 
-  	expect(current_path).to eq('/login')
-   end
+      expect(current_path).to eq('/login')
+    end
   end
 
   describe 'form' do
