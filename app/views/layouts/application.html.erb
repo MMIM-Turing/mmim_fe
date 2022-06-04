@@ -15,6 +15,7 @@
 
   </head>
 
+<<<<<<< HEAD
   <body>
 
     <% flash.each do |flash, message| %>
@@ -22,13 +23,24 @@
         <div class="alert alert-success" <%= flash %>>
           <%= message %>
         </div>
+=======
+    <% flash.each do |flash, message| %>
+     <% if flash == 'success' %>
+      <div class = "alert alert-success" <%= flash %>>
+        <%= message %>
+      </div>
+>>>>>>> 541081dee749c463fc046dd19b031e72519a7b13
       <% elsif flash == 'alert' %>
         <div class = "alert alert-danger" <%= flash %>>
           <%= message %>
         </div>
       <% end %>
     <% end %>
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 541081dee749c463fc046dd19b031e72519a7b13
     <%= yield %>
   </body>
 </html>
