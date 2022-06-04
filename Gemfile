@@ -30,8 +30,11 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'simplecov'
   gem 'vcr'
-  gem 'webmock'
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :test do
+  gem 'webmock'
 end
 
 group :development do
