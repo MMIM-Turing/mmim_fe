@@ -28,7 +28,7 @@ RSpec.describe 'landing page' do
     it 'sends user to results page' do
       visit '/'
       fill_in :address_1, with: "123 Easy Street, Denver CO"
-      fill_in :address_1, with: "456 Peasy Street, Denver CO"
+      fill_in :address_2, with: "456 Peasy Street, Denver CO"
       click_button 'Search'
 
       expect(current_path).to eq('/results')
@@ -36,12 +36,12 @@ RSpec.describe 'landing page' do
   end
 
   describe 'sad path empty address fields' do
-    it 'redirects user to landing page' do
+    it 'redirects user to landing page with flash message' do
       visit '/'
 
       click_button 'Search'
       expect(current_path).to eq('/')
-
+      expect(page).to have_content("Please fill out both address fields")
     end
   end
 
