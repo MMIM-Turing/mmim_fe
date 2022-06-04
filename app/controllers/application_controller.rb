@@ -1,7 +1,14 @@
 class ApplicationController < ActionController::Base
-  helper_method :current_session
+  helper_method :current_user
 
-  def current_session 
-    session[:authenticated]
+  def current_user 
+    user ||= UsersFacade.find_or_create_user({email: session[:user_email]}) if session[:user_email]
+  end
+
+  def require_user
+    unless current_user
+      redirect_to '/login'
+      flash[:success] = 'Please log in to proceed!'
+    end
   end
 end

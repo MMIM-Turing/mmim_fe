@@ -1,23 +1,24 @@
 class SessionsController < ApplicationController
-before_action :current_session, only: [:destroy]
+
   def new; end
   
   def create
-    user = UsersFacade.find_user(request.env['omniauth.auth'])
-  	if user
-  	  session[:authenticated] = 'authenticated'
-  	  redirect_to dashboard_path 
-  	 else 
-  	 	redirect_to root_path
-  	 	flash[:error] = 'Unable to log in with Google Credentials!'
-  	end
+    user = UsersFacade.find_or_create_user(auth_params(request.env['omniauth.auth']))
+  	session[:user_email] = user.email
+  	redirect_to dashboard_path
+    flash[:success] = 'You have successfully logged in!'
+
   end
 
   def destroy 
   	session.destroy 
-  	redirect_to welcome_page
+  	redirect_to root_path
   	flash[:success] = 'You have successfully logged out!'
   end 
 
 
+private 
+  def auth_params(params)
+    {name: params[:info][:name], email: params[:info][:email]}
+  end
 end
