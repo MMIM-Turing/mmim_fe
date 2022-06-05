@@ -1,12 +1,11 @@
 class ResultsController < ApplicationController
-  before_action :require_address
+  before_action :require_address, except: :update
   before_action :default_category
 
   def index
     @locations = LocationsFacade.address_location_search(search_params)
     @category = search_params[:category]
   end
-
 
   private
 
