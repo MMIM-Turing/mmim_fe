@@ -5,4 +5,10 @@ class DashboardController < ApplicationController
     # meeting = MeetingsFacade
     # locations = LocationsFacade.find_midppoints(address_params)
   end
+
+  def edit; end 
+
+  def update
+
+  end
 end
