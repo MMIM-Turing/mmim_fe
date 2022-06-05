@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/users?params=%7B%22name%22:%22test%20user%22,%22email%22:%22test@email.com%22%7D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3a94741b3cd2c05f9fb48269ce0a8801"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 142a7e99-deb1-4c38-b96d-490b94076e72
+      X-Runtime:
+      - '0.158746'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"user","attributes":{"name":"test user","email":"test@email.com","address":null}}}'
+  recorded_at: Sun, 05 Jun 2022 23:25:38 GMT
+recorded_with: VCR 6.1.0
