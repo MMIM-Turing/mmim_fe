@@ -26,4 +26,19 @@ RSpec.describe 'login page' do
     expect(current_path).to eq('/login')
     expect(page).to have_content('Please log in to proceed!')
   end
+
+  it 'has a link to create default address if non existing' do 
+    data = JSON.parse(File.read('spec/fixtures/user.json'), symbolize_names: true)
+    allow(UsersService).to receive(:find_or_create_user).and_return(data)
+
+    visit '/login'
+
+    click_on 'Log in with Google'
+
+    expect(current_path).to eq dashboard_path
+
+    click_on 'Set Default Address'
+
+    expect(current_path).to eq('/dashboard/address/new')
+  end
 end
