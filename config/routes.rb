@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   resource :dashboard, only: [:show], controller: :dashboard do 
     get '/address', to: 'dashboard#edit'
     post '/address', to: 'dashboard#update'
-
   end
 
   get 'login', to: 'sessions#new'
