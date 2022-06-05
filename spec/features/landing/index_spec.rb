@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'landing page' do
   describe 'navbar' do
+   it 'has a link to login and redirects to a login page' do
+  	visit root_path
 
-    it 'has a link to login and redirects to a login page' do
-      visit root_path
-      click_on 'Login'
+    click_on 'Login'
 
       expect(current_path).to eq('/login')
     end
@@ -26,9 +26,10 @@ RSpec.describe 'landing page' do
     end
 
     it 'sends user to results page' do
+
       visit '/'
-      fill_in :address_1, with: "123 Easy Street, Denver CO"
-      fill_in :address_2, with: "456 Peasy Street, Denver CO"
+      fill_in :address_1, with: "placeholder"
+      fill_in :address_2, with: "placeholder"
       click_button 'Search'
 
       expect(current_path).to eq('/results')
@@ -44,5 +45,4 @@ RSpec.describe 'landing page' do
       expect(page).to have_content("Please fill out both address fields")
     end
   end
-
 end

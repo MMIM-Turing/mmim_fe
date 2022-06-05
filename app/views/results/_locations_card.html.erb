@@ -1,0 +1,15 @@
+<div class="card" style="width: 35rem;">
+  <div class="card-body">
+    <div class="mb-3">
+      <% @locations.each do |location| %>
+      <ul>
+        <img src="<%= location.image_url %>" class="img-thumbnail" style="max-width:20%" alt="location thumb">
+        <strong><%= location.name %></strong>
+        <%= location.address %>
+        <%= location.rating %>
+        <%= location.price_rating %>
+      </ul>
+      <% end %>
+    </div>
+  </div>
+</div>

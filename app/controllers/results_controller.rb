@@ -1,10 +1,12 @@
 class ResultsController < ApplicationController
-  before_action :require_address
+  before_action :require_address, except: :update
+  before_action :default_category
 
   def index
-    # @locations = LocationsFacade.top_5(search_params)
+    @locations = LocationsFacade.address_location_search(search_params)
+    @category = search_params[:category]
+    @map_info = LocationsFacade.map_info(@locations)
   end
-
 
   private
 
@@ -16,6 +18,13 @@ class ResultsController < ApplicationController
     if search_params[:address_1].empty? || search_params[:address_2].empty?
       flash[:alert] = "Please fill out both address fields"
       redirect_to '/'
+    else
+    end
+  end
+
+  def default_category
+    if search_params[:category].empty?
+      params[:category] = "coffee shop"
     else
     end
   end
