@@ -1,0 +1,11 @@
+<% provide :head_tags do %>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      initMap(<%=raw(@map_info)%>)
+    });
+  </script>
+<% end %>
+
+<p>
+  <div id="map"></div>
+</p>

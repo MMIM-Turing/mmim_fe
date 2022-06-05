@@ -5,6 +5,7 @@ class ResultsController < ApplicationController
   def index
     @locations = LocationsFacade.address_location_search(search_params)
     @category = search_params[:category]
+    @map_info = LocationsFacade.map_info(@locations)
   end
 
   private

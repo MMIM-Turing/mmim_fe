@@ -5,4 +5,10 @@ class LocationsFacade
       Location.new(data[:attributes])
     end
   end
+
+  def self.map_info(locations)
+    locations.map do |location|
+      [location.name, location.longitude, location.latitude]
+    end
+  end
 end
