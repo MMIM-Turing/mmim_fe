@@ -1,22 +1,33 @@
 class UsersService
   def self.find_or_create_user(params)
-    {
+    # {
+    #   data: {
+    #     type: 'user',
+    #     id: '1',
+    #     attributes: {
+    #       name: params[:name],
+    #       email: params[:email],
+    #       address: params[:address]
+    #     }
+    #   }
+    # }
+
+    response = conn("users?params=#{params.to_json}").post
+     JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.create_or_update_address(params)
+        {
       data: {
         type: 'user',
         id: '1',
         attributes: {
           name: params[:name],
           email: params[:email],
-          address: nil
+          address: params[:address]
         }
       }
     }
-
-    # response = conn('users').post('post') do |req|
-    #   #req.headers['mmim_api_key'] = 'tbd'
-    #   req.body = params.to_json
-    # end
-    #  JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.conn(url)
