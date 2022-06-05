@@ -10,7 +10,7 @@ class DashboardController < ApplicationController
   end 
 
   def update
-    current_user = UsersFacade.create_or_update_address(info_params)
+    updated_user = UsersFacade.create_or_update_address(info_params)
     redirect_to dashboard_path
   end
 
