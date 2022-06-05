@@ -20,14 +20,14 @@ RSpec.describe 'results page' do
         fill_in :category, with: "gym"
         click_button 'Search'
 
-        expect(page).to have_content("gym")
-        expect(page).to have_no_content("coffee shop")
+        expect(page).to have_content("Gym")
+        expect(page).to have_no_content("Coffee shop")
       end
 
       it 'displays coffee shop as the default category' do
         click_button 'Search'
         #note that we didn't fill out :category in the before block
-        expect(page).to have_content("coffee shop")
+        expect(page).to have_content("Coffee shop")
       end
 
 
@@ -37,8 +37,8 @@ RSpec.describe 'results page' do
         click_button 'Update Category'
 
         expect(current_path).to eq('/results')
-        expect(page).to have_content("bar")
-        expect(page).to have_no_content("coffee shop")
+        expect(page).to have_content("Bar")
+        expect(page).to have_no_content("Coffee shop")
       end
     end
   end

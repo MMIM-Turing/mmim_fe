@@ -1,0 +1,8 @@
+<h3>Results for <%= @category.capitalize %></h3>
+<%= form_with url: '/results', method: :patch, local: true do |form| %>
+  <%= form.text_field :category, { class: "form-control-sm", placeholder: 'search new category' } %>
+  <%= form.submit "Update Category", class: "btn btn-success" %>
+<% end %>
+<div style="position: fixed; right: 50%; left: 50%;">
+  <%= render 'locations_card' %>
+</div>
