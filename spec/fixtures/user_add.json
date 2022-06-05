@@ -1,0 +1,11 @@
+{
+  "data": {
+    "type": "user",
+    "id": "1",
+    "attributes": {
+      "name": "someone",
+      "email": "sample@email.com",
+      "address": "123 st, Denver, CO, 80123"
+    }
+  }
+}
