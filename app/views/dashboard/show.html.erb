@@ -1,9 +1,16 @@
 <%= render partial: 'partials/navbar_dashboard' %>
 <br>
- <%= button_to "Set Default Address", '/dashboard/address/new', method: :get, class: 'btn btn-success' %>
- <div style="float:left; padding:10px">
-   <%= render 'search_form' %>
- </div>
- <div style="float:left; padding:10px">
-   <%= render 'search_by_user_form' %>
- </div>
+<% if current_user.address == nil %>
+  <%= link_to "Set Default Address", "/dashboard/address?type=new", method: :get, class: 'btn btn-success' %>
+<% else %>
+   <h4>My Default Address:</h4>
+   <p><%= current_user.address %></p>
+   <%= link_to "Update Default Address", "/dashboard/address?type=update", method: :get, class: 'btn btn-success' %>
+<% end %>
+
+<div style="float:left; padding:10px">
+  <%= render 'search_form' %>
+</div>
+<div style="float:left; padding:10px">
+  <%= render 'search_by_user_form' %>
+</div>
