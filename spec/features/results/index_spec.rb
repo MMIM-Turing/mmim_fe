@@ -1,11 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe 'results page' do
+
+      params = {address_1: '3643 W Colfax Ave, Denver, CO 80204',address_2: '2300 Steele St Denver CO 80205', category: 'cafe'}
+
   before :each do
     visit '/'
-    fill_in :address_1, with: "123 st, city, state, 50001"
-    fill_in :address_2, with: "124 st, city, state, 50003"
+    fill_in :address_1, with: '3643 W Colfax Ave, Denver, CO 80204'
+    fill_in :address_2, with: '2300 Steele St Denver CO 80205'
   end
+
   describe 'map card' do
     xit 'displays a map' do
       click_button 'Search'
@@ -16,7 +20,7 @@ RSpec.describe 'results page' do
 
   describe 'result list card' do
     context 'category' do
-      it 'displays category' do
+      xit 'displays category', :vcr do
         fill_in :category, with: "gym"
         click_button 'Search'
 
@@ -24,14 +28,15 @@ RSpec.describe 'results page' do
         expect(page).to have_no_content("Coffee shop")
       end
 
-      it 'displays coffee shop as the default category' do
+      it 'displays coffee shop as the default category', :vcr do
         click_button 'Search'
+
         #note that we didn't fill out :category in the before block
-        expect(page).to have_content("Coffee shop")
+        expect(page).to have_content("Cafe")
       end
 
 
-      it 'has a form to update category' do
+      it 'has a form to update category', :vcr do
         click_button 'Search'
         fill_in :category, with: "bar"
         click_button 'Update Category'
