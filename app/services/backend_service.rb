@@ -8,4 +8,11 @@ class BackendService
     JSON.parse(response.body, symbolize_names: true)
 
   end
+
+
+  def self.get_locations_by_user(params)
+    p = params.to_json.gsub("@", "%40")
+    response = conn.get("search_by_user?params=#{p}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end

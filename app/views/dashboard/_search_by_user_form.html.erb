@@ -1,0 +1,28 @@
+<%= form_with url: '/dashboard/user_results', method: :get, local: true do |form| %>
+<div id="user_search" class="card" style="width: 25rem;">
+  <div class="card-body">
+    <div class="mb-3">
+      <h1 class="display-6">Search by User</h1>
+  <ul>
+    <% if current_user.address == nil %>
+      <%= form.text_field :address_1, { class: "form-control", placeholder: 'enter address' } %>
+    <% else %>
+      <%= form.text_field :address_1, { class: "form-control", value: current_user.address } %>
+    <% end %>
+    <strong><%= form.label "My Location" %></strong>
+  </ul>
+  <ul>
+    <%= form.text_field :user_b_email, { class: "form-control", placeholder: 'search email' } %>
+    <strong><%= form.label "Find by email" %></strong>
+  </ul>
+  <ul>
+  <%= form.text_field :category, { class: "form-control", placeholder: 'eg. coffee, bar, gym' } %>
+  <strong><%= form.label "Category" %></strong>
+</ul>
+<ul>
+  <%= form.submit "Search", class: "btn btn-success" %>
+</ul>
+<% end %>
+    </div>
+  </div>
+</div>

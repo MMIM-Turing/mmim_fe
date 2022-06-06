@@ -23,19 +23,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3a94741b3cd2c05f9fb48269ce0a8801"
+      - W/"a6efdca0f3f4741c689ff12f17a4b4a8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b71415da-043c-40ad-9f7b-91b3fd651e5e
+      - e587013e-6b9b-4fea-b444-93493306769c
       X-Runtime:
-      - '0.002009'
+      - '0.002107'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"user","attributes":{"name":"test user","email":"test@email.com","address":null}}}'
-  recorded_at: Sun, 05 Jun 2022 23:31:46 GMT
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
+        st, city, state, 80123"}}}'
+  recorded_at: Mon, 06 Jun 2022 22:03:13 GMT
 - request:
     method: put
     uri: http://localhost:3000/api/v1/users?params=%7B%22email%22:%22test@email.com%22,%22address%22:%22123%20st,%20city,%20state,%2080123%22%7D
@@ -53,24 +54,24 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b6957860467092041b0f4442b3bb172c"
+      - W/"a6efdca0f3f4741c689ff12f17a4b4a8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4052e69a-3085-4773-a537-ec2219afee37
+      - 07f0f745-0b15-4289-8740-1efcd3281bf1
       X-Runtime:
-      - '0.015738'
+      - '0.005982'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
         st, city, state, 80123"}}}'
-  recorded_at: Sun, 05 Jun 2022 23:31:46 GMT
+  recorded_at: Mon, 06 Jun 2022 22:03:13 GMT
 recorded_with: VCR 6.1.0
