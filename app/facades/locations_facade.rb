@@ -11,7 +11,11 @@ class LocationsFacade
     coordinates = locations.map do |location|
       [location.name, location.latitude, location.longitude]
     end
-    average = ['average', coordinates.map{ |c| c[1]}.sum/coordinates.count, coordinates.map{ |c| c[2]}.sum/coordinates.count]
-    coordinates.unshift(average)
+    if coordinates != []
+      average = ['average', coordinates.map{ |c| c[1]}.sum/coordinates.count, coordinates.map{ |c| c[2]}.sum/coordinates.count]
+      coordinates.unshift(average)
+    else 
+      'No results found'
+    end
   end
 end
