@@ -1,0 +1,64 @@
+
+<% if current_user.address == nil  %>
+<h3>Set your default address:</h3>
+    <%= form_with url: '/dashboard/address', method: :patch, local: true do |form| %>
+    <div class="card" style="width: 25rem;">
+      <div class="card-body">
+        <div class="mb-3">
+      <ul>
+        <%= form.text_field :street, { class: "form-control", placeholder: 'enter street address' } %>
+        <strong><%= form.label "Street Address" %></strong>
+      </ul>
+      <ul>
+        <%= form.text_field :city, { class: "form-control", placeholder: 'enter city' } %>
+        <strong><%= form.label "City" %></strong>
+      </ul>
+      <ul>
+        <%= form.text_field :state, { class: "form-control", placeholder: 'enter state' } %>
+        <strong><%= form.label "State" %></strong>
+      </ul>
+      <ul>
+        <%= form.text_field :zipcode, { class: "form-control", placeholder: 'enter zipcode' } %>
+        <strong><%= form.label "Zipcode" %></strong>
+      </ul>
+    <ul>
+      <%= form.submit "Set Default Address", class: "btn btn-success" %>
+    </ul>
+    <% end %>
+        </div>
+      </div>
+    </div>
+
+<% else %>
+    <h3>Update your default address:</h3>
+        <%= form_with url: '/dashboard/address', method: :patch, local: true do |form| %>
+        <div class="card" style="width: 25rem;">
+          <div class="card-body">
+            <div class="mb-3">
+          <ul>
+            <%= form.text_field :street, { class: "form-control", value: current_user.street_address} %>
+            <strong><%= form.label "Street Address" %></strong>
+          </ul>
+          <ul>
+            <%= form.text_field :city, { class: "form-control", value: current_user.city } %>
+            <strong><%= form.label "City" %></strong>
+          </ul>
+          <ul>
+            <%= form.text_field :state, { class: "form-control", value: current_user.state } %>
+            <strong><%= form.label "State" %></strong>
+          </ul>
+          <ul>
+            <%= form.text_field :zipcode, { class: "form-control", value: current_user.zipcode  } %>
+            <strong><%= form.label "Zipcode" %></strong>
+          </ul>
+        <ul>
+          <%= form.submit "Update Default Address", class: "btn btn-success" %>
+        </ul>
+        <% end %>
+            </div>
+          </div>
+        </div>
+
+
+
+<% end %>

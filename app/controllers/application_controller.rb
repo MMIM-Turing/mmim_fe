@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
   def current_user
     @current_user ||= UsersFacade.find_or_create_user({ email: session[:user_email] }) if session[:user_email]
-   end
+  end
 
   def require_user
     unless current_user

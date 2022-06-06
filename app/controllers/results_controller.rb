@@ -3,12 +3,12 @@ class ResultsController < ApplicationController
   before_action :default_category
 
   def index
-      @locations = LocationsFacade.address_location_search(search_params)
-      @category = search_params[:category]
-      @map_info = LocationsFacade.map_info(@locations)
+    @locations = LocationsFacade.address_location_search(search_params)
+    @category = search_params[:category]
+    @map_info = LocationsFacade.map_info(@locations)
     if @locations == [] || @map_info == 'No results found'
       redirect_to root_path
-      flash[:alert] = "No midpoints found-please try different addresses"
+      flash[:alert] = 'No midpoints found-please try different addresses'
     end
   end
 
@@ -20,16 +20,12 @@ class ResultsController < ApplicationController
 
   def require_address
     if search_params[:address_1].empty? || search_params[:address_2].empty?
-      flash[:alert] = "Please fill out both address fields"
+      flash[:alert] = 'Please fill out both address fields'
       redirect_to '/'
-    else
     end
   end
 
   def default_category
-    if search_params[:category].empty?
-      params[:category] = "cafe"
-    else
-    end
+    params[:category] = 'cafe' if search_params[:category].empty?
   end
 end

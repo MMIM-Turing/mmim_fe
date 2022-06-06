@@ -6,8 +6,7 @@ class DashboardController < ApplicationController
     # locations = LocationsFacade.find_midppoints(address_params)
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     updated_user = UsersFacade.create_or_update_address(info_params)
@@ -22,11 +21,11 @@ class DashboardController < ApplicationController
   private
 
   def address_params
-    params[:street]+', '+params[:city]+', '+params[:state]+' '+params[:zipcode]
+    params[:street] + ', ' + params[:city] + ', ' + params[:state] + ' ' + params[:zipcode]
   end
 
   def info_params
-    {email: current_user.email, address: address_params}
+    { email: current_user.email, address: address_params }
   end
 
   def new_meeting_params
