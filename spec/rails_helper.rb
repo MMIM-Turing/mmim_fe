@@ -78,7 +78,8 @@ OmniAuth.config.mock_auth[:google] = {
   'provider' => 'google oauth2',
   'info' => {
     'name' => 'test user',
-    'email' => 'sample@email.com'
+    'email' => 'sample@email.com',
+    'address' => nil
   }
 }
 

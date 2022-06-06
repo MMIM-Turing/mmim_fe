@@ -1,6 +1,6 @@
 <%= render partial: 'partials/navbar_landing' %>
-<% if  params[:type]='new' %>
-  <%= render partial: 'new_address_form' %>
-<% elsif params[:type]='update'%>
-  <%= render partial: 'update_address_form' %>
+<% if  params[:type]=='new' %>
+  <%= render partial: 'address_form' %>
+<% elsif params[:type]=='update'%>
+  <%= render partial: 'address_form', :locals =>{:user => current_user}  %>
 <% end %>
