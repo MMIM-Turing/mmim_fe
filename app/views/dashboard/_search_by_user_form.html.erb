@@ -1,14 +1,18 @@
-<%= form_with url: '/dashboard/results', method: :get, local: true do |form| %>
+<%= form_with url: '/dashboard/user_results', method: :get, local: true do |form| %>
 <div class="card" style="width: 25rem;">
   <div class="card-body">
     <div class="mb-3">
       <h1 class="display-6">Search by User</h1>
   <ul>
-    <%= form.text_field :address_1, { class: "form-control", placeholder: 'enter address' } %>
+    <% if current_user.address == nil %>
+      <%= form.text_field :address_1, { class: "form-control", placeholder: 'enter address' } %>
+    <% else %>
+      <%= form.text_field :address_1, { class: "form-control", value: current_user.address } %>
+    <% end %>
     <strong><%= form.label "My Location" %></strong>
   </ul>
   <ul>
-    <%= form.text_field :address_2, { class: "form-control", placeholder: 'enter address' } %>
+    <%= form.text_field :user_b_email, { class: "form-control", placeholder: 'search email' } %>
     <strong><%= form.label "Find by email" %></strong>
   </ul>
   <ul>

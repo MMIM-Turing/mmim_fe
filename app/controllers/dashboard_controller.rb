@@ -7,11 +7,15 @@ class DashboardController < ApplicationController
   end
 
   def edit
-  end 
+  end
 
   def update
     updated_user = UsersFacade.create_or_update_address(info_params)
     redirect_to dashboard_path
+  end
+
+  def new_meeting
+    suggested_meeting = MeetingsFacade.suggested_meeting(new_meeting_params)
   end
 
   private
@@ -22,5 +26,9 @@ class DashboardController < ApplicationController
 
   def info_params
     {email: current_user.email, address: address_params}
+  end
+
+  def new_meeting_params
+    { user_a_email: params[:user_a_email], user_b_email: params[:user_b_email], place_ids: params[:place_ids] }
   end
 end

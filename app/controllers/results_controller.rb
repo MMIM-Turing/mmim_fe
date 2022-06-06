@@ -24,7 +24,7 @@ class ResultsController < ApplicationController
 
   def default_category
     if search_params[:category].empty?
-      params[:category] = "coffee shop"
+      params[:category] = "cafe"
     else
     end
   end
