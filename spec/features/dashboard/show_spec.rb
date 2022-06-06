@@ -46,5 +46,12 @@ RSpec.describe 'login page' do
 
       expect(current_path).to eq('/dashboard/address')
     end
+
+    it 'uses a users default address if present', :vcr do
+
+      within "#user_search" do
+        page.should have_field(:address_1, with: '123 St, Denver, CO 80123')
+      end
+    end
   end
 end
