@@ -3,9 +3,13 @@ class ResultsController < ApplicationController
   before_action :default_category
 
   def index
-    @locations = LocationsFacade.address_location_search(search_params)
-    @category = search_params[:category]
-    @map_info = LocationsFacade.map_info(@locations)
+      @locations = LocationsFacade.address_location_search(search_params)
+      @category = search_params[:category]
+      @map_info = LocationsFacade.map_info(@locations)
+    if @locations == [] || @map_info == 'No results found'
+      redirect_to root_path
+      flash[:alert] = "No midpoints found-please try different addresses"
+    end
   end
 
   private

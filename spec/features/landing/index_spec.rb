@@ -25,11 +25,13 @@ RSpec.describe 'landing page' do
       expect(page).to have_field(:category)
     end
 
-    it 'sends user to results page' do
-
+    it 'sends user to results page', :vcr do
       visit '/'
-      fill_in :address_1, with: "placeholder"
-      fill_in :address_2, with: "placeholder"
+
+      fill_in :address_1, with: '2300 Steele St Denver CO 80205'
+      fill_in :address_2, with: "3643 W Colfax Ave, Denver, CO 80204"
+      fill_in :category, with: 'cafe'
+
       click_button 'Search'
 
       expect(current_path).to eq('/results')

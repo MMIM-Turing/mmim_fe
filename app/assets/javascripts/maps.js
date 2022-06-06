@@ -2,7 +2,7 @@ function initMap(locations) {
     var myCoords = new google.maps.LatLng(locations[0][1], locations[0][2]);
     var mapOptions = {
     center: myCoords,
-    zoom: 15
+    zoom: 14
     };
 
     var infowindow =  new google.maps.InfoWindow({});
