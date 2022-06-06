@@ -1,7 +1,7 @@
 
 <% if current_user.address == nil  %>
 <h3>Set your default address:</h3>
-    <%= form_with url: '/dashboard/address', method: :post, local: true do |form| %>
+    <%= form_with url: '/dashboard/address', method: :patch, local: true do |form| %>
     <div class="card" style="width: 25rem;">
       <div class="card-body">
         <div class="mb-3">
@@ -31,7 +31,7 @@
 
 <% else %>
     <h3>Update your default address:</h3>
-        <%= form_with url: '/dashboard/address', method: :post, local: true do |form| %>
+        <%= form_with url: '/dashboard/address', method: :patch, local: true do |form| %>
         <div class="card" style="width: 25rem;">
           <div class="card-body">
             <div class="mb-3">
