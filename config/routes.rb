@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resource :dashboard, only: [:show], controller: :dashboard do
     get '/address', to: 'dashboard#edit'
-    post '/address', to: 'dashboard#update'
+    patch '/address', to: 'dashboard#update'
   end
 
   namespace :dashboard do
