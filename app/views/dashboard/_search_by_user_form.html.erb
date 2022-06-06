@@ -2,13 +2,14 @@
 <div class="card" style="width: 25rem;">
   <div class="card-body">
     <div class="mb-3">
+      <h1 class="display-6">Search by User</h1>
   <ul>
     <%= form.text_field :address_1, { class: "form-control", placeholder: 'enter address' } %>
-    <strong><%= form.label "Address 1" %></strong>
+    <strong><%= form.label "My Location" %></strong>
   </ul>
   <ul>
     <%= form.text_field :address_2, { class: "form-control", placeholder: 'enter address' } %>
-    <strong><%= form.label "Address 2" %></strong>
+    <strong><%= form.label "Find by email" %></strong>
   </ul>
   <ul>
   <%= form.text_field :category, { class: "form-control", placeholder: 'eg. coffee, bar, gym' } %>

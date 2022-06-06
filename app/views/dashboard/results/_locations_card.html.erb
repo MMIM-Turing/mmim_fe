@@ -1,0 +1,18 @@
+<div class="card" style="width: 40rem;">
+  <div class="card-body">
+    <div class="mb-3">
+      <dl class ="list-group">
+        <% @locations.each do |location| %>
+        <dd class="list-group-item d-flex justify-content-between align-items-center text-truncate">
+          <strong><%= location.name %></strong>
+          <%= location.address %><br>
+          <br>
+          Average Rating: <%= location.rating %><br>
+          <button style="height:20%" type="button" class="btn-success btn-sm"><%= location.price_rating %></button>
+          <img src="<%= location.image_url %>" class="card-img-left" style="max-width:20%; height:auto" alt="location thumb">
+        </dd>
+      </dl>
+      <% end %>
+    </div>
+  </div>
+</div>

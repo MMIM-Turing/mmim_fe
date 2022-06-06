@@ -1,3 +1,9 @@
 <%= render partial: 'partials/navbar_dashboard' %>
 <br>
  <%= button_to "Set Default Address", '/dashboard/address/new', method: :get, class: 'btn btn-success' %>
+ <div style="float:left; padding:10px">
+   <%= render 'search_form' %>
+ </div>
+ <div style="float:left; padding:10px">
+   <%= render 'search_by_user_form' %>
+ </div>
