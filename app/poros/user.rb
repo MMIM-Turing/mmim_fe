@@ -1,5 +1,6 @@
 class User
   attr_reader :name, :email, :address
+
   def initialize(data)
     @name = data[:name]
     @email = data[:email]
@@ -11,7 +12,7 @@ class User
   end
 
   def city
-    @address.split(',').second.delete(" ")
+    @address.split(',').second.delete(' ')
   end
 
   def state
@@ -24,12 +25,11 @@ class User
 
   def address_format(str)
     state = str.split(',').last.split(' ').first
-    add = str.split(/ |\_/).map(&:capitalize).join(" ")
+    add = str.split(/ |_/).map(&:capitalize).join(' ')
     if state.length == 2
-      add.gsub(state.capitalize, state.upcase) 
+      add.gsub(state.capitalize, state.upcase)
     else
-      add 
+      add
     end
   end
-
 end

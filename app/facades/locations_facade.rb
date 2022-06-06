@@ -1,6 +1,5 @@
 class LocationsFacade
   def self.address_location_search(params)
-
     data = BackendService.get_locations(params)[:data]
     list = data.map do |data|
       Location.new(data[:attributes])
@@ -12,9 +11,11 @@ class LocationsFacade
       [location.name, location.latitude, location.longitude]
     end
     if coordinates != []
-      average = ['average', coordinates.map{ |c| c[1]}.sum/coordinates.count, coordinates.map{ |c| c[2]}.sum/coordinates.count]
+      average = ['average', coordinates.map { |c| c[1] }.sum / coordinates.count, coordinates.map do |c|
+                                                                                    c[2]
+                                                                                  end.sum / coordinates.count]
       coordinates.unshift(average)
-    else 
+    else
       'No results found'
     end
   end

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'landing#index'
   resources :results, only: [:index]
 
-  resource :dashboard, only: [:show], controller: :dashboard do 
+  resource :dashboard, only: [:show], controller: :dashboard do
     get '/address', to: 'dashboard#edit'
     post '/address', to: 'dashboard#update'
   end
