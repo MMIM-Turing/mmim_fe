@@ -2,7 +2,6 @@ class LocationsFacade
   def self.address_location_search(params)
 
     data = BackendService.get_locations(params)[:data]
-    require 'pry'; binding.pry
     list = data.map do |data|
       Location.new(data[:attributes])
     end
