@@ -21,26 +21,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b9fdcd29c0bc264d0587103e47e78bc0"
+      - W/"2a46bfe5bf51da41fdb77db08b4a54a8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5793046e-8454-409a-8ee7-ec25f5e4306e
+      - 2efa0fb9-3c92-4a5d-a434-19519b1a39e8
       X-Runtime:
-      - '0.683053'
+      - '0.676129'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"141","type":"location","attributes":{"id":141,"name":"Mercury
+      string: '{"data":[{"id":"1201","type":"location","attributes":{"id":1201,"name":"Mercury
         Cafe","place_id":"ChIJl7-Ogyd5bIcRTgzca2cfXmw","address":"2199 California
-        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uEBx-Kr_Cj75iRRLA_tlwp7JWF36jxwRc_ttP8cNFykDNUKgCiuzKkw_nf1KGwSWCtcyxvdvsCtVh2IabeKv7Eybkdeb4aNgze6L_SjpDshmJA2nvK4RHfpIOYyGN3a_MeJdE2wQ-4SZsrMAQQdgxRV82LYYPuy2He_dkbhWiD-kW0b3","price_level":2}},{"id":"142","type":"location","attributes":{"id":142,"name":"City
+        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uEBcyJsCl3ZBli5qp7qf6pG_aYY7ZnogXr_QjEEi10Scon_zSstgF5rQ95dqYe3ixZKeSBoo-97CeNoqVJenHLyUPraBTMNB0s0SkZzuavY3YjLlFdDxHj8Ui0XujeCNaGOvrKMK3E34vBOFGjiviOhEDcMh8ik-sbDrexYcjK3VnQhL","price_level":2}},{"id":"1202","type":"location","attributes":{"id":1202,"name":"City
         O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
-        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uEBBKZvtaqaDppsKxY9xTysn5cWPqfOUe9R7xJyiRljyD9icNADSg3wX7yG-5q6pw8Z-MwtXWLd-8ltY0Rc4lBhsasDsImDMOK_9BSYHFYwOmptjtJRQ-Q96rXCDJkSSXsCw8hBffbsg0kDm2OHN-k115M43Ig8Y0zIafjaYSDkJyfjT","price_level":2}},{"id":"143","type":"location","attributes":{"id":143,"name":"D
+        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uECtwECEINRQeBlMIWz5czLLIcl2_MtHclm4YNmW83TjX1b2wkP71uYZZga1VHmmzmGlAwuBO50556XcYLZHusfjD6X4UrVO5bRaME1VjBCEMYSzCpwomhw71R6DqUM_szA4pIjSQWdGR0VYW-vtPNRTSSiF8RrexIDqmdAcb2qmwIko","price_level":2}},{"id":"1203","type":"location","attributes":{"id":1203,"name":"D
         Bar Denver","place_id":"ChIJZfxKmTN5bIcRZQSdZN7EZ0g","address":"494 East 19th
-        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEAM64uZoF0BLXbv1qtOb--rOaW8UM-8xKLoQhXG-SJSXbbKK38D0s3CGRbl_P5OL7DCoER41RfhsRPUn32CAFbqpMnELANRZ0Q7PwdJIE1xUjqXyZiviPb5Nh-IfYmYpAURxgeTwYMesEeACVu9kQ01bv-fzktv9CxiVx5rVChWiD3l","price_level":2}},{"id":"144","type":"location","attributes":{"id":144,"name":"The
+        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEA5tN16OinAhVkZsnpOljRCj1hlAnxFEve_dK0BFg-wEei5fNxcHDCSPjCLNaILEMwaxh7icTGpJP48uTAmpG2USnVl6PgRcS3uWv6BKf2cMrOQ0_rYGkgezTROL_7LZKXpvoU6wrmW15KknUYictTKwgWzV7AKliufRsLdePic1vlg","price_level":2}},{"id":"1204","type":"location","attributes":{"id":1204,"name":"The
         Delectable Egg","place_id":"ChIJvUaJ1tV4bIcRZA5jdVPJw-4","address":"1625 Court
-        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEB3OvIU2Rn2I7WwKRW8zuG7qfAr-a72n3cuFL3f2VYIsoZvnrf6T5zJkZBxKO7SBxIT0_W_1Ce54yuMQiBJW-jwoVbh881x4w4j9yKCxyPSlQdv8laVoHkh4x4GcO2MZktgxrCB1KjOwP1MVw2t5M3aXvb_4f5RxZzxOXnA4-RcUTDR","price_level":1}},{"id":"145","type":"location","attributes":{"id":145,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
-        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uEBbpayhRZgtazznmY8sIQPp0ubjXjZcu3v9EmXKLXd1snWRBkS6o9g6ypii1EtkLtfkySaibDQ8xp1S4FYqAlyIFIgTqzMtqM-2GJnqtHYbU0Cxy_vNGro8u-mQ8reB-B57iCpy_yDNXMsm37g922dIX425lNhSZed_dSC_CdqxWGHd","price_level":1}}]}'
-  recorded_at: Mon, 06 Jun 2022 21:40:46 GMT
+        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEAqUBEzJj0rJrIIUk2iUJKe9UnMIBbT-N5xuwy7V5ne_1jr4HGAwf_uFBsm1u8TFB27JFqmm8nJ0c3vjDQbaoBFfm-m0Gcreg7_kUwVBJFcMl0rgnM86yg5lDVw4t3Di8GMD0ocoIlEDH97J88d-8Y05CeFC4gdIVxcRAuAHgrCeVGB","price_level":1}},{"id":"1205","type":"location","attributes":{"id":1205,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
+        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uECPGjyLh1hh1edu-Kk3bZSGsD_Lrt8YoT0pMeIGdJYMcNbmaoUshC8Z5otsGwoVijdG2SSiufy_LbshqXCjBbHGCQX9WY5dlVUJfYKBDr_K8nSKVyaS1H1baqsVDoxylSDmsHEefwJzMQx07N5w-SeSLTtb6vZUc1WhiCvdDWBn6Fj8","price_level":1}}]}'
+  recorded_at: Mon, 06 Jun 2022 22:03:10 GMT
 recorded_with: VCR 6.1.0

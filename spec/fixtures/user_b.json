@@ -1,0 +1,11 @@
+{
+  "data": {
+    "type": "user",
+    "id": "3",
+    "attributes": {
+      "name": "Test User",
+      "email": "test@test.com",
+      "address": "1600 Pennsylvania Ave Washington"
+    }
+  }
+}

@@ -21,28 +21,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"572d7175bd8c83d9bc2436c788b6b13a"
+      - W/"ec4c16f876f6dcb3a826ba2bc3ef9e84"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3082c22a-6feb-48ca-acc4-9eda384dbc8a
+      - 3fb4e670-c230-40c4-b309-75c8354d1f97
       X-Runtime:
-      - '0.659089'
+      - '0.725197'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"181","type":"location","attributes":{"id":181,"name":"Mercury
+      string: '{"data":[{"id":"1241","type":"location","attributes":{"id":1241,"name":"Mercury
         Cafe","place_id":"ChIJl7-Ogyd5bIcRTgzca2cfXmw","address":"2199 California
-        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uEC3jaTqE5r0_nu2tuKi-dvXzzet-fx-Gm5GxThUOMXqMphwrq0k2rOedBuvr2dVUv_EWBKcSK1jTYgNgHvG0hPcemAUt9ZsdmjI-j_Z669uQQF8VzfgkSeZGZslKKKYm9CMgIcLH1w-Tpab6qPOmlVh8KxQRe0sMqcZqmm6_wCRGzCB","price_level":2}},{"id":"182","type":"location","attributes":{"id":182,"name":"City
+        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uEC1vA2t2JiGHS_NtAvBiqKoFzmG15ymVUyIf41IDvbjUMbcPQwLdG2UYVJMddrHnuU7XhQBvCOSDJmO3m-Vt08udx0vYzTWxGgnv5KXOEZzjUo8cNtJ2UbJ7bcChns-EtWgICVcJmUyJAhz60pj2Ebnrah-zTxCVEjcGj6OruD-3ANz","price_level":2}},{"id":"1242","type":"location","attributes":{"id":1242,"name":"City
         O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
-        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uEAtjICSrfb6uikJFyfoGCW4PfPibKEQ7cmJ3Ahf6UesgQS0UQ4_eTdMwSi54Aeq06W04dj4d7vAZpost3QZKD1DNDu_gAlcQHQwUMMcgRDlnOVv7DRcd2UMn5RQy2MKf3k5Fy_gnkUlPu5dEzDU_qZqQkA0PVV2eyOBhqI7mu1mW7LE","price_level":2}},{"id":"183","type":"location","attributes":{"id":183,"name":"D
+        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uEBRnDT7dBA7hfg5tE0biaM8vLKkuI0ob_Hdp5Zya82YktWuP6HKom0OGNEEsXFQT1qWLR-5xq5kFX47jJeo2wECTZcVyaPtSiaxKx-YJ-ERNUO8EBdZomtiiziK_0xhCoJl0V2w95BdvcvVEr5jCKVAqYz1vBQnXYtl5lZmQQQDiD-0","price_level":2}},{"id":"1243","type":"location","attributes":{"id":1243,"name":"D
         Bar Denver","place_id":"ChIJZfxKmTN5bIcRZQSdZN7EZ0g","address":"494 East 19th
-        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uECI4eUlArvH85iygkwMTEcVpG7Z--W-nlU4jFP-KoKjF0K6kOlGb9-F4Z1CvVTuyejDa1gmkxN3E-70mABvknCgg0c-Ehog76L-uZPz7if5X-3sUpWE2bpXCmYl0ehnZ9Vg7AJ9paWSjFvGzN3B5uqIKY2-6D-oDQ_iGhCpmo-osq3I","price_level":2}},{"id":"184","type":"location","attributes":{"id":184,"name":"The
+        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEA40E5ePrt0hwkN8gorvhAouIfKnTvwAptV841ucxTDf4yRO97lW-tQScZzphFHb1MG1Y2MlfGmipo_hIDWIXTtpLrfdrTFWAT_TuoxVSsqKcweIyjo3HqRy06kE60gaRr5pPzuzg0V0fy5Mv2aeKofYDiOz7IKJMKJIG-7Yy5B4Oq9","price_level":2}},{"id":"1244","type":"location","attributes":{"id":1244,"name":"The
         Delectable Egg","place_id":"ChIJvUaJ1tV4bIcRZA5jdVPJw-4","address":"1625 Court
-        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uECd5AWzZNd_Dwo_r3xc22RAsQMO77VcHMMreukk0wmlC5Ksol-883jBE4Zb7dYZ88jqaBvnI7cr7cgjYphmk7uOIZZ2C8vIs_LYRNdpKj5tAEGzQKDjTQHHA9H_XMK82bGqgocWgwlpTs8FyKdeyZKaEASVAv1YNlInWyOYkZiZ_BvV","price_level":1}},{"id":"185","type":"location","attributes":{"id":185,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
-        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uEDSrTIWCBCcIJEmyOI83QulKJ4g74BfLo52kTPLiGtNaoINLNcvbba1eCTSQgywc9H2QUYPbq7Kr2YxqQPRUPEkB-hiMLj1hcNKNYps0sjdGdUrYJ1NwMErfdxByOu1Um8PO1VMC5IX4_BfEPaiMzYr9s1gehaKPoDlii4GSnVMshVs","price_level":1}}]}'
-  recorded_at: Mon, 06 Jun 2022 21:40:47 GMT
+        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEBgFIOL00LR5McHpm5BAjphJzN9YocFROVJpKtkVtRVy060zqFqTwSQe65jZoS2LnuLqstzdvWDrrswIM9WZU33cqFfKKrm0N6EUT2H0OLCqP1n8G5dymUQm1QgwTYG4PnwWmefgX3sLlLDm8Al5fo9zyYiD7WHIDJF3nZkl7bYZrlW","price_level":1}},{"id":"1245","type":"location","attributes":{"id":1245,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
+        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uEDwdcIs6LgNsbvobqBR8kh5JlXVDlrAYk8v8qFGNa9iIt7NiIre6B3JUSvatAUHa-EuA6Jl2Cxc49bPFNBDbMpWo0-lNk7ZUXzlgm330rDpGq8XjJ_6D8nWK1PG5S6-IAn-s-YAKpRHS9dEqHOtCo7U5uqoaTYqOaTDNxzUCo0y35Up","price_level":1}}]}'
+  recorded_at: Mon, 06 Jun 2022 22:03:12 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22bar%22%7D
@@ -64,26 +64,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b0983240d897c1e302df516f7e30f112"
+      - W/"189026d7f16288baebc85cd84e9c46b9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b8607f95-fcc2-477a-8ce9-7ed7e430c511
+      - 56906e2f-35a4-4619-a0c0-246bde08a308
       X-Runtime:
-      - '0.711188'
+      - '0.667117'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"201","type":"location","attributes":{"id":201,"name":"Panzano","place_id":"ChIJm5csC9p4bIcRDhpgwqiuxNc","address":"909
-        17th Street, Denver","lat":39.7477933,"lng":-104.9928419,"rating":4.5,"image_url":"Aap_uECsm2qrtHWK73Pws2dxM7JkECS0QLzVgP7mko3lOl6j5xYLfwHeBrNyBOwzKeh_DwBuAzgyT4Lcask2VdnkE4ngK09bktMl_7mKwW_hmtq7L0s7IKRqECJv1tmzHqGRSHzaSabACSJ2ZWnmAOZ3fsoYTvH_FrXoNMwP3ROYjC0RPuwd","price_level":3}},{"id":"202","type":"location","attributes":{"id":202,"name":"Maggiano''s
+      string: '{"data":[{"id":"1261","type":"location","attributes":{"id":1261,"name":"Panzano","place_id":"ChIJm5csC9p4bIcRDhpgwqiuxNc","address":"909
+        17th Street, Denver","lat":39.7477933,"lng":-104.9928419,"rating":4.5,"image_url":"Aap_uEDa8GvCU30xqW_zjVWXEZLTvqf3pT29u4w7_uT0h4mXWErqFbSvJJtevLzs2z6y18zIME3BktWkCTSR3O0hOcPaG3lXFkpQTHsSmV5dMpS1Lkt7zQAjECHpZWcqoH12R_PIjTkg1jRXB1Rct4u8QaoqSft86s6J9o2Pq60nuCsXsd0w","price_level":3}},{"id":"1262","type":"location","attributes":{"id":1262,"name":"Maggiano''s
         Little Italy","place_id":"ChIJY5watdZ4bIcRIDAE-njFBdA","address":"500 16th
-        St Suite 150, Pavilions Mall, Denver","lat":39.7438395,"lng":-104.9906516,"rating":4.5,"image_url":"Aap_uED6CCROeBsJHvLpIgcP3wEsisD2d5M2Llv6geAa3y2rtQSyq3IJtarXMggsa8NTuExAk1ReAHAD2WsFETOy2XzC8-60jUbp72B_BRKEbKntR4b_WhqXSDZnv9u8gCtBmMya32UhCzyselG8T7oNoqTlQ_mgxN9LRAvvQ7GzDiSCiD1r","price_level":2}},{"id":"203","type":"location","attributes":{"id":203,"name":"Great
+        St Suite 150, Pavilions Mall, Denver","lat":39.7438395,"lng":-104.9906516,"rating":4.5,"image_url":"Aap_uECGUlS5aYjcDvrnFYdAYC7s7xc8d5ceySTbWg-L7AYgxWSW1AMQdNEn-FPJQdhCzjOkQfqqlUi80cGEYBJf8s9vgjByAUenZamHzpb7FnrkYVMkzvt5Wj2PXqPafLuPGEJ4jvRDEiNEOkthdmFcHJyBFmAUAoH3Cmql0ghpqCMnQp_g","price_level":2}},{"id":"1263","type":"location","attributes":{"id":1263,"name":"Great
         Divide Brewing Co","place_id":"ChIJo_c5KN94bIcRf-MnunKDJug","address":"2201
-        Arapahoe Street, Denver","lat":39.7538083,"lng":-104.9885167,"rating":4.6,"image_url":"Aap_uEA2d4MJqjYAJ_O_UQGJLvzCDt3PXU3H18hDUXlpjOoN9UZhPGqnReOkVhMqOX3paLB4IqDrvvnXifgDTmzsORUuHBpnGKMXmYlg9JRSgwxQJ9SrLq_QIah3fRis2RpOsEF8mkj7kUud3dKYhpeXjsw-jGX4jZiJH9xOyXcT-8xF_NfB","price_level":2}},{"id":"204","type":"location","attributes":{"id":204,"name":"Rock
+        Arapahoe Street, Denver","lat":39.7538083,"lng":-104.9885167,"rating":4.6,"image_url":"Aap_uED6dKPKl4e35dePWUJ0HAQm_9w2U7YaNOtGZL10qnqpSrBqU_D4004aOW1OQOb9BeQpNz2jGdKEHGu8tjxav82s0AaGbgHia5K-8e-JvX75iPEz3eEM_0sKa75ZYSVRL_HO0CmZ6ePbvb9B6wUlroFKUoE_kVBF5aggYfURgZmOFfNZ","price_level":2}},{"id":"1264","type":"location","attributes":{"id":1264,"name":"Rock
         Bottom Restaurant \u0026 Brewery","place_id":"ChIJHY5jhNp4bIcR8ij0UT5PKRY","address":"1001
-        16th Street Mall A-100, Denver","lat":39.747516,"lng":-104.994804,"rating":3.9,"image_url":"Aap_uEDbBP5jebt8y8X8opAdW9PwOLHmFIHkO7ZfnkM1Sk-kwKhp5wwlfq7Lokw-XlsAd0Qf5Njl2pSC1vnFG1XVppHtER-x2rj_xSAcqiDORQOakNqSoGNyxuaJp2Uq3DpKi4ZCwa27OUuWWYr3DDhW4uFu_bzS0sZzj6MuLgHq8hlBjVTC","price_level":2}},{"id":"205","type":"location","attributes":{"id":205,"name":"Skyline
+        16th Street Mall A-100, Denver","lat":39.747516,"lng":-104.994804,"rating":3.9,"image_url":"Aap_uEBQBPj-qhLXbeHVCqbroDTmVlEQmirLk4SEQWBHNfmhqIkzTMcd2L6DCG9FQ77DP051sYuCVB6l8ePfUXP6sKIDsUxknQ7jUMI3Utx76e3X0He3GX_KWfkJlkJip9mag6GVc74aghjp8B2FdJvU6plRX9_nY69moZj6LvqsCaAu9hoH","price_level":2}},{"id":"1265","type":"location","attributes":{"id":1265,"name":"Skyline
         Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
-        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEC4ko0LIvuMPsoG8YPod573LJxtYq4wo5eOCzb2vNU2Bouxgi9zwHRBgKdWMEtt-fa3kdWkBzvqImKXJvwAfCC8qpbfJVao59De4GaQ5BOjEsyvXm7n7DOgUoXtr0V-XP9Fq4R7x8tQrZxHjc1qsiUEhPquytDQ3_bb76ltWA8iuPz_","price_level":null}}]}'
-  recorded_at: Mon, 06 Jun 2022 21:40:48 GMT
+        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uECxbMo90dbLiz9q_L__x3YcijgtK2VIE-EQJjzjJoxjFqy3ffHBxadQJx4qu3YNQhFa2j3mYu9C-X1MlGzPHv6zKaky72qmnlcUYqkDHV4ORgw14yig2WCXxOmsh-pGlV3hxpJBBmU4D98HZof4fKlC7dNokDYq8jSNJNc5572GE_4D","price_level":null}}]}'
+  recorded_at: Mon, 06 Jun 2022 22:03:12 GMT
 recorded_with: VCR 6.1.0
