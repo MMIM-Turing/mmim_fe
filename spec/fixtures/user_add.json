@@ -5,7 +5,7 @@
     "attributes": {
       "name": "someone",
       "email": "sample@email.com",
-      "address": "123 st, Denver, CO, 80123"
+      "address": "123 st, Denver, CO 80123"
     }
   }
 }
