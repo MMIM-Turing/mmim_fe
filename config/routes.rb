@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
   patch '/results', to: 'results#index'
+  patch '/dashboard/results', to: 'dashboard/results#index'
 end

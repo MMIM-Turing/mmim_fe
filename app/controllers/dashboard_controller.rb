@@ -15,7 +15,8 @@ class DashboardController < ApplicationController
   end
 
   def new_meeting
-    suggested_meeting = MeetingsFacade.suggested_meeting(new_meeting_params)
+    # suggested_meeting = MeetingsFacade.suggested_meeting(new_meeting_params)
+    redirect_to '/dashboard'
   end
 
   private
