@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22address_2%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22cafe%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ba774a22aa01f7aaf6319ad96059abd4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4f5e29f6-62af-4c5b-9e7e-17ca47755edf
+      X-Runtime:
+      - '0.592974'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"273","type":"location","attributes":{"id":273,"name":"Mercury
+        Cafe","place_id":"ChIJl7-Ogyd5bIcRTgzca2cfXmw","address":"2199 California
+        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uEA6uxOSdTVkWZ5TiYsA1FTPsd46FtBbvxwQORxa64pMFT-QeBnurcxAy_GZ3heO0OkZ5WDgLhYoU1SScpjQPBrsAox3W72NJtqWUvKkrJqG6rwliF9uAMVlm0g5r1nLFBIWo6xXvXeNJy11qs6aCMtmm2-gjWRDd5b2DpEJ9g0XjVdq","price_level":2}},{"id":"274","type":"location","attributes":{"id":274,"name":"City
+        O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
+        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uEBKg_RBir0eJJxBLECk5ZLQIkh88ypTTqWr-H7Efq_y9R8-WtHZ938jnUDOVQ_senw5g064w5byKFhe2DLbJ2aPAWo0xV1Wn84jJI1JkXpGDz4dUSepQoOw_fK8SMyZkuevSgppFTwiBOB8GQqntJLOwgVU8Q_KPD8_rrWK5J98ksk3","price_level":2}},{"id":"275","type":"location","attributes":{"id":275,"name":"D
+        Bar Denver","place_id":"ChIJZfxKmTN5bIcRZQSdZN7EZ0g","address":"494 East 19th
+        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEBsKWt-RWUTbAUEKwJ6ojHg1NQtmuvJdrekqQUpfa20JQ0sR88zoRlhxqZSUxXcg3QuUsayRX6v7Vj5NiqnlmrCYejw_gw5yUyfV9g1yvRweGemoBwsHkpTzwl7lMDOddMCIMwzCdbpH4fll9pPLSO0jV7rPQYW_C6Lf-bg_CIjHRm0","price_level":2}},{"id":"276","type":"location","attributes":{"id":276,"name":"The
+        Delectable Egg","place_id":"ChIJvUaJ1tV4bIcRZA5jdVPJw-4","address":"1625 Court
+        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uED_fGNaovAMrrEQm1kkSzXlBM6dmvK4ftumZ-wiTUrKUJzYemLfONUK2L4H3W5mvsOdj5wDScYI9kBPqzmZR_0V-9RHZ8gLc5gfXYcXJbftzsFIXl_azfc7BsvmEa8nhxZ-YjrmJqec3Qiwq8BA8LaNTA1KnHx2psS1tAZt0-Szdx6o","price_level":1}},{"id":"277","type":"location","attributes":{"id":277,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
+        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uECbvPawYofu3G4GJ-87DnxjE3nRF6FoUZHOxMJZwdt7q5JA9ydJ97rX5NabiVfGFvkJ1aUyQZziHCGWnJbOuMVWYUdPzvaISlqx0NcagmPlYPso0OKou4BWZzr1stiqo2DMh5gccdOlFB_sePmxywtS7c-FgajEUvyrHfH-3YAKXUs9","price_level":1}}]}'
+  recorded_at: Mon, 06 Jun 2022 03:49:32 GMT
+recorded_with: VCR 6.1.0

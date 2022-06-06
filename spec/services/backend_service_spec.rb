@@ -8,8 +8,9 @@ RSpec.describe 'backend service' do
 
     end
 
-    it '#get_locations' do
-      expect(BackendService.get_locations('spec/fixtures/locations.json')).to have_key(:data)
+    it '#get_locations', :vcr do
+      params = {address_1: '3643 W Colfax Ave, Denver, CO 80204',address_2: '2300 Steele St Denver CO 80205', category: 'cafe'}
+      expect(BackendService.get_locations(params)).to have_key(:data)
     end
   end
 end
