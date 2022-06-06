@@ -13,7 +13,8 @@ RSpec.describe 'login page' do
   it 'has a form to create default address if non existing' do 
     data = JSON.parse(File.read('spec/fixtures/user_add.json'), symbolize_names: true)
     allow(UsersService).to receive(:create_or_update_address).and_return(data)
-    user = User.new(name: 'Someone', email: 'sample@email.com', address: '123 st, Denver, CO, 80123')
+    user_data = {:name=>"someone", :email=>"sample@email.com", :address=>"123 st, Denver, CO 80123"}
+    user = User.new(user_data) 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
     click_on 'Set Default Address'
@@ -25,7 +26,7 @@ RSpec.describe 'login page' do
 
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_content('My Default Address:')
-    expect(page).to have_content('123 st, Denver, CO, 80123')
+    expect(page).to have_content('123 St, Denver, CO 80123')
     expect(page).to_not have_link('Set Default Address')
     expect(page).to have_link('Update Default Address')
   end
