@@ -13,6 +13,11 @@ class DashboardController < ApplicationController
     redirect_to dashboard_path
   end
 
+  def new_meeting
+    # suggested_meeting = MeetingsFacade.suggested_meeting(new_meeting_params)
+    redirect_to '/dashboard'
+  end
+
   private
 
   def address_params
@@ -21,5 +26,9 @@ class DashboardController < ApplicationController
 
   def info_params
     { email: current_user.email, address: address_params }
+  end
+
+  def new_meeting_params
+    { user_a_email: params[:user_a_email], user_b_email: params[:user_b_email], place_ids: params[:place_ids] }
   end
 end

@@ -6,6 +6,13 @@ class LocationsFacade
     end
   end
 
+  def self.user_search(params)
+    data = BackendService.get_locations_by_user(params)[:data]
+    list = data.map do |data|
+      Location.new(data[:attributes])
+    end
+  end
+
   def self.map_info(locations)
     coordinates = locations.map do |location|
       [location.name, location.latitude, location.longitude]

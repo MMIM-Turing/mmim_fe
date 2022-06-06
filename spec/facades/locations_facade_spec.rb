@@ -13,5 +13,16 @@ RSpec.describe 'locations facade' do
         expect(location).to be_a(Location)
       end
     end
+
+    it '#user_search', :vcr do
+      user_b = UsersService.find_or_create_user({name: "Test User", email: 'test@test.com', address: "1600 Pennsylvania Ave, Washington"})
+      params = {address_1: '23 U St NW, Washington, DC 20001', user_b_email: 'test@test.com', category: 'cafe'}
+
+      expect(LocationsFacade.user_search(params)).to be_a(Array)
+      
+      LocationsFacade.user_search(params).each do |location|
+        expect(location).to be_a(Location)
+      end
+    end
   end
 end

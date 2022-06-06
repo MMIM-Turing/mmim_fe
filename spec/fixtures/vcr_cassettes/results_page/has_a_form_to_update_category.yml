@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22gym%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a72963612f433e90904669ad6864bfe5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5f887eee-5a5e-4285-956a-3c742b8437b6
+      X-Runtime:
+      - '0.693707'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1121","type":"location","attributes":{"id":1121,"name":"CorePower
+        Yoga","place_id":"ChIJkbiCHNV-bIcREkhwQY7LubM","address":"333 East 13th Avenue,
+        Denver","lat":39.7370696,"lng":-104.9830572,"rating":4.4,"image_url":"Aap_uEA5t9tr9ncFD_w8UMd1en_zDBEELdKmfR4KXbaKKltNg3ETnvUO8kvCgewPz3MlKKvDY9YYBojN4DHif8oim_UjouVAu5Bwt5ygvYbw2Ajjj3-krePEjOod5VvDcVGZqLYFF8dibMZArScosboWyhgTj6MRfXJz4hK37ADAbszG5vBu","price_level":null}},{"id":"1122","type":"location","attributes":{"id":1122,"name":"Downtown
+        Denver YMCA","place_id":"ChIJN83ojdV4bIcRgwOjx8qpmN0","address":"25 East 16th
+        Avenue Unit B, Denver","lat":39.74182640000001,"lng":-104.9863131,"rating":4.1,"image_url":"Aap_uECxGUYBtr_zNMt7TWwkKm3TEsbl2TFl3CcqtRczvZ0iQmufc1r44Qk3ftQ1xv9bMWv9Zt76QO1yQOcJpJGOybaasmcndI1yXFqlqXtL_779Mt7zj-W8lPs2u0Hi8yExTEt4F5wCP4gDDL2ImoOYAPm0_xIE-7XBDkuQgq89IYdGvfJ0","price_level":null}},{"id":"1123","type":"location","attributes":{"id":1123,"name":"Samadhi
+        Yoga Sangha","place_id":"ChIJnf220y55bIcRv5cLuIqca-A","address":"639 East
+        19th Avenue, Denver","lat":39.746416,"lng":-104.979468,"rating":4.5,"image_url":"Aap_uEDbJIsco7jlFDIN7BgCfQWDfaCpJUZguE56t6kugyVTZEmkc9UouvVw6e9yWKxejnszdc2aVIJI8nnSrPRplNA0wPY1OpSlMhVCOli-lCvabDUUobmYK9jz8Z8AnFSOpET0pb9WCmX1unQr7Ocvn4gChR6LDGwrccyWAY385zd77a8R","price_level":null}},{"id":"1124","type":"location","attributes":{"id":1124,"name":"La
+        Rumba","place_id":"ChIJjzh3ACl_bIcREN-vglORVF8","address":"99 West 9th Avenue,
+        Denver","lat":39.7305946,"lng":-104.9886474,"rating":4.1,"image_url":"Aap_uEBJvvthBt5MmSVY96CR7-3feUZhhhXpbDfBShQdultBN2mH7qpwpkapAbCYcBPGxh13hH9-3q59cIp5yW7MLnoa0eUPsv2IkFMxlW9TTkSc_S59VBDN55yzSogs3sChTRJgZ5OJZhIVli0Q9HoMsUGg0kaMBinNFmts5hT7pPjZqrGK","price_level":1}},{"id":"1125","type":"location","attributes":{"id":1125,"name":"The
+        Denver Athletic Club","place_id":"ChIJLRP7z9N4bIcRT6PfN5O1xMo","address":"1325
+        Glenarm Place, Denver","lat":39.7416927,"lng":-104.9936792,"rating":4.4,"image_url":"Aap_uEBf_3L25m_XerQKTJWWDFiFl3Tml1lgw2PUtJDtf1co9ajCXJj8RU-L1c5IgvrlxcK0bEBja9UOoXRtVzQycIAauz3VaFI_RQuU5PGLvJhAbrSMO2MoUeZcF90NiBzTFppUPIXQDlI6pwkNKqvRFl7MGFEt9QcUBbXr0TltMaUGIdNu","price_level":null}}]}'
+  recorded_at: Mon, 06 Jun 2022 22:03:07 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22bar%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2e1bd6e3cbd1748d6b05e48892d148f9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7785b2ea-e48c-48cb-935d-7bb137c0d663
+      X-Runtime:
+      - '0.780825'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1141","type":"location","attributes":{"id":1141,"name":"City
+        O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
+        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uEBnhYruztCuRUN8exXBRyNxpGMvm0uvsQLBVha8KWmKhlg1v7NAolScUr50bpgAufh3jUpC7KbAhJnDixXTvLdnnDp57Xm9-wgnD0JBnRGfyOBlPPinxPH3MDj5lU3Kbje1K-QTG1jF0rFvIMtykvnkcGI0jYO4oDj8WHycf6XLooIS","price_level":2}},{"id":"1142","type":"location","attributes":{"id":1142,"name":"The
+        Church Nightclub","place_id":"ChIJUfbocCp_bIcRdDlbGink75U","address":"1160
+        Lincoln Street, Denver","lat":39.7349676,"lng":-104.9857648,"rating":3.7,"image_url":"Aap_uEB6VfJNbN6WAvQAukxkVynz8nirYho_fIzgEGPgLO1jm4Z_MvjwF6V72enQ9bWOabn-x8lmvvPpX_EBz5XtUbvoZqj5FkkmOBK-8FVQ8fiwqCW8gKjqwWLN5IB_fn6q_b_7UJbGWBLc6jVkD9HppkzF2YPFr04SveTn-vW52VCnVrRr","price_level":2}},{"id":"1143","type":"location","attributes":{"id":1143,"name":"Maggiano''s
+        Little Italy","place_id":"ChIJY5watdZ4bIcRIDAE-njFBdA","address":"500 16th
+        St Suite 150, Pavilions Mall, Denver","lat":39.7438395,"lng":-104.9906516,"rating":4.5,"image_url":"Aap_uEDPRXw9UqpeIFsvuGUhtt-FDr7dKeJTpfNCKqKZonLJ4yAaP1xsHV1yHeJ0QBspnT88Csj7l9zs9MJUfEVto1FYClu9Az9Ia4Oci9w0pWgF1CXC7K-CXEeSfV3ncT3gmUO0_Me8ioGFRAEN2FP_s2DAns38cgXhm8MvFlgOzoF1WXW8","price_level":2}},{"id":"1144","type":"location","attributes":{"id":1144,"name":"Stoney''s
+        Bar and Grill","place_id":"ChIJfaIaDip_bIcRFzwCojaHsu8","address":"1111 Lincoln
+        Street, Denver","lat":39.7341339,"lng":-104.9863389,"rating":4.3,"image_url":"Aap_uEAGK5eRFkkZaxVSNv74RKiv801z29wsp6swVCTrIenc4P47glYc3l99G-Xgrr-d58hcN3reNLyO-Hfk1ZTD_2vhrl9rGM8_2yc3x0d_jL6qLfAt9bbGl4LV9toJbimlaQZPLPulO_lmFkwbOpMciDvvr7Q4SNZLxdtc4560KrJh9AAT","price_level":1}},{"id":"1145","type":"location","attributes":{"id":1145,"name":"Ace
+        Eat Serve","place_id":"ChIJu-mW5St5bIcRmFpCS-fM6MA","address":"501 East 17th
+        Avenue, Denver","lat":39.7435577,"lng":-104.9807338,"rating":4.3,"image_url":"Aap_uEB5SyLaqAYl_rMHXFneyUF8Sp2-__WOnjWO07_cQHIrcMqKjKkVYWfxOY9RsVjWuWFfbemOHfUHi1nqgv8wWdn-DlkSoZ_ShBo-pXFmsU8KRL_QODdVUdPFkKL4hQ45oWpqdtK-XGT-rjKbOrWzKZDEQeyM4OezSYZg2E8EUc8Khg4","price_level":2}}]}'
+  recorded_at: Mon, 06 Jun 2022 22:03:07 GMT
+recorded_with: VCR 6.1.0
