@@ -7,6 +7,7 @@ RSpec.describe 'results page' do
     allow(UsersService).to receive(:find_or_create_user).and_return(data)
     visit '/login'
     click_on 'Log in with Google'
+    allow(PhotoService).to receive(:get_url).and_return('http//url')
   end
 
   it 'displays category', :vcr do
