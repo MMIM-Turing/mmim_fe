@@ -8,6 +8,14 @@
 
 ## Background and Description
 
+Have you ever wanted to meet up with friend but did not know where to go? This app lets a user enter two addresses and then search for a location in the middle of those two addresses. The user can also chose to search for a specific category of results.
+
+![landing_page](./img/landing_page.png)
+
+Using Google API the user is then sent to a page where they can see their results. A map is displayed on the page with pinpoints indicating the results. Then the user sees a list of results with an image, address, average rating, and a price range.
+
+![results](./img/results.png)
+
 ## Requirements and Setup
 
 #### Setup
