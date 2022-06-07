@@ -3,11 +3,6 @@ class ResultsController < ApplicationController
   before_action :default_category
 
   def index
-    # @locations = Rails.cache.fetch("something", expires_in: 12.hours) do
-
-      # require 'pry'; binding.pry
-      # LocationsFacade.address_location_search(search_params)
-    # end
     @locations = LocationsFacade.address_location_search(search_params)
     @category = search_params[:category]
     @map_info = LocationsFacade.map_info(@locations)

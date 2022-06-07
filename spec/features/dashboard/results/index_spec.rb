@@ -49,6 +49,19 @@ RSpec.describe 'results page' do
     end
   end
 
+  describe 'no results search', :vcr do 
+    it 'redirect to dashboard and flash alert message when no results found', :vcr do 
+      within "#address_search" do
+        fill_in :address_1, with: '123 st'
+        fill_in :address_2, with: '249 st'
+        click_button 'Search'
+      end
+      expect(current_path).to eq(dashboard_path)
+      expect(page).to have_content('No midpoints found-please try different addresses')
+    end
+  end
+
+
   it 'has a form to update category', :vcr do
 
     within "#address_search" do
