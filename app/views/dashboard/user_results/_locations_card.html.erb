@@ -7,6 +7,8 @@
             <dd class="list-group-item d-flex justify-content-between align-items-center text-truncate">
               <%= form.hidden_field :user_a_email, value: current_user.email %>
               <%= form.hidden_field :user_b_email, value: params[:user_b_email] %>
+              <%= form.hidden_field :address_1, value: params[:address_1] %>
+              <%= form.hidden_field :category, value: params[:category] %>              
               <%= check_box_tag "place_ids[]", location.place_id %>
               <strong><%= location.name %></strong>
               <%= location.address %><br>

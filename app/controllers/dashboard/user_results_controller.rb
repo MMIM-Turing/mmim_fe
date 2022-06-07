@@ -3,7 +3,9 @@ class Dashboard::UserResultsController < ApplicationController
   before_action :default_category
 
   def index
-    @locations = LocationsFacade.user_search(search_params)
+    @locations = Rails.cache.fetch("locations - #{search_params}") do
+      LocationsFacade.user_search(search_params)
+    end
     @category = search_params[:category]
     @map_info = LocationsFacade.map_info(@locations)
   end
