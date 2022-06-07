@@ -1,15 +1,20 @@
+
 <% @locations.each do |location| %>
-<div id="locations" class="card" style="width: 25rem;">
+<div class="card" style="width: 40rem;">
   <div class="card-body">
     <div class="mb-3">
-      <ul>
-          <strong><%= location.name %></strong>
-          <%= location.address %><br>
-          <br>
-          Average Rating: <%= location.rating %><br>
-          <button style="height:20%" type="button" class="btn-success btn-sm"><%= location.price_rating %></button>
-          <img src="<%= location.image_url %>" class="card-img-left" style="max-width:20%; height:auto" alt="location thumb">
-        </ul>
+      <div style="float: left; margin-right: 30px; margin-top: 20px;">
+        <img src=<%= location.url_image %>>
+      </div>
+          <div class="card-body">
+            <h4 class="card-title"><%= location.name %></h4>
+            <p class="card-text"><strong>Adress:</strong> <%= location.address %></p>
+            <p class="card-text"><strong>Average Range:</strong> <%= location.rating %></p>
+            <% if location.price_rating != 'N/a' %>
+            <p class="card-text"><strong>Price Range:</strong> <button style="height:20%" type="button" class="btn-success btn-sm"><%= location.price_rating %></button></p>
+            <% end %>
+          </div>
+      </dl><br>
     </div>
   </div>
 </div>
