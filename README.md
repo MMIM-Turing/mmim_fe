@@ -73,13 +73,13 @@ Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmi
 [GitHub](https://github.com/kg-byte) | [LinkedIn](https://www.linkedin.com/in/kim-guo-5331b4158/)
 
 #### John Hennerich
-[GitHub]() | [LinkedIn](https://www.linkedin.com/in/john-hennerich/)
+[GitHub](https://github.com/jhennerich) | [LinkedIn](https://www.linkedin.com/in/john-hennerich/)
 
 #### Will Medders
 [GitHub](https://github.com/wmedders21) | [LinkedIn](https://www.linkedin.com/in/will-medders-781a80232/)
 
 #### Oscar Santos
-[GitHub]() | [LinkedIn](https://www.linkedin.com/in/oscar-santos-perez/)
+[GitHub](https://github.com/Oscar-Santos) | [LinkedIn](https://www.linkedin.com/in/oscar-santos-perez/)
 
 #### Max Wagner
-[GitHub]() | [LinkedIn]()
+[GitHub](https://github.com/MWagner3) | [LinkedIn](https://www.linkedin.com/in/maximilian-wagner3350/)
