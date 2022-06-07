@@ -14,4 +14,11 @@ class BackendService
     response = conn.get("search_by_user?params=#{p}")
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.suggest_meeting(params)
+    binding.pry
+    p = params.to_json.gsub("@", "%40")
+    response = conn.post("meeting?params=#{p}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end

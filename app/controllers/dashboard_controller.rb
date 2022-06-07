@@ -3,8 +3,9 @@ class DashboardController < ApplicationController
   before_action :require_address_params, only: :update
 
   def show
-    # meeting = MeetingsFacade
-    # locations = LocationsFacade.find_midppoints(address_params)
+    # @pending_meetings = MeetingsFacace.pending_meetings(current_user.email)
+    # @accepted_meetings = MeetingsFacace.accepted_meetings(current_user.email)
+    # @declined_meetings = MeetingsFacace.declined_meetings(current_user.email)
   end
 
   def edit; end
