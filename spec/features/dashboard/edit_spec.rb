@@ -32,6 +32,25 @@ RSpec.describe '/dashboard/address page' do
       expect(page).to_not have_link('Set Default Address')
       expect(page).to have_link('Update Default Address')
     end
+
+    it 'flash alert message and remain on update page if no user input' do 
+      data = JSON.parse(File.read('spec/fixtures/user_add.json'), symbolize_names: true)
+      allow(UsersService).to receive(:create_or_update_address).and_return(data)
+      user_data = { name: 'someone', email: 'sample@email.com', address: '123 st, Denver, CO 80123' }
+
+      click_on 'Set Default Address'
+      user = User.new(user_data)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+      fill_in :street, with: ''
+      fill_in :city, with: 'Denver'
+      fill_in :state, with: 'Colorado'
+      fill_in :zipcode, with: '80123'
+      click_on 'Set Default Address'
+      
+      expect(current_path).to eq('/dashboard/address')
+      expect(page).to have_content('Please fill out all required area')
+    end
   end
 
   describe 'update default address' do
@@ -61,6 +80,26 @@ RSpec.describe '/dashboard/address page' do
 
       expect(page).to have_content('200 St, Littleton, CO 80125')
       expect(page).to_not have_content('123 St, Denver, CO 80123')
+    end
+
+    it 'flash alert message and remain on update page if no user input' do 
+      click_on 'Update Default Address'
+      fill_in :street, with: ''
+      fill_in :city, with: 'littleton'
+      fill_in :state, with: 'Co'
+      fill_in :zipcode, with: '80125'
+
+      data = JSON.parse(File.read('spec/fixtures/user_add.json'), symbolize_names: true)
+      allow(UsersService).to receive(:create_or_update_address).and_return(data)
+
+      user_data = { name: 'someone', email: 'sample@email.com', address: '200 St, Littleton, CO 80125' }
+      user = User.new(user_data)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+      click_on 'Update Default Address'
+
+      expect(current_path).to eq('/dashboard/address')
+      expect(page).to have_content('Please fill out all required area')
     end
   end
 end
