@@ -8,6 +8,8 @@ RSpec.describe 'results page' do
     visit '/'
     fill_in :address_1, with: '3643 W Colfax Ave, Denver, CO 80204'
     fill_in :address_2, with: '2300 Steele St Denver CO 80205'
+    allow(PhotoService).to receive(:get_url).and_return('http//url')
+    
   end
 
   describe 'map card' do
