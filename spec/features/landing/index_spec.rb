@@ -27,6 +27,7 @@ RSpec.describe 'landing page' do
 
     it 'sends user to results page', :vcr do
       visit '/'
+      allow(PhotoService).to receive(:get_url).and_return('http//url')
 
       fill_in :address_1, with: '2300 Steele St Denver CO 80205'
       fill_in :address_2, with: '3643 W Colfax Ave, Denver, CO 80204'
