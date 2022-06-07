@@ -1,16 +1,116 @@
 ---
 http_interactions:
 - request:
-    method: put
-    uri: http://localhost:3000/api/v1/users?params=%7B%22email%22:%22sample@email.com%22,%22address%22:%221600%20Pennsylvania%20Ave,%20Washington,%20DC%2020500%22%7D
+    method: get
+    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222401%20Tilden%20St%20Nw,%20Washington,%20DC%2020008%22,%22user_b_email%22:%22test@test.com%22,%22category%22:%22cafe%22%7D
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
       - Faraday v2.3.0
-      Content-Length:
-      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 56944f64-3756-4461-87b5-86033c1f17a1
+      X-Runtime:
+      - '0.680185'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Tue, 07 Jun 2022 01:24:45 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222401%20Tilden%20St%20Nw,%20Washington,%20DC%2020008%22,%22user_b_email%22:%22test@test.com%22,%22category%22:%22cafe%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 64a776fc-6913-456a-843b-f05a88aa184f
+      X-Runtime:
+      - '0.770381'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Tue, 07 Jun 2022 01:26:16 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222401%20Tilden%20St%20Nw,%20Washington,%20DC%2020008%22,%22user_b_email%22:%22test@test.com%22,%22category%22:%22cafe%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 57c09a44-b059-4063-8647-daeb93eafce5
+      X-Runtime:
+      - '0.617367'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Tue, 07 Jun 2022 01:28:13 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222401%20Tilden%20St%20Nw,%20Washington,%20DC%2020008%22,%22user_b_email%22:%22sample@sample.com%22,%22category%22:%22cafe%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,17 +123,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Request-Id:
-      - 981f01ab-4829-4ff5-be96-815326182496
+      - d1a77beb-2715-4d3c-bfd0-c8433ea5ffda
       X-Runtime:
-      - '0.059699'
+      - '0.017480'
       Content-Length:
-      - '9979'
+      - '9994'
     body:
       encoding: UTF-8
       string: '{"status":500,"error":"Internal Server Error","exception":"#\u003cNoMethodError:
-        undefined method `update'' for nil:NilClass\u003e","traces":{"Application
-        Trace":[{"id":0,"trace":"app/controllers/api/v1/users_controller.rb:10:in
-        `update''"}],"Framework Trace":[{"id":1,"trace":"actionpack (5.2.8) lib/action_controller/metal/basic_implicit_render.rb:6:in
+        undefined method `address'' for nil:NilClass\u003e","traces":{"Application
+        Trace":[{"id":0,"trace":"app/controllers/api/v1/search_by_user_controller.rb:3:in
+        `index''"}],"Framework Trace":[{"id":1,"trace":"actionpack (5.2.8) lib/action_controller/metal/basic_implicit_render.rb:6:in
         `send_action''"},{"id":2,"trace":"actionpack (5.2.8) lib/abstract_controller/base.rb:194:in
         `process_action''"},{"id":3,"trace":"actionpack (5.2.8) lib/action_controller/metal/rendering.rb:30:in
         `process_action''"},{"id":4,"trace":"actionpack (5.2.8) lib/abstract_controller/callbacks.rb:42:in
@@ -57,7 +157,7 @@ http_interactions:
         `each''"},{"id":22,"trace":"actionpack (5.2.8) lib/action_dispatch/journey/router.rb:35:in
         `serve''"},{"id":23,"trace":"actionpack (5.2.8) lib/action_dispatch/routing/route_set.rb:840:in
         `call''"},{"id":24,"trace":"rack (2.2.3.1) lib/rack/etag.rb:27:in `call''"},{"id":25,"trace":"rack
-        (2.2.3.1) lib/rack/conditional_get.rb:40:in `call''"},{"id":26,"trace":"rack
+        (2.2.3.1) lib/rack/conditional_get.rb:27:in `call''"},{"id":26,"trace":"rack
         (2.2.3.1) lib/rack/head.rb:12:in `call''"},{"id":27,"trace":"activerecord
         (5.2.8) lib/active_record/migration.rb:559:in `call''"},{"id":28,"trace":"actionpack
         (5.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":29,"trace":"activesupport
@@ -84,8 +184,8 @@ http_interactions:
         lib/puma/server.rb:706:in `handle_request''"},{"id":50,"trace":"puma (3.12.6)
         lib/puma/server.rb:476:in `process_client''"},{"id":51,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":52,"trace":"puma (3.12.6)
-        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}],"Full Trace":[{"id":0,"trace":"app/controllers/api/v1/users_controller.rb:10:in
-        `update''"},{"id":1,"trace":"actionpack (5.2.8) lib/action_controller/metal/basic_implicit_render.rb:6:in
+        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}],"Full Trace":[{"id":0,"trace":"app/controllers/api/v1/search_by_user_controller.rb:3:in
+        `index''"},{"id":1,"trace":"actionpack (5.2.8) lib/action_controller/metal/basic_implicit_render.rb:6:in
         `send_action''"},{"id":2,"trace":"actionpack (5.2.8) lib/abstract_controller/base.rb:194:in
         `process_action''"},{"id":3,"trace":"actionpack (5.2.8) lib/action_controller/metal/rendering.rb:30:in
         `process_action''"},{"id":4,"trace":"actionpack (5.2.8) lib/abstract_controller/callbacks.rb:42:in
@@ -109,7 +209,7 @@ http_interactions:
         `each''"},{"id":22,"trace":"actionpack (5.2.8) lib/action_dispatch/journey/router.rb:35:in
         `serve''"},{"id":23,"trace":"actionpack (5.2.8) lib/action_dispatch/routing/route_set.rb:840:in
         `call''"},{"id":24,"trace":"rack (2.2.3.1) lib/rack/etag.rb:27:in `call''"},{"id":25,"trace":"rack
-        (2.2.3.1) lib/rack/conditional_get.rb:40:in `call''"},{"id":26,"trace":"rack
+        (2.2.3.1) lib/rack/conditional_get.rb:27:in `call''"},{"id":26,"trace":"rack
         (2.2.3.1) lib/rack/head.rb:12:in `call''"},{"id":27,"trace":"activerecord
         (5.2.8) lib/active_record/migration.rb:559:in `call''"},{"id":28,"trace":"actionpack
         (5.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":29,"trace":"activesupport
@@ -137,5 +237,5 @@ http_interactions:
         lib/puma/server.rb:476:in `process_client''"},{"id":51,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":52,"trace":"puma (3.12.6)
         lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-  recorded_at: Mon, 06 Jun 2022 23:15:20 GMT
+  recorded_at: Tue, 07 Jun 2022 01:29:30 GMT
 recorded_with: VCR 6.1.0

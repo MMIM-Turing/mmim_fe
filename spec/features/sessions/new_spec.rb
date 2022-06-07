@@ -17,7 +17,6 @@ RSpec.describe 'login page' do
     expect(page).to_not have_link('Login')
     expect(page).to have_content('Welcome someone!')
     # test user's name configured is someone
-    expect(page).to have_content('You have successfully logged in!
-')
+    expect(page).to have_content('You have successfully logged in!')
   end
 end

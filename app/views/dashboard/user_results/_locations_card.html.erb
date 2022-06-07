@@ -5,8 +5,8 @@
         <%= form_with url: '/dashboard/meeting', local: true do |form|  %>
           <% @locations.each do |location| %>
             <dd class="list-group-item d-flex justify-content-between align-items-center text-truncate">
-              <%= form.hidden_field :user_a_email, value: current_user.email %>
-              <%= form.hidden_field :user_b_email, value: params[:user_b_email] %>
+              <%= form.hidden_field :host_email, value: current_user.email %>
+              <%= form.hidden_field :guest_email, value: params[:user_b_email] %>
               <%= check_box_tag "place_ids[]", location.place_id %>
               <strong><%= location.name %></strong>
               <%= location.address %><br>

@@ -1,0 +1,11 @@
+{
+  "data": {
+    "type": "user",
+    "id": "5",
+    "attributes": {
+      "name": "Sample User",
+      "email": "sample@sample.com",
+      "address": "2401 Tilden St NW, Washington, DC 20008"
+    }
+  }
+}

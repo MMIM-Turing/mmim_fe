@@ -1,6 +1,6 @@
 class DashboardController < ApplicationController
   before_action :require_user
-  before_action :require_address_params, only: :update 
+  before_action :require_address_params, only: :update
 
   def show
     # meeting = MeetingsFacade
@@ -15,7 +15,7 @@ class DashboardController < ApplicationController
   end
 
   def new_meeting
-    # suggested_meeting = MeetingsFacade.suggested_meeting(new_meeting_params)
+    suggested_meeting = MeetingsFacade.suggested_meeting(new_meeting_params)
     redirect_to '/dashboard'
   end
 
@@ -30,7 +30,7 @@ class DashboardController < ApplicationController
       flash[:alert] = 'Please fill out all required area'
       if params[:commit] == "Update Default Address"
         redirect_to '/dashboard/address?type=update'
-      else 
+      else
         redirect_to '/dashboard/address?type=new'
       end
     end
@@ -40,6 +40,6 @@ class DashboardController < ApplicationController
   end
 
   def new_meeting_params
-    { user_a_email: params[:user_a_email], user_b_email: params[:user_b_email], place_ids: params[:place_ids] }
+    { host_email: params[:host_email], guest_email: params[:guest_email], place_ids: params[:place_ids] }
   end
 end

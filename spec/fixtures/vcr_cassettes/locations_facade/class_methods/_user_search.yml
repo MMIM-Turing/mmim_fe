@@ -27,16 +27,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6cf5d23c-d9c6-49ee-b462-4dc61fe384fc
+      - 9700f193-1037-4a2e-9a1b-277858a3a8ad
       X-Runtime:
-      - '0.004834'
+      - '0.006656'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":null,"type":"user","attributes":{"name":"Test User","email":"test@test.com","address":"1600
         Pennsylvania Ave, Washington"}}}'
-  recorded_at: Mon, 06 Jun 2022 22:03:03 GMT
+  recorded_at: Tue, 07 Jun 2022 01:24:39 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%2223%20U%20St%20NW,%20Washington,%20DC%2020001%22,%22user_b_email%22:%22test@test.com%22,%22category%22:%22cafe%22%7D
@@ -62,15 +62,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 39c7cbf9-ed90-4df3-a782-695303aceaff
+      - d2286866-8cb7-4219-be9e-ebf761136d0a
       X-Runtime:
-      - '0.731771'
+      - '0.851519'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Mon, 06 Jun 2022 22:03:04 GMT
+  recorded_at: Tue, 07 Jun 2022 01:24:40 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%2223%20U%20St%20NW,%20Washington,%20DC%2020001%22,%22user_b_email%22:%22test@test.com%22,%22category%22:%22cafe%22%7D
@@ -96,13 +96,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 02ff9975-2b3c-4618-9d35-40d9fe7e1a7a
+      - d527d3db-8c99-46f4-b738-2d6215486801
       X-Runtime:
-      - '0.610547'
+      - '0.619341'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Mon, 06 Jun 2022 22:03:05 GMT
+  recorded_at: Tue, 07 Jun 2022 01:24:41 GMT
 recorded_with: VCR 6.1.0
