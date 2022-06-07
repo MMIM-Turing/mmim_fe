@@ -18,13 +18,39 @@ RSpec.describe 'results page' do
     end
   end
 
+  describe 'invalid search' do 
+    it 'redirect to dashboard and flash error message when emtpy address input' do 
+      visit '/'
+      fill_in :address_1, with: ''
+      fill_in :address_2, with: ''
+      click_button 'Search'
+
+      expect(current_path).to eq(root_path)
+      expect(page).to have_content('Please fill out both address fields')
+
+    end
+  end
+
+  describe 'no results search' do 
+    it 'redirect to dashboard and flash alert message when no results found', :vcr do 
+      visit '/'
+      fill_in :address_1, with: '123 st'
+      fill_in :address_2, with: '249 st'
+      click_button 'Search'
+
+      expect(current_path).to eq(root_path)
+      expect(page).to have_content('No midpoints found-please try different addresses')
+    end
+  end
+
+
   describe 'result list card' do
     context 'category' do
-      xit 'displays category', :vcr do
-        fill_in :category, with: 'gym'
+      it 'displays category', :vcr do
+        fill_in :category, with: 'park'
         click_button 'Search'
 
-        expect(page).to have_content('Gym')
+        expect(page).to have_content('Park')
         expect(page).to have_no_content('Coffee shop')
       end
 
