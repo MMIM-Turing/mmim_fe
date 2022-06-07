@@ -17,8 +17,8 @@
                 <% if location.price_rating != 'N/a' %>
                 <p class="card-text"><strong>Price Range:</strong> <button style="height:20%" type="button" class="btn-success btn-sm"><%= location.price_rating %></button></p>
                 <% end %>
-                <strong><%= label_tag 'place_ids[]', 'Select this location for a meeting' %></strong>
                 <%= check_box_tag "place_ids[]", location.place_id %>
+                <strong><%= label_tag 'place_ids[]', 'Select this location for a meeting' %></strong>
               </div>
           </div>
         </div>
