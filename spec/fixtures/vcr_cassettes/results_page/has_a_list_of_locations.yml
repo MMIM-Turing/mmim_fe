@@ -21,27 +21,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f8150be6f8f9bd4e5d524524f58684c0"
+      - W/"01c2053f5cbb95a8abdff1800ed1fa67"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7c992c21-62de-4f08-933a-364f0686887e
+      - 449113a8-4802-4019-a491-6080ca556716
       X-Runtime:
-      - '1.130465'
+      - '0.418946'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1181","type":"location","attributes":{"id":1181,"name":"CorePower
+      string: '{"data":[{"id":"355","type":"location","attributes":{"id":355,"name":"CorePower
         Yoga","place_id":"ChIJkbiCHNV-bIcREkhwQY7LubM","address":"333 East 13th Avenue,
-        Denver","lat":39.7370696,"lng":-104.9830572,"rating":4.4,"image_url":"Aap_uEByHF0jtZEt0jO4eQreEZCS3SbxxX1GKIPJkDP_EMYm69_n-1Y5_l5f_q040ILDvex3Kpn5gW4nEz9xDRi4b_J3Rb85pqOhyy7TY07hbbjGqpJCtfNT6WQkcm7HAF4MR-U0swN9Ao_0-msCT2gZ-90IyuxmrecWhZHSr1ymzkRt8V4B","price_level":null}},{"id":"1182","type":"location","attributes":{"id":1182,"name":"Downtown
+        Denver","lat":39.7370696,"lng":-104.9830572,"rating":4.4,"image_url":"Aap_uECaSCBGlWhyWde9VryGFxhNapRUiQGn0dAHasobuJln-mlzIj6NZpIY3RTblccpyO9bz4Evw4ddpI4mmhfAA2mwep2mGsnfyrXWY_cRboJmDO4MsxH8Q-hHzrWTvX5Iuu_JgIg6f4H_oBtlYwnt1hCAmQAvEf_gxr1JByQxlMwnPRzU","price_level":null}},{"id":"356","type":"location","attributes":{"id":356,"name":"Downtown
         Denver YMCA","place_id":"ChIJN83ojdV4bIcRgwOjx8qpmN0","address":"25 East 16th
-        Avenue Unit B, Denver","lat":39.74182640000001,"lng":-104.9863131,"rating":4.1,"image_url":"Aap_uECNMVMB5-i6KAkJWWwRVCN31_PHjp5OoiTQ1VVCbmyVp_76IkCoOXcDI0h_FtKJk59IixQAxfB0inPEVHr0XQeP0ABafHt7J14pA5lggIg1EmDBz-wj9nD_d2fht96cEJI65pXZceEG3bMEt4cZjJ10aeJAWslfVis6syxOuw-109oI","price_level":null}},{"id":"1183","type":"location","attributes":{"id":1183,"name":"Samadhi
+        Avenue Unit B, Denver","lat":39.74182640000001,"lng":-104.9863131,"rating":4.1,"image_url":"Aap_uECSl0aon3BTKX-TAzm0akAufKvbg9tat4x7-td19zl-dMFhl_38iZoyFHGp-NX7ZaBgAwBzMQkY4o-DjQYcU-tKsl1JWb6U71HQp3QDv-yoS3zVQ_KkCqy0GCsk5kKEYSCydyGoHK0JCiBRenVF8rVuDzhKDOHbhXSUZ5bYko61uIq4","price_level":null}},{"id":"357","type":"location","attributes":{"id":357,"name":"Samadhi
         Yoga Sangha","place_id":"ChIJnf220y55bIcRv5cLuIqca-A","address":"639 East
-        19th Avenue, Denver","lat":39.746416,"lng":-104.979468,"rating":4.5,"image_url":"Aap_uEBOk0ehJf55Zk2YLrxbEgvXvF9tO9G5_zkq_cmDkv068pgG0ndZS4vTysi_s-ArOtowPw1fcvt0b9893ykKCGC6w4if_NHr3B-0ttXcR466MAGy1RdlvOrZDMw_uyef3U3BaxJH0PdDq0TAH3gIM-eCZWHqshttdGGA2ePWEYQNWkZU","price_level":null}},{"id":"1184","type":"location","attributes":{"id":1184,"name":"La
+        19th Avenue, Denver","lat":39.746416,"lng":-104.979468,"rating":4.5,"image_url":"Aap_uEAU4hizEA9mZB8PYQlT3zuPxQXe3GENFrdz7vrbmuWHXqEPWIXhYoQSBPrAebwFhjolQXWpf0LnmkWJebZ-DUhLzdGC2R1mq24bgYhWEPCs3KatSp2klDipImuFpUN6ai3-gV-F-OzDvtKWZcATx833RRIEKsSNqpABdPAOhCw0MA28","price_level":null}},{"id":"358","type":"location","attributes":{"id":358,"name":"La
         Rumba","place_id":"ChIJjzh3ACl_bIcREN-vglORVF8","address":"99 West 9th Avenue,
-        Denver","lat":39.7305946,"lng":-104.9886474,"rating":null,"image_url":"Aap_uEDGGvMDqBXWSuhCPdT42HFAqm9zb7mdVKf41e9mZtr6Rt8Hs8SLtgqnMa0hQE5iXf2jyv4nHykpINmGJooyQcba0iYbuL_zEeLBx6uTqQJ3IhD7adCMUfUNonEApHIdKiuM92pGLDC36jinSl7JwWv2Ny-S9FgNE2O7Fow1F3dyCuLP","price_level":1}},{"id":"1185","type":"location","attributes":{"id":1185,"name":"The
+        Denver","lat":39.7305946,"lng":-104.9886474,"rating":4.1,"image_url":"Aap_uEBqxPHU77WMoU-0PG15nV3Oc6QVLtOr6DkaTTISKun53iMv52DJuX-E14QpwR7ajHsv0mugcYvX9LEsxZ8lpMEPtCbULFsbZUFgpA2sx6C-SNRzwbUEOfeAaCW3vr_5ySntdr8A10EAVrTly7pVzJ3e36JLITmm2sShyDS5Xmb1lqm5","price_level":1}},{"id":"359","type":"location","attributes":{"id":359,"name":"The
         Denver Athletic Club","place_id":"ChIJLRP7z9N4bIcRT6PfN5O1xMo","address":"1325
-        Glenarm Place, Denver","lat":39.7416927,"lng":-104.9936792,"rating":4.4,"image_url":"Aap_uEBIHrdizzV0zCTXZPcWbV68IT8VPi2YhB_VSmDvviqMr9_LsWovJ08dhZYlkL8zWWubJxrXzEvv7eVSqkhefBgBak_9nSUSGXba1Mxm3uT4yCs4H6SHXImseFcXNAcb9I1Lssx_KbyZubXKMhbMfmjESlP9sszDWM8mdabCgf2dlBdO","price_level":null}}]}'
-  recorded_at: Mon, 06 Jun 2022 22:03:09 GMT
+        Glenarm Place, Denver","lat":39.7416927,"lng":-104.9936792,"rating":4.4,"image_url":"Aap_uEBBWik9MLeN747H7IYu2KTBCkd_QN05oJRQ3M_dpFzzqtz2nOWJL4jaB982AgylCdEvv6GKCL8uKRcrpgZejeL8G5ajsP0sVcNMhc78RSwsot1-2Fmca1gIIuAr56yPrFvy7YgMhY2gXg51DirAnZhWfIFD2eyn1_jT-xuv9zFPIs0-","price_level":null}}]}'
+  recorded_at: Tue, 07 Jun 2022 03:54:56 GMT
 recorded_with: VCR 6.1.0

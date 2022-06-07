@@ -26,4 +26,10 @@ class Location
     return '$$$$' if level == 4
     return 'N/a' if level.nil?
   end
+
+  def url_image
+    if @image_url
+      PhotoService.get_url(@image_url)
+    end
+  end
 end
