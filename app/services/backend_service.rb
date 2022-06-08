@@ -1,6 +1,6 @@
 class BackendService
   def self.conn
-    Faraday.new('http://localhost:3000/api/v1')
+    Faraday.new(ENV["backend_server"])
   end
 
   def self.get_locations(params)
