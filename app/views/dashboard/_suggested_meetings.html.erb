@@ -1,27 +1,29 @@
-<% @suggested_meetings.each do |meeting| %>
-<div>
-  <div style="padding:10px">
-    <% if current_user.email == meeting.host_email %>
-      <h1>Pending Meeting</h1>
-    <% elsif current_user.email == meeting.guest_email %>
-      <h1>You've Been Invited!</h1>
-    <% end %>
-    <p><strong><%= meeting.host_email %></strong> has invited<br>
-    <strong><%= meeting.guest_email %></strong> to meet at:</p>
-    <% meeting.locations.each do |location| %>
-      <p><strong><%= location.name %></strong> -
-      <%= location.address %></p>
-      <% if current_user.email == meeting.guest_email%>
-        <%= form_with url: 'dashboard/accept', local: true do |form| %>
-        <%= form.hidden_field :meeting_info, value: { place_id: location.place_id, host_email: meeting.host_email, guest_email: meeting.guest_email } %>
-        <%= form.submit "Agree to Meet at #{location.name}", class: "btn-success btn-sm" %>
-        <% end %>
-    <% end %>
-<% end %>
-<% if current_user.email == meeting.host_email %>
-<button class="btn-warning btn-sm">Awaiting Reply From <%= meeting.guest_email %></button>
-<% end %>
+<% if @suggested_meetings %>
+  <% @suggested_meetings.each do |meeting| %>
+  <div>
+    <div style="padding:10px">
+      <% if current_user.email == meeting.host_email %>
+        <h1>Pending Meeting</h1>
+      <% elsif current_user.email == meeting.guest_email %>
+        <h1>You've Been Invited!</h1>
+      <% end %>
+      <p><strong><%= meeting.host_email %></strong> has invited<br>
+      <strong><%= meeting.guest_email %></strong> to meet at:</p>
+      <% meeting.locations.each do |location| %>
+        <p><strong><%= location.name %></strong> -
+        <%= location.address %></p>
+        <% if current_user.email == meeting.guest_email%>
+          <%= form_with url: 'dashboard/accept', local: true do |form| %>
+          <%= form.hidden_field :meeting_info, value: { place_id: location.place_id, host_email: meeting.host_email, guest_email: meeting.guest_email } %>
+          <%= form.submit "Agree to Meet at #{location.name}", class: "btn-success btn-sm" %>
+          <% end %>
+      <% end %>
+  <% end %>
+  <% if current_user.email == meeting.host_email %>
+  <button class="btn-warning btn-sm">Awaiting Reply From <%= meeting.guest_email %></button>
+  <% end %>
 
+    </div>
   </div>
-</div>
+  <% end %>
 <% end %>
