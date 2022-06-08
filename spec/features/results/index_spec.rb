@@ -73,7 +73,7 @@ RSpec.describe 'results page' do
         expect(page).to have_no_content('Coffee shop')
       end
 
-      xit 'has a form to create a meeting', :vcr do
+      it 'has a form to create a meeting', :vcr do
         data = JSON.parse(File.read('spec/fixtures/user_b.json'), symbolize_names: true)
         allow(UsersService).to receive(:find_or_create_user).and_return(data)
 
@@ -99,9 +99,15 @@ RSpec.describe 'results page' do
         find("input[type='checkbox'][value='ChIJZ1xnLNq3t4kRMWSzJo7OC6k']").set(true)
         find("input[type='checkbox'][value='ChIJu9YSTc-3t4kRWcD2pLsGRSI']").set(true)
 
-        data = ""
+        loc_1 = Location.new({ name: "Open City", address: "2331 Calvert Street Northwest, Washington" })
+        loc_2 = Location.new({ name: "Tryst", address: "2459 18th Street Northwest, Washington" })
+        loc_3 = Location.new({ name: "Teaism Dupont Circle", address: "2009 R Street Northwest, Washington" })
 
-        allow_any_instance_of(DashboardController).to receive(:suggested_meetings).and_return(data)
+        locations = [loc_1, loc_2, loc_3]
+
+        data = SuggestedMeeting.new({guest_email: "sample@sample.com", host_email: "test@test.com", locations: locations})
+
+        allow_any_instance_of(DashboardController).to receive(:suggested_meetings).and_return([data])
 
         click_on 'Request a meeting'
 
