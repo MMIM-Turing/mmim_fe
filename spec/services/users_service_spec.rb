@@ -24,12 +24,12 @@ RSpec.describe 'Users service' do
 
     it '#finds a user' , :vcr do
       params = {email: 'test@test.com'}
-      user = UsersService.find_user(params)
+      user_data = UsersService.find_user(params)
 
-
-
-
-
+      expect(user_data).to have_key(:data)
+      expect(user_data[:data][:attributes][:name]).to eq('Test User')
+      expect(user_data[:data][:attributes][:email]).to eq('test@test.com')
+      expect(user_data[:data][:attributes][:address]).to eq('1600 Pennsylvania Ave, Washington')
     end
 
   end
