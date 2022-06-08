@@ -23,19 +23,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"df8a0a68364203336eacc110223fa9a4"
+      - W/"9c4d559f169f64515d32566d86fc6b71"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7c175959-7990-421a-81c4-4b3a71f0bd07
+      - 8b2d4d86-c814-4454-9e84-06d0b4592401
       X-Runtime:
-      - '0.002157'
+      - '0.001969'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"6","type":"user","attributes":{"name":"test user","email":"test@email.com","address":null}}}'
-  recorded_at: Tue, 07 Jun 2022 03:55:03 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
+        st, city, state, 80123"}}}'
+  recorded_at: Wed, 08 Jun 2022 05:01:35 GMT
 - request:
     method: put
     uri: http://localhost:3000/api/v1/users?params=%7B%22email%22:%22test@email.com%22,%22address%22:%22123%20st,%20city,%20state,%2080123%22%7D
@@ -63,14 +64,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ff0b7469-a597-4177-9a9f-20a36e5fb318
+      - c9750482-0a59-4916-ae30-c3dc922ed12e
       X-Runtime:
-      - '0.009026'
+      - '0.006629'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
         st, city, state, 80123"}}}'
-  recorded_at: Tue, 07 Jun 2022 03:55:03 GMT
+  recorded_at: Wed, 08 Jun 2022 05:01:35 GMT
 recorded_with: VCR 6.1.0

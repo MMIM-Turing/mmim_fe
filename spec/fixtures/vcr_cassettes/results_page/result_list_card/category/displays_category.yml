@@ -2,50 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22park%22%7D
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"1d971e367fe7ebc3d7d938e56f248870"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 987a310d-2368-4db4-aaeb-5450ef98e37d
-      X-Runtime:
-      - '0.473792'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":[{"id":"395","type":"location","attributes":{"id":395,"name":"Skyline
-        Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
-        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEB4uxQREttr1BNbrTWfHrlnP-DvZbMJHTXPQJKvliEm8dKBzohHESn8FJFzA6GnVSYC-xAoyIty-nFUPBc7f8JENWCIyVjacyBdFOpE1vOxFal-0hE1dHuXfRK9nKLG2SYoyFti-O37NgcUZYZglT9f75-jFTOpwKzXVyL8EEiWXlSS","price_level":null}},{"id":"396","type":"location","attributes":{"id":396,"name":"Civic
-        Center Park","place_id":"ChIJo_UsR9V4bIcRjC1WKfsrSEA","address":"101 14th
-        Avenue, Denver","lat":39.7392358,"lng":-104.9888592,"rating":4.3,"image_url":"Aap_uEB4fpeIU4HLHiBSRcRuzoNPu-yPbptMKsCG_Q6pl947oxNppGDSTAblY5zupUyZORCS5U1tqTY8vvug_icJ8Vo-dM45AuJKOyapge8jrrK8Rgp67eD3a1qxfXgLK6EwI7bEWEKPId4cwj6SchsbVjIiXgk75QaZeyPF0xx2F_6nDCzg","price_level":null}},{"id":"397","type":"location","attributes":{"id":397,"name":"Abraham
-        Lincoln Park","place_id":"ChIJ_ZWzCtl4bIcRgw32GAwZu88","address":"Curtis Street,
-        Denver","lat":39.7504666,"lng":-104.9899837,"rating":3.7,"image_url":"Aap_uECLzwBw5WoBArVeeC59rhuPSmD-dL0Gfyn3lWhVE7F6h4WTotTZlw6pOYmTUCWzZsTQx5adtD0pbc7kBwOaqdZGzVrEUZzqukyWhkSM2LjMilm3a47cdq2e94UiqWjUlfQIuOSWGthrOFYosdRBI9gZRGYB5wjsOJCTrN02mDnkZcAp","price_level":null}},{"id":"398","type":"location","attributes":{"id":398,"name":"Lincoln
-        Memorial Park","place_id":"ChIJFTSEQ9V4bIcRn1dmE_9CpAQ","address":"1449 Lincoln
-        Street, Denver","lat":39.7392309,"lng":-104.9865636,"rating":4.6,"image_url":"Aap_uECoGir-Xy5lX5f96vUlo3_BrN-1I6HmZ8_48nvcG9bl3eXaMJz-yYVm6JZ4ioFB-88kVyQIcy9Nx8Ff-n21KxsJV_1YP3SsRuMk1dc0Rv0475AHZG9Un-_8Nvl_Z5bHPMo_jaF5Ud5AcKr0sicNF64QU1lL0aQIp_LVnR9BePzMq8G_","price_level":null}},{"id":"399","type":"location","attributes":{"id":399,"name":"Neil
-        Walton, Your One Lincoln Park Expert","place_id":"ChIJq6qezcR4bIcRvUrQTd27ySQ","address":"1624
-        Market Street, Denver","lat":39.7501106,"lng":-104.9975082,"rating":null,"image_url":null,"price_level":null}}]}'
-  recorded_at: Tue, 07 Jun 2022 03:54:59 GMT
-- request:
-    method: get
     uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uEB4uxQREttr1BNbrTWfHrlnP-DvZbMJHTXPQJKvliEm8dKBzohHESn8FJFzA6GnVSYC-xAoyIty-nFUPBc7f8JENWCIyVjacyBdFOpE1vOxFal-0hE1dHuXfRK9nKLG2SYoyFti-O37NgcUZYZglT9f75-jFTOpwKzXVyL8EEiWXlSS
     body:
       encoding: US-ASCII
@@ -240,4 +196,48 @@ http_interactions:
         Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
         HREF=\"https://lh3.googleusercontent.com/places/AAcXr8rLtjfXmsjTCeM_1qn3Y6iEkkion3NFLf5o10VOQvS-cQgF4TRj5sMAwb9WL9yOgo0U9hiAe50z9z7U8WiiMBlvAo8E1h7CXwA=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
   recorded_at: Tue, 07 Jun 2022 03:54:59 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22park%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8979bb5ee7825fbfb783687113faf29d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 42b4f552-80fb-465d-ba2c-b53eb543dfc6
+      X-Runtime:
+      - '0.444351'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"281","type":"location","attributes":{"id":281,"name":"Skyline
+        Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
+        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEBwpr5Nyepq1VkPH5klU42K0D1ABiX7YMY_FXi2DOnbp1KVnfjfU9UpcNvoPKW0-eVKxdjZCcqc-fh7nsM7rvQmz2CSgcFlxLmLMfGHdaUvZc62vr9avhx2kOPSuc4pXTTUQcmA-s_xOIBvh2tLubNgA3XsUaV8M5LlgS6lHSVG4tTk","price_level":null}},{"id":"282","type":"location","attributes":{"id":282,"name":"Civic
+        Center Park","place_id":"ChIJo_UsR9V4bIcRjC1WKfsrSEA","address":"101 14th
+        Avenue, Denver","lat":39.7392358,"lng":-104.9888592,"rating":4.3,"image_url":"Aap_uEBOJvI5yTRlJzwPEDmWc0MXZAJ8CZuKv-VCctBi0FC3g7a0NorNW2XUgguTtZyvAlj_tqlYAxCRCQm-v_mCqtAVnwDHErqiI4krAoxkjRpHFgtFiN7kPDG59u7-fs41SU_ylmoicz5-06bo__KX0WUKMqSiyMTOC32yyn--duTso1cu","price_level":null}},{"id":"283","type":"location","attributes":{"id":283,"name":"Abraham
+        Lincoln Park","place_id":"ChIJ_ZWzCtl4bIcRgw32GAwZu88","address":"Curtis Street,
+        Denver","lat":39.7504666,"lng":-104.9899837,"rating":3.7,"image_url":"Aap_uECHoQcbkDnjLU3nPFh-6huDj-tpm7YbVXGOR0xIZNxm_KJewEbgIkjPh8X0SRe8ZG0lvmOj_WNMCw0HWPaH7mGD1R3L7-wkPha9ARD9WftJFmNBFO7g7JQik__ERpcUyyP4exLX8_WmeBbeLirct_qeth0B1fN1aBdOlN3hXYlPx4Pe","price_level":null}},{"id":"284","type":"location","attributes":{"id":284,"name":"Lincoln
+        Memorial Park","place_id":"ChIJFTSEQ9V4bIcRn1dmE_9CpAQ","address":"1449 Lincoln
+        Street, Denver","lat":39.7392309,"lng":-104.9865636,"rating":4.6,"image_url":"Aap_uEAnrbA8SWTeNTLPGgABw12cQc1l9xlhUZbCbS1PIXk_rLUqk8eLC5Xuxm2cTpGOY24aYDlMGQG9jzZxzvgT3S6FfgatLqZqYAsLxPP9kIdQenoOn-KoCOwcjlAULyeNYT2C5V81aFS0zai5AdN4roPklzW-fw6asfjXEfgxqu4E8D9M","price_level":null}},{"id":"285","type":"location","attributes":{"id":285,"name":"Neil
+        Walton, Your One Lincoln Park Expert","place_id":"ChIJq6qezcR4bIcRvUrQTd27ySQ","address":"1624
+        Market Street, Denver","lat":39.7501106,"lng":-104.9975082,"rating":null,"image_url":null,"price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 05:01:33 GMT
 recorded_with: VCR 6.1.0
