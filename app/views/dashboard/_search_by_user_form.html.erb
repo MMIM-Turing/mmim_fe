@@ -16,7 +16,7 @@
     <strong><%= form.label "Find by email" %></strong>
   </ul>
   <ul>
-  <%= form.text_field :category, { class: "form-control", placeholder: 'eg. coffee, bar, gym' } %>
+    <%= select_tag(:category, options_for_select(['cafe', 'restaurant', 'bar', 'park','library'], 'cafe')) %><br>  
   <strong><%= form.label "Category" %></strong>
 </ul>
 <ul>

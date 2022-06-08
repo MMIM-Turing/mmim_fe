@@ -27,16 +27,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 05ddc4cd-21a1-48ee-813b-2cbdbe2c69c8
+      - 29f0fb1c-af8b-4f32-ba6e-52418caae3ec
       X-Runtime:
-      - '0.007954'
+      - '0.002463'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
         st, city, state, 80123"}}}'
-  recorded_at: Wed, 08 Jun 2022 17:15:27 GMT
+  recorded_at: Wed, 08 Jun 2022 18:29:53 GMT
 - request:
     method: put
     uri: http://localhost:3000/api/v1/users?params=%7B%22email%22:%22test@email.com%22,%22address%22:%22123%20st,%20city,%20state,%2080123%22%7D
@@ -64,14 +64,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 36d4a3e2-f12d-4e69-9ffe-424aae28b1ae
+      - b3a7e9fe-04fe-4b24-b6b5-4934a7981dce
       X-Runtime:
-      - '0.004893'
+      - '0.004093'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
         st, city, state, 80123"}}}'
-  recorded_at: Wed, 08 Jun 2022 17:15:27 GMT
+  recorded_at: Wed, 08 Jun 2022 18:29:53 GMT
 recorded_with: VCR 6.1.0

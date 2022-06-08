@@ -21,9 +21,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Request-Id:
-      - 3b6a33d0-f970-4991-a5df-0ac80bff7c61
+      - bc966757-f00e-4301-bd7c-e814918dd825
       X-Runtime:
-      - '0.563817'
+      - '0.502443'
       Content-Length:
       - '10274'
     body:
@@ -138,5 +138,5 @@ http_interactions:
         lib/puma/server.rb:476:in `process_client''"},{"id":53,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":54,"trace":"puma (3.12.6)
         lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-  recorded_at: Wed, 08 Jun 2022 17:15:21 GMT
+  recorded_at: Wed, 08 Jun 2022 18:28:49 GMT
 recorded_with: VCR 6.1.0

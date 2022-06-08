@@ -15,13 +15,13 @@ RSpec.describe 'results page' do
     within "#address_search" do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
       fill_in :address_2, with: "1155 W 5th Ave, Denver, CO 80204"
-      fill_in :category, with: "gym"
+      select "park", from: :category
       click_button 'Search'
     end
 
-    expect(page).to have_content("Gym")
+    expect(page).to have_content("Park")
     expect(page).to have_no_content("Cafe")
-  end  
+  end
 
   it 'has cafe as default category', :vcr do
 
@@ -33,10 +33,10 @@ RSpec.describe 'results page' do
     end
 
     expect(page).to have_content("Cafe")
-  end  
+  end
 
-  describe 'invalid search', :vcr do 
-    it 'redirect to dashboard and flash error message when emtpy address input' do 
+  describe 'invalid search', :vcr do
+    it 'redirect to dashboard and flash error message when emtpy address input' do
       within "#address_search" do
         fill_in :address_1, with: ''
         fill_in :address_2, with: ''
@@ -49,8 +49,8 @@ RSpec.describe 'results page' do
     end
   end
 
-  describe 'no results search', :vcr do 
-    it 'redirect to dashboard and flash alert message when no results found', :vcr do 
+  describe 'no results search', :vcr do
+    it 'redirect to dashboard and flash alert message when no results found', :vcr do
       within "#address_search" do
         fill_in :address_1, with: '123 st'
         fill_in :address_2, with: '249 st'
@@ -67,16 +67,16 @@ RSpec.describe 'results page' do
     within "#address_search" do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
       fill_in :address_2, with: "1155 W 5th Ave, Denver, CO 80204"
-      fill_in :category, with: "gym"
+      select "park", from: :category
       click_button 'Search'
     end
 
-    fill_in :category, with: "bar"
+    select "bar", from: :category
     click_button 'Update Category'
 
     expect(current_path).to eq('/dashboard/results')
     expect(page).to have_content("Bar")
-    expect(page).to have_no_content("Gym")
+    expect(page).to have_no_content("Park")
   end
 
   it 'has a map', :vcr do
@@ -84,7 +84,7 @@ RSpec.describe 'results page' do
     within "#address_search" do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
       fill_in :address_2, with: "1155 W 5th Ave, Denver, CO 80204"
-      fill_in :category, with: "gym"
+      select "cafe", from: :category
       click_button 'Search'
     end
 
@@ -96,7 +96,7 @@ RSpec.describe 'results page' do
     within "#address_search" do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
       fill_in :address_2, with: "1155 W 5th Ave, Denver, CO 80204"
-      fill_in :category, with: "gym"
+      select "restaurant", from: :category
       click_button 'Search'
     end
 
