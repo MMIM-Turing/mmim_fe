@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22email@email.com%22%7D
+    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22user_search@email.com%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -21,23 +21,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8ec35f57a2c374f0e28a040317bf4e0f"
+      - W/"a0a037af925c6f1ac0429d4385d00288"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9b9a9141-ca4a-4a58-8992-de75d2c352a9
+      - 567edcbd-c529-4459-b86b-43e4c20b4128
       X-Runtime:
-      - '0.003582'
+      - '0.097016'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test","email":"email@email.com","address":"2001
+      string: '{"data":{"id":"8","type":"user","attributes":{"name":"usersearch base","email":"user_search@email.com","address":"2001
         Colorado Blvd, Denver, CO 80205"}}}'
-  recorded_at: Wed, 08 Jun 2022 15:48:43 GMT
+  recorded_at: Wed, 08 Jun 2022 16:23:51 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222300%20Steele%22,%22user_b_email%22:%22email@email.com%22,%22category%22:%22cafe%22%7D
+    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222300%20Steele%22,%22user_b_email%22:%22user_search@email.com%22,%22category%22:%22cafe%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -56,9 +56,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Request-Id:
-      - d0807be3-c8ee-46e7-b94a-740d5827cc76
+      - c18ddae3-1e39-43ed-a51d-a94c610a0522
       X-Runtime:
-      - '0.158430'
+      - '0.179466'
       Content-Length:
       - '10290'
     body:
@@ -173,5 +173,5 @@ http_interactions:
         lib/puma/server.rb:476:in `process_client''"},{"id":53,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":54,"trace":"puma (3.12.6)
         lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-  recorded_at: Wed, 08 Jun 2022 15:48:43 GMT
+  recorded_at: Wed, 08 Jun 2022 16:23:51 GMT
 recorded_with: VCR 6.1.0
