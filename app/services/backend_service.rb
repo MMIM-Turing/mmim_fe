@@ -1,6 +1,6 @@
 class BackendService
   def self.conn
-    Faraday.new(ENV['backend_server'])
+    Faraday.new(ENV["backend_server"])
   end
 
   def self.get_locations(params)

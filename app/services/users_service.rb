@@ -17,7 +17,7 @@ class UsersService
 
 private 
     def conn(uri)
-      Faraday.new("#{ENV['backend_server']}/#{uri}")
+      Faraday.new("#{ENV["backend_server"]}/#{uri}")
     end
   end
 end
