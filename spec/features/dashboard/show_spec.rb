@@ -59,7 +59,8 @@ RSpec.describe 'login page' do
     it 'has a form to create a meeting', :vcr do
       data = JSON.parse(File.read('spec/fixtures/user_b.json'), symbolize_names: true)
       allow(UsersService).to receive(:find_or_create_user).and_return(data)
-
+      allow(PhotoService).to receive(:get_url).and_return('http//url')
+      
       visit '/login'
 
       click_on 'Log in with Google'

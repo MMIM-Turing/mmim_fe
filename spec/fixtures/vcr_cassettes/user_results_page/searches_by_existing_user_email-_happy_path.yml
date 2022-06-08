@@ -25,14 +25,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dad2742d-ad1f-4031-b262-1e6cb9282ae6
+      - b1fa5a55-272f-4976-9cf4-7a3355dc1880
       X-Runtime:
-      - '0.003771'
+      - '0.002044'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"8","type":"user","attributes":{"name":"usersearch base","email":"user_search@email.com","address":"2001
         Colorado Blvd, Denver, CO 80205"}}}'
-  recorded_at: Wed, 08 Jun 2022 17:05:02 GMT
+  recorded_at: Wed, 08 Jun 2022 17:15:21 GMT
 recorded_with: VCR 6.1.0
