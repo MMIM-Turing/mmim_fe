@@ -4,6 +4,7 @@ class Dashboard::UserResultsController < ApplicationController
 
   def index
 
+<<<<<<< HEAD
     @user_b = UsersFacade.find_user({email: search_params[:user_b_email]})
     if @user_b == 'invalid email'
       redirect_to dashboard_path
@@ -20,6 +21,14 @@ class Dashboard::UserResultsController < ApplicationController
         flash[:alert] = 'No midpoints found-please try different addresses'
       end
     end
+=======
+    @locations = Rails.cache.fetch("locations - #{search_params}") do
+      LocationsFacade.user_search(search_params)
+    end
+    @user_b = UsersFacade.find_or_create_user({email: search_params[:user_b_email]})
+    @category = search_params[:category]
+    @map_info = LocationsFacade.map_info(@locations)
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
   end
 
   private

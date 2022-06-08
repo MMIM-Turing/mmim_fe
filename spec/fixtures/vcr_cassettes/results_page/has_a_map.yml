@@ -21,6 +21,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
+<<<<<<< HEAD
       - W/"5f2b7ac38338b37d7213594b8f501d8b"
       Cache-Control:
       - max-age=0, private, must-revalidate
@@ -28,10 +29,20 @@ http_interactions:
       - ff061d73-6fbb-4dc4-8fd4-d5be5420eb21
       X-Runtime:
       - '0.418227'
+=======
+      - W/"adbddc083cfed97361c39f0f47b11bdd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e66cb8f3-7529-4ab8-8d70-0718727901af
+      X-Runtime:
+      - '0.617160'
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
+<<<<<<< HEAD
       string: '{"data":[{"id":"221","type":"location","attributes":{"id":221,"name":"CorePower
         Yoga","place_id":"ChIJkbiCHNV-bIcREkhwQY7LubM","address":"333 East 13th Avenue,
         Denver","lat":39.7370696,"lng":-104.9830572,"rating":4.4,"image_url":"Aap_uEB5gCpq9OguNCIW5lBfNe7UjGnVDEMq7VVKD-lK8nUY5Nx9O8g0HQduPFm6Odge70jzr8UCu7lxcOl8vyFIcPxvMBvvwf5L6oxmLasitVyrauDalzpAj1qs6yZNzlN_z41qz1N6pALQIVDC8sHV_TRh_QRzOWwEnGMs7nSK4G4lzy1I","price_level":null}},{"id":"222","type":"location","attributes":{"id":222,"name":"Downtown
@@ -44,4 +55,18 @@ http_interactions:
         Denver Athletic Club","place_id":"ChIJLRP7z9N4bIcRT6PfN5O1xMo","address":"1325
         Glenarm Place, Denver","lat":39.7416927,"lng":-104.9936792,"rating":4.4,"image_url":"Aap_uEAMrP87t099ebeyE-0oXc17u6kSATOkkvSt6gNUOwHbgmqmplOjLp68Pv24EKk4IzRwD8_Ce3k5LAowANgj-m4n7sujMsVQZxUyOdIXOqanqm9QBK2N7aoTkY7Pc-q3I9XBYvs5VQ2mfTXfhMPUtxTKxdga9A0ruACDoSp6BoStAXht","price_level":null}}]}'
   recorded_at: Wed, 08 Jun 2022 05:01:31 GMT
+=======
+      string: '{"data":[{"id":"241","type":"location","attributes":{"id":241,"name":"CorePower
+        Yoga","place_id":"ChIJkbiCHNV-bIcREkhwQY7LubM","address":"333 East 13th Avenue,
+        Denver","lat":39.7370696,"lng":-104.9830572,"rating":4.4,"image_url":"Aap_uEC7WIK9WaO8RegB6doD15myktPaMUFpN_a34cSGty4PNcVJTGurjzZnrkX98CuLCSrYGs5wNXriL_txSnHai-1a2gF4AQ60iZd_kLemmlHrvnF25tt6tlMBXx_XTQ2kZI35mltkv7ODjgIfeT92Z4XLD12vZ4M5zUUa5tD6S8bZR-al","price_level":null}},{"id":"242","type":"location","attributes":{"id":242,"name":"Downtown
+        Denver YMCA","place_id":"ChIJN83ojdV4bIcRgwOjx8qpmN0","address":"25 East 16th
+        Avenue Unit B, Denver","lat":39.74182640000001,"lng":-104.9863131,"rating":4.1,"image_url":"Aap_uECvcxMot7acCA68PzLHXV5vDkJZeVlYmLxb55H5GFAgXrGcgbkn-D4ciUV15BP9ss4hxlNS2k6bwakO8nq_wcEb4yszgWWnGY_5HQkm5q9EX4_8xydpd6l_jnGYiWUmofXoFRlRK-ngrbsz3Vjo5UrKbJkRgIuazg64xv48Ajd4DWUN","price_level":null}},{"id":"243","type":"location","attributes":{"id":243,"name":"Samadhi
+        Yoga Sangha","place_id":"ChIJnf220y55bIcRv5cLuIqca-A","address":"639 East
+        19th Avenue, Denver","lat":39.746416,"lng":-104.979468,"rating":4.5,"image_url":"Aap_uEA-A9xKr-b1KpQQthqf5NTWutsG5cqBxuTJBmBFFqnxhoRyzfrQfDbOEroZsrkUjjBI8YAWDdANeF9wX4UVA8v1lgfEPY04oB-kyLbp-pUxxUpfyDbSB2TkaJ1DyyH-A2_AxUOAWmkaoQe_Nj4FimyGb0vfpetKFhCLxPdw8noDh3AU","price_level":null}},{"id":"244","type":"location","attributes":{"id":244,"name":"La
+        Rumba","place_id":"ChIJjzh3ACl_bIcREN-vglORVF8","address":"99 West 9th Avenue,
+        Denver","lat":39.7305946,"lng":-104.9886474,"rating":4.1,"image_url":"Aap_uEC-q6vWy2pogC8bnSBmBNA4MccJmyYoTVp431L6JRtLZLVYEWR4mXV0efrBMbgn06NTQeoDSATXIH6Ycla4pN4N4ROZxI05GtKlEdvFUgBL3i3KHlCJPMn5sNITTUjHUIl8BV73vn49EpELUYTQ_pOgbHTsCjHwTdL-aCc4XB4c1kWA","price_level":1}},{"id":"245","type":"location","attributes":{"id":245,"name":"The
+        Denver Athletic Club","place_id":"ChIJLRP7z9N4bIcRT6PfN5O1xMo","address":"1325
+        Glenarm Place, Denver","lat":39.7416927,"lng":-104.9936792,"rating":4.4,"image_url":"Aap_uEC0f1F1ua1sDEKmdHMLVJD76XxbWCbA6F96qxVls2g2sBrD1v25IiZkyRm2HWIFId1fcBu_V19qhFs7w4z2v1HnphIBlQYZTC732R8OYYIDRNI-wROqDFcyX5friFnpApbUR5j8k1I-j4AUqxD6o2hfqJjs3wRF7zxZeCwaPHFWQk-V","price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 04:13:54 GMT
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
 recorded_with: VCR 6.1.0

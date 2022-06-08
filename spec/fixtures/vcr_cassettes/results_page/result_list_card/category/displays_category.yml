@@ -2,6 +2,7 @@
 http_interactions:
 - request:
     method: get
+<<<<<<< HEAD
     uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uEB4uxQREttr1BNbrTWfHrlnP-DvZbMJHTXPQJKvliEm8dKBzohHESn8FJFzA6GnVSYC-xAoyIty-nFUPBc7f8JENWCIyVjacyBdFOpE1vOxFal-0hE1dHuXfRK9nKLG2SYoyFti-O37NgcUZYZglT9f75-jFTOpwKzXVyL8EEiWXlSS
     body:
       encoding: US-ASCII
@@ -198,6 +199,8 @@ http_interactions:
   recorded_at: Tue, 07 Jun 2022 03:54:59 GMT
 - request:
     method: get
+=======
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
     uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22park%22%7D
     body:
       encoding: US-ASCII
@@ -217,6 +220,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
+<<<<<<< HEAD
       - W/"5ef14b065c9bf61b9e767c9c3cbd3771"
       Cache-Control:
       - max-age=0, private, must-revalidate
@@ -224,10 +228,20 @@ http_interactions:
       - e9fe78d9-3f87-465a-a51e-9c5af0e66e80
       X-Runtime:
       - '0.479520'
+=======
+      - W/"dfc437371a9613d5593cf47a116a720a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3342894a-b093-4222-bf5d-0a0afa65e2ca
+      X-Runtime:
+      - '0.608173'
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
+<<<<<<< HEAD
       string: '{"data":[{"id":"401","type":"location","attributes":{"id":401,"name":"Skyline
         Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
         Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEDxSeZDZWQDnHa9EZ57On4kzpUmkTMf9sCsZQVYWWRxCH2UXHmcOmssPCpre5ktFFs2aegKq8S6UKgD-0R7CrCJzn56eu4v4hgVQjZpplZGGVsE5Hob0Lnw7UejC_lbb0t3FMl_QEr6j56s6NieJhcannNxirJsF4vGjZ1yX26OLWTl","price_level":null}},{"id":"402","type":"location","attributes":{"id":402,"name":"Civic
@@ -240,4 +254,18 @@ http_interactions:
         Walton, Your One Lincoln Park Expert","place_id":"ChIJq6qezcR4bIcRvUrQTd27ySQ","address":"1624
         Market Street, Denver","lat":39.7501106,"lng":-104.9975082,"rating":null,"image_url":null,"price_level":null}}]}'
   recorded_at: Wed, 08 Jun 2022 05:02:29 GMT
+=======
+      string: '{"data":[{"id":"301","type":"location","attributes":{"id":301,"name":"Skyline
+        Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
+        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEDuyLKaj7nKQ9e1pMeuOV27PdgAAUAHwiHzacffrx-a5_94-67aexl8R9S4woVR7Na0isPbbyf6RyerbtZgFhtAIFjVPnTjLDXTlqzJvsRqkPb7wgJDbbdkxAKRHOtNW-0B7LAE602CbCjKd1EM6BAHWP7t3CFP8taYyySg2nFCV6gL","price_level":null}},{"id":"302","type":"location","attributes":{"id":302,"name":"Civic
+        Center Park","place_id":"ChIJo_UsR9V4bIcRjC1WKfsrSEA","address":"101 14th
+        Avenue, Denver","lat":39.7392358,"lng":-104.9888592,"rating":4.3,"image_url":"Aap_uEDeKXVzcJmuKCmgN1LbjQNZyDtSRmRltqbRDyBq1YL4Nb8JNmc0NytbcdkAAA34H2MYMsjewLNGnoptPQpEN0IZSUbc_xUSJ6KEMpIRR_KOh6HHAdx1BTwAIRrdz_kxEuvSlXAF-XfcQeYey9AYq-dgmOuj-C4HKKS14oNM7mjSkjet","price_level":null}},{"id":"303","type":"location","attributes":{"id":303,"name":"Abraham
+        Lincoln Park","place_id":"ChIJ_ZWzCtl4bIcRgw32GAwZu88","address":"Curtis Street,
+        Denver","lat":39.7504666,"lng":-104.9899837,"rating":3.7,"image_url":"Aap_uEDannWxXFcVaFyntELPNAzexhfsSEutXb2Ldzb-CshG5Zaz9zGWAb1rfklrBgCd2kMxfAu9OVgkd-tz5akYFDqX94fYGCYJbb6gf-KyULPP96L8R3Zysa4BRcPJrBYdPuvJ6M7iHOCIdi7Ive008hO4LW9Nrxn8Gi4KG8sem6Ls45Ml","price_level":null}},{"id":"304","type":"location","attributes":{"id":304,"name":"Lincoln
+        Memorial Park","place_id":"ChIJFTSEQ9V4bIcRn1dmE_9CpAQ","address":"1449 Lincoln
+        Street, Denver","lat":39.7392309,"lng":-104.9865636,"rating":4.6,"image_url":"Aap_uEBpUIaomTYx1Nzzln2vsQ3Tq0UV51x5ShUv1B8k4pt4LkRxRGyUjYBpJkQnsCZ1cICBQr3EpfKFOEOkiuzTv0-HpFPVrl6T4XR3Ls4tHoUtI5uhrZTBOZrpsNQaMUBi5kkpHou33819FjHK4VQjK661PSWJ38qqtnGKQ3GB6U1chZIe","price_level":null}},{"id":"305","type":"location","attributes":{"id":305,"name":"Neil
+        Walton, Your One Lincoln Park Expert","place_id":"ChIJq6qezcR4bIcRvUrQTd27ySQ","address":"1624
+        Market Street, Denver","lat":39.7501106,"lng":-104.9975082,"rating":null,"image_url":null,"price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 04:13:57 GMT
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
 recorded_with: VCR 6.1.0

@@ -2,7 +2,11 @@
 http_interactions:
 - request:
     method: get
+<<<<<<< HEAD
     uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uEDMkVJ1f7Up8kld8VGeLhjgfEfHDDve0139vo_M_lNI4NsTTNHzQb-oKQ2H-SeRfTU_f-gb6XL2kIMg3z-FiT526N0Lig6jR7cho5n3u34-EE-ua9eVNvn0BMVUokbvP_Z_DoNYKgPKP6It62iFNxUMfGJB-evv9Jf7OypwIqmEryIL
+=======
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22cafe%22%7D
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
     body:
       encoding: US-ASCII
       string: ''
@@ -15,6 +19,7 @@ http_interactions:
       - "*/*"
   response:
     status:
+<<<<<<< HEAD
       code: 302
       message: Found
     headers:
@@ -535,6 +540,38 @@ http_interactions:
   recorded_at: Wed, 08 Jun 2022 05:02:30 GMT
 - request:
     method: get
+=======
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"36da714174b6715505120f0a6584ed0f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fa4cf2d7-4698-4682-bcea-9681b3703104
+      X-Runtime:
+      - '0.507395'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"341","type":"location","attributes":{"id":341,"name":"Mercury
+        Cafe","place_id":"ChIJl7-Ogyd5bIcRTgzca2cfXmw","address":"2199 California
+        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uED_RW_PuFdW3iicKwGpckncjrrN_jR1KEzcAcf-JihslTipU4Wf7LJlRlPyHgSPQqQ1dLVE6EPUd-GPwTBjzQjA060GhYDh8Km5ivE3mrndLVqQvwLqQt3bzFZ9E19qi-39gAhvIAybyzR3P7cTY3oqLVLc6Ev08T5XZEOXLGXwbHrq","price_level":2}},{"id":"342","type":"location","attributes":{"id":342,"name":"City
+        O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
+        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uEAl0vqHSE9kT2ZydvyRcI6TXOFFYwYMQ8CdOhhl58heQF3xnz6HCc4-bzWsx7AaEvZNiNur0T3z_j0t98zbZYJ6p8uZt5r3PWGoDvVrA0Qf6pzJylDIwDZL6DiElOdzsE1LEY3Ud1fGYI_XuumfS3RqniOcsm3DnqyRjbQudWqF7lSC","price_level":2}},{"id":"343","type":"location","attributes":{"id":343,"name":"D
+        Bar Denver","place_id":"ChIJZfxKmTN5bIcRZQSdZN7EZ0g","address":"494 East 19th
+        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uECNYNx2qstmSyTIy-BNipcEgPzvofUdM8sJU_SzBnKTVkX8_5xU3xEHSnIZ1VzOts-SRZMNLgZAseM4ZvdRAwmbPFr33b4ZXQRCDwgFtK_nQsJKTJ5ppHnv5ZfXEDySrZCc38x2_AEQaQC2YrBVOC2YK0gPEFaPrTVyDL1ExMZ8Ermw","price_level":2}},{"id":"344","type":"location","attributes":{"id":344,"name":"The
+        Delectable Egg","place_id":"ChIJvUaJ1tV4bIcRZA5jdVPJw-4","address":"1625 Court
+        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEAH_NbOu-egb0xitAMjyM8jG0t7Q9g80XzL8PYGUqYeXcc7IPVBge5D8G_Q0HoIwQGKBDy4GyLcn-1qYwX15zI3bgMRz2wihK6wpL7qNmkyS2Nb5EcfQKHiTJQS9F94lPz97tOy_S_KmXYfCRNMZvXKb4uK8m9mylxXVQBwEOBeKRIn","price_level":1}},{"id":"345","type":"location","attributes":{"id":345,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
+        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uEC_BNpOc_MuNt68t9s7-pWv2kfowTyAvgRx9I0GdGrQYRkckdE52e8RyoXV8Vplz3par13OKxsjb94ShYJCjQaF7rh5eMR93jjBZGrWMQkmcU1yQ0itKISFlvwj0zv5YfM6_JoQjZuoaosie_uQyQqf-x4_Mw22dv8UJ9XaOIqZl3J1","price_level":1}}]}'
+  recorded_at: Wed, 08 Jun 2022 04:13:58 GMT
+- request:
+    method: get
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
     uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22bar%22%7D
     body:
       encoding: US-ASCII
@@ -554,6 +591,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
+<<<<<<< HEAD
       - W/"b7b73ac707134f818facde96e19f68f6"
       Cache-Control:
       - max-age=0, private, must-revalidate
@@ -561,10 +599,20 @@ http_interactions:
       - de44b09d-1d4d-4a93-9316-7cd05aaeaa2f
       X-Runtime:
       - '0.424282'
+=======
+      - W/"0b1a5052779b4fea83d1c64d309f3234"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c67443f9-e7be-463d-8f13-f6aa01cc098c
+      X-Runtime:
+      - '0.582111'
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
+<<<<<<< HEAD
       string: '{"data":[{"id":"461","type":"location","attributes":{"id":461,"name":"Panzano","place_id":"ChIJm5csC9p4bIcRDhpgwqiuxNc","address":"909
         17th Street, Denver","lat":39.7477933,"lng":-104.9928419,"rating":4.5,"image_url":"Aap_uEBm7JDFuIRVtQIEKRKWDphnie5oQRLyRV_6VTrj1Oq5YUcyJqvEfNKuzjQSXXWM8vGXBVAiPzaVR0g1gANqYH5SwDlrCVkcv_iZ2pzK-c5dZoGJ00N13HNtq3unqOLT-OMTa8F_uK3BvtuTPiJ9-S1YsA9aKkqLmQtiw06Fnnrh1Roi","price_level":3}},{"id":"462","type":"location","attributes":{"id":462,"name":"Maggiano''s
         Little Italy","place_id":"ChIJY5watdZ4bIcRIDAE-njFBdA","address":"500 16th
@@ -576,4 +624,17 @@ http_interactions:
         Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
         Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEDRBFDoGgEzyZTfVy2nSY9eb0k1ywodf58jSRBBwip86Qjte3jwFYwpTrNk_xadnJm4ztIVusP3Q-BZKxXBNvDBmXQwcxRe3L4j6xzgnfDDthTuY8U1giIYKHHvCnASMYpDFD0RJf5Y9qzOLmCoYklnazfn_FXpPDiHp5yJGKWuryRP","price_level":null}}]}'
   recorded_at: Wed, 08 Jun 2022 05:02:31 GMT
+=======
+      string: '{"data":[{"id":"361","type":"location","attributes":{"id":361,"name":"Panzano","place_id":"ChIJm5csC9p4bIcRDhpgwqiuxNc","address":"909
+        17th Street, Denver","lat":39.7477933,"lng":-104.9928419,"rating":4.5,"image_url":"Aap_uECW7QDimnQw5MdrLCJXll9CO-EuCsegZmOH279-t86KYeOENT0W-cwVmgAmdS7G1mtTjdhvVNESNqy77fRHn69YfNRphE8LVawlzMnn4gn2Fjz7RBkTQTCPeyu0ty-qFyCeyXXY7j8-dm4HOMk9ZtPkaj-L0MiqE_4D6PZq350HdeEA","price_level":3}},{"id":"362","type":"location","attributes":{"id":362,"name":"Maggiano''s
+        Little Italy","place_id":"ChIJY5watdZ4bIcRIDAE-njFBdA","address":"500 16th
+        St Suite 150, Pavilions Mall, Denver","lat":39.7438395,"lng":-104.9906516,"rating":4.5,"image_url":"Aap_uEBWvEUfYDl8SJoRya59GuHFxasTWwG14YSCHpbyITP1y2Tm8IMI9AcsUSWMXziqPyxFIGzAoOSt58zOIoFQWgqOTJy0OICqJpWz_X-jrln2jWdn5FI5GLxT0jl3uBIUoFKS1kCF4m3nmrrLGdbswEbp7SyeWekXXXFtOGsInNLSo4oh","price_level":2}},{"id":"363","type":"location","attributes":{"id":363,"name":"Great
+        Divide Brewing Co","place_id":"ChIJo_c5KN94bIcRf-MnunKDJug","address":"2201
+        Arapahoe Street, Denver","lat":39.7538083,"lng":-104.9885167,"rating":4.6,"image_url":"Aap_uEAEfNKONVqGlzXDZpR3PBC6IFtc4n6zURPz2rhZSNLGUbVl6-WlhDECBbyE40u8AF8U0R2MfWIEZBtT3NLVyGpk61NDKGZqqFn2h8C8bVlEQ_fPj7xiIq1669JMKYeZ5ndiDYk44TedtIq2FjCyHl4foFSj5XXXhVklyw1lZwvsxIG_","price_level":2}},{"id":"364","type":"location","attributes":{"id":364,"name":"Rock
+        Bottom Restaurant \u0026 Brewery","place_id":"ChIJHY5jhNp4bIcR8ij0UT5PKRY","address":"1001
+        16th Street Mall A-100, Denver","lat":39.747516,"lng":-104.994804,"rating":3.9,"image_url":"Aap_uEDNA8bM3ujz66cUcaPrH59af_JKW47WnD3pJI_IfqNmRmnGRZZObMS7dVZ10TAYdFTsl0ZaWBWDnWw2crZBq0XCP0D1Hcfl3t-vKHJIv-iBguOCFdXKiaYeoiRE3FWvi-UQ2wHPMsYOZbe3-RTv7ZV6dKOhVix_HA7N2lz7iKmGEdDX","price_level":2}},{"id":"365","type":"location","attributes":{"id":365,"name":"Skyline
+        Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
+        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEAAYFv7UhqcqwP71ZRL4tdFDTg6WXT7rn82WKIhCqg304u3S8xFxlnjeLh04BYvUelmr-vDRww_S64FGDbtCoy2dNE0Nq9hsDMpkOqEBdilD4Oz7vYq_HOHi2lbonhkBpO9usDT0T3oBmQ_6Jc5KOsWjBTbtq_wV4bsDdAoctoHUSEW","price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 04:13:59 GMT
+>>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
 recorded_with: VCR 6.1.0
