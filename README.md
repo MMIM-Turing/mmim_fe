@@ -9,6 +9,7 @@
 - [App](#app)
 - [Background](#background)
 - [Requirements](#requirements)
+- [Setup](#setup)
 - [Contributors](#contributors)
 
 ## App
