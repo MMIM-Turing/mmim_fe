@@ -1,12 +1,22 @@
-# Meet In the Middle Front End Repo
+# Meet Me in the Middle Front End Repo
 
 ![ruby](https://img.shields.io/badge/Ruby-2.7.4-red)
 ![rails](https://img.shields.io/badge/Rails-5.2.8-red)
 ![rspec](https://img.shields.io/badge/RSpec-3.11.0-green)
 ![contributors](https://img.shields.io/badge/Contributors-6-yellow)
 
+## Table of Contents
+- [App](#app)
+- [Background](#background)
+- [Requirements](#requirements)
+- [Contributors](#contributors)
 
-## Background and Description
+### App
+
+Meet Me in the Middle app can be found on [heroku](https://mmim.herokuapp.com/).
+
+
+### Background
 
 Have you ever wanted to meet up with friend but did not know where to go? This app lets a user enter two addresses and then search for a location in the middle of those two addresses. The user can also chose to search for a specific category of results.
 
@@ -16,7 +26,13 @@ Using Google API the user is then sent to a page where they can see their result
 
 ![results](./img/results.png)
 
-## Requirements and Setup
+### Requirements
+Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmim_be.git) for full functionality.
+
+#### API
+- Go to [Google](https://developers.google.com) and follow instructions for Google Developer setup and to create an API key.
+- Create a [Google Geocode API](https://developers.google.com/maps/documentation/geocoding/start).
+- Create a [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview).
 
 #### Setup
 1. Clone this repository: On your local machine, open a terminal session and enter the following commands for SSH or HTTPS to clone the repo.
@@ -71,23 +87,13 @@ $ rails s
 - Open web browser and visit link
     http://localhost:5000 <br><br>
 
-Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmim_be.git) for full functionality.
+### Contributors
 
-## Contributors
-#### Joseph Downs
-[GitHub](https://github.com/josephdowns) | [LinkedIn](https://www.linkedin.com/in/josdowns/)
-
-#### Kim Guo
-[GitHub](https://github.com/kg-byte) | [LinkedIn](https://www.linkedin.com/in/kim-guo-5331b4158/)
-
-#### John Hennerich
-[GitHub](https://github.com/jhennerich) | [LinkedIn](https://www.linkedin.com/in/john-hennerich/)
-
-#### Will Medders
-[GitHub](https://github.com/wmedders21) | [LinkedIn](https://www.linkedin.com/in/will-medders-781a80232/)
-
-#### Oscar Santos
-[GitHub](https://github.com/Oscar-Santos) | [LinkedIn](https://www.linkedin.com/in/oscar-santos-perez/)
-
-#### Max Wagner
-[GitHub](https://github.com/MWagner3) | [LinkedIn](https://www.linkedin.com/in/maximilian-wagner3350/)
+|  | |
+| --- | --- |
+| Joseph Downs | [GitHub](https://github.com/josephdowns) &#124; [LinkedIn](https://www.linkedin.com/in/josdowns/) |
+| Kim Guo | [GitHub](https://github.com/kg-byte) &#124; [LinkedIn](https://www.linkedin.com/in/kim-guo-5331b4158/) |
+| John Hennerich |[GitHub](https://github.com/jhennerich) &#124; [LinkedIn](https://www.linkedin.com/in/john-hennerich/) |
+| Will Medders | [GitHub](https://github.com/wmedders21) &#124; [LinkedIn](https://www.linkedin.com/in/will-medders-781a80232/) |
+| Oscar Santos | [GitHub](https://github.com/Oscar-Santos) &#124; [LinkedIn](https://www.linkedin.com/in/oscar-santos-perez/) |
+|Max Wagner | [GitHub](https://github.com/MWagner3) &#124; [LinkedIn](https://www.linkedin.com/in/maximilian-wagner3350/)|
