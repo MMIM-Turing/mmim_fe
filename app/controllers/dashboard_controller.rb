@@ -4,6 +4,7 @@ class DashboardController < ApplicationController
 
   def show
     keys = Rails.cache.instance_variable_get(:@data).keys.find_all {|k| k.include?(current_user.email)}
+    keys = keys.find_all {|k| !k.include?("user_b_email") }
     @suggested_meetings = keys.map { |k| Rails.cache.read(k) }
   end
 
@@ -12,6 +13,10 @@ class DashboardController < ApplicationController
   def update
     updated_user = UsersFacade.create_or_update_address(info_params)
     redirect_to dashboard_path
+  end
+
+  def accept
+    binding.pry
   end
 
   def new_meeting
