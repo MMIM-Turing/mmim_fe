@@ -23,20 +23,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e2900693bb5e7604d9be3444948523e9"
+      - W/"ed4c5be5d31a448376f976fc16b13c34"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3230340b-a3ba-4342-9ff8-23e547c2b3fe
+      - bc454d13-3c14-4f02-8851-9dcf27d5f540
       X-Runtime:
-      - '0.054400'
+      - '0.009176'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Test User","email":"test@test.com","address":"1600
+      string: '{"data":{"id":null,"type":"user","attributes":{"name":"Test User","email":"test@test.com","address":"1600
         Pennsylvania Ave, Washington"}}}'
-  recorded_at: Tue, 07 Jun 2022 03:54:51 GMT
+  recorded_at: Wed, 08 Jun 2022 03:58:24 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%2223%20U%20St%20NW,%20Washington,%20DC%2020001%22,%22user_b_email%22:%22test@test.com%22,%22category%22:%22cafe%22%7D
@@ -58,27 +58,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2db6bc447b8b848bfe203ac952540864"
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '018cf7e7-f5ed-4cc1-a608-7df7bba0aa78'
+      - dd9bb180-11f2-4105-b779-f2af56748d24
       X-Runtime:
-      - '0.688294'
+      - '0.794895'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"215","type":"location","attributes":{"id":215,"name":"Busboys
-        and Poets","place_id":"ChIJ2TVI4Yy3t4kRWDjaOE-LISc","address":"450 K Street
-        Northwest, Washington","lat":38.90223710000001,"lng":-77.0180877,"rating":4.4,"image_url":"Aap_uED0a5S6X5gXyocY2WFE7mdQRYANMNIfutlgsDCZwvxktWVFnP7qTBYqmWBmkqa5EMw0N-2Zlh2ui7tMDGXPcKZ7Etd_tCqFbeH1h94t0PhmVhq_Eas5qDAKoEivD8r9NXcGNnmE5d2iOBoYKwGfPwDLt-syt8cIWUqiYVAcw2hzY2hT","price_level":2}},{"id":"216","type":"location","attributes":{"id":216,"name":"Le
-        Diplomate","place_id":"ChIJgYIki-m3t4kRZImvuN_pp9Q","address":"1601 14th Street
-        Northwest, Washington","lat":38.911365,"lng":-77.0316635,"rating":4.6,"image_url":"Aap_uEAy6HX8dWirCJx1P1G0ZajZsPw_L77KE0k5SfDC69wHTNeDOCJhzLupMOf9p_fqI0DPRRqjoup7mmJ10Q6JfZsXaFToAoBoPfbRA8a04_eh778vojse1Iz25JsYOMLFiBnfHR07VUhv6xhzfzimfNR6anG4E-X_3J9S2xWlJKhjvTDN","price_level":3}},{"id":"217","type":"location","attributes":{"id":217,"name":"Dunkin''","place_id":"ChIJc2hfT463t4kRsSChl7fH-Ok","address":"Capital
-        One Arena, 601 F Street Northwest, Washington","lat":38.898361,"lng":-77.021785,"rating":3.4,"image_url":"Aap_uEBop-fFjFgRSke-cCe-IqvPPB2RDHmNBVp3jMlkD9VK-OsfXmtRr43rGOlXuHE44LzV0i4afSHc6kvC5JtdBxV41WO698lL6NjvdPTG1JkzWu2-3xID0Cb6LL1b0KPwD4V_jW4hUXOCtO30yZZGq2yNHrRNDG4E3jg7NEJXwVl-pZIM","price_level":1}},{"id":"218","type":"location","attributes":{"id":218,"name":"McDonald''s","place_id":"ChIJzd4oJ5S3t4kRdOWbVWMM-6Y","address":"1235
-        New York Avenue Northwest, Washington","lat":38.900598,"lng":-77.02937299999999,"rating":3.6,"image_url":"Aap_uEBpsUQWCe5e-lqLrZfmFPXkfx7OllkiLw0YLRLb1B98O3AgWcKs-iWEVUd9YgvG4qeG4Uu3SaRbaPTTZ12keSEHHun2_VCSkcH5wmdKKqIXCtSOdO3pX7E9LKKy-MxGLvQdbrfzz9EmDiwBCjeXZth21dDMwsaBS9zqURsCfbV6iuOU","price_level":1}},{"id":"219","type":"location","attributes":{"id":219,"name":"Ted''s
-        Bulletin","place_id":"ChIJkceyP-i3t4kRISOyo8QO6Mo","address":"1818 14th Street
-        Northwest, Washington","lat":38.9146882,"lng":-77.0321529,"rating":4.5,"image_url":"Aap_uEAfNaEzNUwPLaJkR9vVcBOw9F6ixCL8LTVpmvw6EETmXzuttXzkP7-2m3gaGO_aukZZlQmPT3oMnRGyv8mLvNZuE-14I1VuU4IpaYbOHvwye817gk3n_e2W6UpbJ9GdggRE7wb-Tpr23f7jMrfDzul0L_hwgIspXoxFeOBaBGeeuJx7","price_level":2}}]}'
-  recorded_at: Tue, 07 Jun 2022 03:54:52 GMT
+      string: '{"data":[]}'
+  recorded_at: Wed, 08 Jun 2022 03:58:25 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%2223%20U%20St%20NW,%20Washington,%20DC%2020001%22,%22user_b_email%22:%22test@test.com%22,%22category%22:%22cafe%22%7D
@@ -100,25 +92,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b371c428b2fa76e1accfde31f3938ac6"
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 40d228b2-1ce8-4759-b071-3d5d5e9c9c12
+      - f2c4442b-6666-4527-92cc-db42daa21ad7
       X-Runtime:
-      - '0.525210'
+      - '0.545376'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"235","type":"location","attributes":{"id":235,"name":"Busboys
-        and Poets","place_id":"ChIJ2TVI4Yy3t4kRWDjaOE-LISc","address":"450 K Street
-        Northwest, Washington","lat":38.90223710000001,"lng":-77.0180877,"rating":4.4,"image_url":"Aap_uECOdHOpjG9xOfBpyxyeOheMxqZQ-3gTRMFwQSNPXT6E06D3Rd51k-Z2nXopO-Ze6QrdCSxwwODgowY5kR7jSzRBxLR6HTIHFMPQ1lSLiHk0UTRgiWf73spSUd7GstzOG5okGH_bjjDk10loEkIZR_1dUgjHzQfIW2rdLUckOODeLGuI","price_level":2}},{"id":"236","type":"location","attributes":{"id":236,"name":"Le
-        Diplomate","place_id":"ChIJgYIki-m3t4kRZImvuN_pp9Q","address":"1601 14th Street
-        Northwest, Washington","lat":38.911365,"lng":-77.0316635,"rating":4.6,"image_url":"Aap_uEDDb4NGrEGlwRxegaY-r7_o46HJSV1C3y4wmEcpF-IrEN-dHW_yBFck6qPcU3c1NGFrt4LDWKFYvJ4QHNnR6T3MtavrpYsQiuBzDyH1uKsG5FCWNqKrwPJVqVy3LH9zIhQa3UqLieJEytWXNvhwF3ZFboVR9pFZV7NSOc6yxnRTBjZs","price_level":3}},{"id":"237","type":"location","attributes":{"id":237,"name":"Dunkin''","place_id":"ChIJc2hfT463t4kRsSChl7fH-Ok","address":"Capital
-        One Arena, 601 F Street Northwest, Washington","lat":38.898361,"lng":-77.021785,"rating":3.4,"image_url":"Aap_uEBWtAbSyCGB7WN630wuc1_0r0bwHLd2VbfaUM2GD7GUOzr0s7KB9LutNwkXpWRAB0IqhBtHNbLTi1nrcQQHqzp5PRJKWdSYQzvIkNfQeDokadsUzThKZ5Vg1bPVKtW7qwAzgUVBZHBgOO9Yx3z_K1Z6UG7GLDP7qI55yrR5G7_idzgO","price_level":1}},{"id":"238","type":"location","attributes":{"id":238,"name":"McDonald''s","place_id":"ChIJzd4oJ5S3t4kRdOWbVWMM-6Y","address":"1235
-        New York Avenue Northwest, Washington","lat":38.900598,"lng":-77.02937299999999,"rating":3.6,"image_url":"Aap_uEBsN7V8bxaYd3KCKiA0qrqUKjV-GCkdatsC83HixwT36d3T5uFYhY0EZvIGvbgpgKG1pDnYFsczu1rVo8jRtOVkeJzQNPXdhsKjNZqQqQH2g6Njcbxo1de-CfCRRF5X9vVVo0atuEHsYtE56XaVDkHBbEPMZxySCS9FPykXqTM7lSPJ","price_level":1}},{"id":"239","type":"location","attributes":{"id":239,"name":"Ted''s
-        Bulletin","place_id":"ChIJkceyP-i3t4kRISOyo8QO6Mo","address":"1818 14th Street
-        Northwest, Washington","lat":38.9146882,"lng":-77.0321529,"rating":4.5,"image_url":"Aap_uEDvtO2_-pzk52Vdv0gHk0XA90eyTtW_sW1jwsOzY6SMKAsn-MJDd5Jnt0Dq3h6VM8GKEFT4s9o6Lcdzac9CwfWm6nnh9vGYjM0aLu4YKO6vO43DmZEalaL94_YdC0TVAOdclSdVTZumEIYQc-JmL6wSs06L7Bdw5WY4ZKwMjWfbka5d","price_level":2}}]}'
-  recorded_at: Tue, 07 Jun 2022 03:54:53 GMT
+      string: '{"data":[]}'
+  recorded_at: Wed, 08 Jun 2022 03:58:26 GMT
 recorded_with: VCR 6.1.0

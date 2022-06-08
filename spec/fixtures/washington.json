@@ -1,0 +1,81 @@
+{
+  "data":[
+    {
+      "id":"585",
+      "type":"location",
+      "attributes":
+      {
+        "id":585,
+        "name":"Open City",
+        "place_id":"ChIJFaK2ddS3t4kR4LLXUHpoLC0",
+        "address":"2331 Calvert Street Northwest, Washington",
+        "lat":38.9237209,
+        "lng":-77.0523722,
+        "rating":4.2,
+        "image_url":"Aap_uECJAEWu2-DmMT00dFfy3Im3d33A-t9n1332k3EdSwxyyxjBTVnc4gXmF9YqraIFV1uy8nrGdXBewT90tKnaxFikykdvYyJ7kEou3OwOTA_jaCSt87qI3bIpNugId_FlAhOyEPNKoWEbdsYzTe-8xsECOZySuUShnYZzWaqKVrmNRHcz",
+        "price_level":2
+      }
+    },
+    {
+      "id":"586",
+      "type":"location",
+      "attributes":
+      {
+        "id":586,
+        "name":"Tryst",
+        "place_id":"ChIJZ1xnLNq3t4kRMWSzJo7OC6k",
+        "address":"2459 18th Street Northwest, Washington",
+        "lat":38.921977,
+        "lng":-77.042091,
+        "rating":4.5,
+        "image_url":"Aap_uEAAmnskTlAxT6uHt2aqxMUEjmuaoi6ZZtW85aukRXN6qAOJJrolNJnelZitRKwazi5Uoe7nW-Jb0MdZhGRG_RegLUyF8WDsZNR1hyV_ibZOQe1yBAfySEN4PDmWUMezNUIGlFyFUazl942MwAjelHTmK2n8sJOgFdvRv6ktNSen7E3T",
+        "price_level":2
+      }
+    },
+    {
+      "id":"587",
+      "type":"location",
+      "attributes":
+      {
+        "id":587,"name":"Teaism Dupont Circle",
+        "place_id":"ChIJu9YSTc-3t4kRWcD2pLsGRSI",
+        "address":"2009 R Street Northwest, Washington",
+        "lat":38.912772,
+        "lng":-77.045816,
+        "rating":4.5,
+        "image_url":"Aap_uEC6tfHy8Xn1U9e8tMGNfILhOl1yRjNtPA0E77DQSlJPD5zb0qOToTUkF-MLMfe6HbGTM7EjfiavACXoJ_ZBnofwg52C2FdNQjdOD5cd0jYwLTASY6XsixOKFKA_HO-B2GUtD3TLrusj4XnDqq1F7QvwrwHsAEB3ScojDH2yNBg99ZQs",
+        "price_level":2
+      }
+    },
+    {
+      "id":"588",
+      "type":"location",
+      "attributes":
+      {
+        "id":588,
+        "name":"Starbucks",
+        "place_id":"ChIJKSjjOMa3t4kRGjyVhLs9VaE",
+        "address":"1501 Connecticut Avenue Northwest, Washington",
+        "lat":38.910597,
+        "lng":-77.04371300000001,
+        "rating":4.0,
+        "image_url":"Aap_uEB1HzRxC1vIudmtEANv35A2wV7aG2X14QIsoK-yYxQ1XTle6DkYPegYgenq_PwOhcfIb_0ee9NTLQQodGByb5TaAudqoqgZDZBfS6AMpOY-_KVlFWXLXK5pEffK7ciaYHUyyfo43MLReIfGdLWgdSHOIfav5rEKnM-58fABWJyd05T8",
+        "price_level":2
+      }
+    },
+    {
+      "id":"589",
+      "type":"location",
+      "attributes":
+      {
+        "id":589,
+        "name":"Dawson's Market",
+        "place_id":"ChIJE8m5Ys-3t4kRDLep_4lRvVY",
+        "address":"2001 S Street NW, Washington",
+        "lat":38.9144185,
+        "lng":-77.0451312,
+        "rating":4.5,
+        "image_url":"Aap_uECxbEAgmdjWowkC3rpTOVKKa5rFzKV25AYKXuzag_N9rn19k74JPijtWhHw-aEpFnFKEqObPWD_bC1BUXY2PnFhJyb2NecsldyKBfkVJQRVMrv1Lz0eOz65UKUn0aCypE1bg19IkoIHwGi4Go6zNTypAKoL1c8xUe6ISowUEldJVZQj",
+        "price_level":2
+      }
+    }]}

@@ -21,27 +21,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"131ad4f8d0196807d22ab99596b2b3b0"
+      - W/"9be4e146fc644dd78b4f3f4baad9be8e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b37b5131-3d91-40c8-8123-ac7c6f828b7b
+      - d28b98cd-2f3d-4d9f-b55f-30eff0830c09
       X-Runtime:
-      - '0.548136'
+      - '0.699344'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"275","type":"location","attributes":{"id":275,"name":"City
+      string: '{"data":[{"id":"265","type":"location","attributes":{"id":265,"name":"City
         O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
-        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uEDFM6Af6ieMI86MASjZlMEkOmF0xaP8vrb6QDcJ_hHjPa7pbwlbS8BUqgo_EMZYSRmV9MtD_w3mLkzrssLm1zFONzXXoQMCBuzjtb7srb9jnGUWg-1dVvYYKlbb8qScdbkDZ8CwjpZ1gaPV6Lt1bHl5OV9AQeJZa5KzVn4koMAMVjgd","price_level":2}},{"id":"276","type":"location","attributes":{"id":276,"name":"D
+        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uECe7MuAxdQlCpVgwel6xP0_DQrPoy3e16qRlpnxJMn2vAcPwv44PosGM3gNhS6Vllf3gQSbRwLf7MVTbwvLCO7nlKdKVqD4l9wh2zCY8ms7l2hl4xgQfFF59xfOIrN9RFP9GZ1NSy6H-U4NY0a71xQcP0cu5OirMAJrWpl19cJEzR0J","price_level":2}},{"id":"266","type":"location","attributes":{"id":266,"name":"D
         Bar Denver","place_id":"ChIJZfxKmTN5bIcRZQSdZN7EZ0g","address":"494 East 19th
-        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEDduf_a4hnq9XDZ-kMcOhztBcpfyGZuu5M4qmk5I_5mtdvTQmM2xEWX_x0K6CS9ltWI09IVadKJN6T-ow7RKX7K7UslyjU1Sv4Y_ROuN8V4YXyVgt6Hn2va_QyT_dsCBJYw2mXvDpAX91omCuii2SwtKtg6gSLbJkUF-UUJoBYSMLI1","price_level":2}},{"id":"277","type":"location","attributes":{"id":277,"name":"Pablo''s
+        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEAKVgKazpAk59LQqFY1po7nlfCs6fYoerMEMDXfGW6KGKhqCePlFL1moF2JlvBP14OlQdeNcoT0uvfDlFecvLFVdcK7aU6_jPMOxL7eSNO2Hj76pb5e4n1XPcTa7qYYetqpYXx8fP2HigNHWniIkupZexaNKCr7D8aC_BVitG6AUUd-","price_level":2}},{"id":"267","type":"location","attributes":{"id":267,"name":"Pablo''s
         Coffee - 6th Avenue","place_id":"ChIJ2TrHwtt-bIcRxEMq9iOvk6w","address":"3806,
-        630 East 6th Avenue, Denver","lat":39.7254806,"lng":-104.9789739,"rating":4.6,"image_url":"Aap_uEBIc2exOOvgh9_vE9Yh299cZTsmAWgDrRjKW440tv1YpUtRgS9B7UhXmF1VYl070YO1acicaDOtcQaPhmLcgrV8UB7ODuAtUwtdLS6NcaSoNeFFlvznpey_0z4k4kDgdfPU3z1ipEDnZXPvfJ8uByPZb7zvb9BqcYP67XOtAFJLb7iA","price_level":1}},{"id":"278","type":"location","attributes":{"id":278,"name":"The
+        630 East 6th Avenue, Denver","lat":39.7254806,"lng":-104.9789739,"rating":4.6,"image_url":"Aap_uEAn0HLfAQFKV2fLCbqDqA0MlF8_dme0kC6QOTVI5wVDf56yKzBffuhtiU8dzsT1MvS5cjLXPD9_MLDuiBQTU_f0So7RratqoU7ZG_5Wzkkp522RYtlOMEEN7s_EutYFq-skz566jxPChV___j2YUZEl1-iYdSTnBCJkenyQrVWSobFW","price_level":1}},{"id":"268","type":"location","attributes":{"id":268,"name":"The
         Delectable Egg","place_id":"ChIJvUaJ1tV4bIcRZA5jdVPJw-4","address":"1625 Court
-        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEDQOueUcFXx3f9UQc0qADYkJ3FKahWzFdDIPUYNn9bdgPlR_Zxh3jNIcnRF-W2JyGUONrkIPq4CcgnX9W6_MtZbAAbCZNNYee-2pGveoAuIoVxULF2sol0PABudwDbK-s9FDCZYRpAwd3oSPtjVfHdqRIGIUWXyeJGiNgjrU3ue0nXf","price_level":1}},{"id":"279","type":"location","attributes":{"id":279,"name":"Fluid
+        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEAd74lJ1hA-9YMALLXnRea2FKUvz1pKJYYJYWQ6YJQdXfb7pRR7VyPjDs_PwqRPxbI_qgbw4b2s5tyKITmVO9IrkZTZa-z6b8JufFnEzh0KYqNFjnlN14jn_GWzAOsEjUEwc80TBhSpgx3hjp8SInll0i2uJDts9CDrgFDmzZ9tF2FP","price_level":1}},{"id":"269","type":"location","attributes":{"id":269,"name":"Fluid
         Coffee Bar","place_id":"ChIJ0zkuISl5bIcRQLZXJRkFPuY","address":"501 East 19th
-        Avenue, Denver","lat":39.74638890000001,"lng":-104.9808333,"rating":4.5,"image_url":"Aap_uECTG1BMx00vsLULzZMvktfeSQLpZRzkhsaQrbrmbPIu4EY2fRE0D1vX6GB6bmkWMkl0E5Tqpt32m3V5iy9N2LHXwkkUNRBGe_t7po9dorjxDVWEQykhVAuV0A1hQ755ArAvJZ-2inThPAu00PwcgOPUuyT0Wv0qYIGKlUCW3u0zBbZc","price_level":1}}]}'
-  recorded_at: Tue, 07 Jun 2022 03:54:54 GMT
+        Avenue, Denver","lat":39.74638890000001,"lng":-104.9808333,"rating":4.5,"image_url":"Aap_uED0IRqBdPm_YIywFj9RJNn16PcV-FkfOlGFonz2Ubd3iacexFSEa57cPJ1cxjVhFdtbwRxWTQjo5l2yhvLRAtVNacINd1m76GjMQxlPbW2mZktKVHQesJlf3GsyMLh-vwMlm-4u1WKQa0mp41_3k0eYVlJLwiWEsZdzB8ab9tGdu2mI","price_level":1}}]}'
+  recorded_at: Wed, 08 Jun 2022 03:58:28 GMT
 recorded_with: VCR 6.1.0

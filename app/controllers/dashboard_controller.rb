@@ -3,11 +3,7 @@ class DashboardController < ApplicationController
   before_action :require_address_params, only: :update
 
   def show
-    if Rails.cache.instance_variable_get(:@data)
-      keys = Rails.cache.instance_variable_get(:@data).keys.find_all {|k| k.include?(current_user.email)}
-      keys = keys.find_all {|k| !k.include?("user_b_email") }
-      @suggested_meetings = keys.map { |k| Rails.cache.read(k) }
-    end
+    @suggested_meetings = suggested_meetings
   end
 
   def edit; end
@@ -27,7 +23,6 @@ class DashboardController < ApplicationController
     Rails.cache.fetch("#{new_meeting_params.values.join}") do
       meetings = MeetingsFacade.suggested_meeting({ locations: suggested_locations, host_email: new_meeting_params[:host_email], guest_email: new_meeting_params[:guest_email] })
     end
-    # suggested_meeting = MeetingsFacade.suggested_meeting(new_meeting_params)
     redirect_to dashboard_path
   end
 
@@ -58,8 +53,12 @@ class DashboardController < ApplicationController
   def params_from_user_results_controller
     { "address_1" => params[:address_1], "user_b_email" => params[:user_b_email], "category" => params[:category] }
   end
+
+  def suggested_meetings
+    if Rails.cache.instance_variable_get(:@data)
+      keys = Rails.cache.instance_variable_get(:@data).keys.find_all {|k| k.include?(current_user.email)}
+      keys = keys.find_all {|k| !k.include?("user_b_email") }
+      @suggested_meetings = keys.map { |k| Rails.cache.read(k) }
+    end
+  end
 end
-
-
-
-# Rails.cache.instance_variable_get(:@data).keys.where(key.include?(user.email)}

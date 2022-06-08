@@ -14,7 +14,7 @@
         <%= location.address %></p>
         <% if current_user.email == meeting.guest_email%>
           <%= form_with url: 'dashboard/accept', local: true do |form| %>
-          <%= form.hidden_field :meeting_info, value: { place_id: location.place_id, host_email: meeting.host_email, guest_email: meeting.guest_email } %>
+          <%= form.hidden_field :meeting_info, value: { location_name: location.name, location_address: location.address, host_email: meeting.host_email, guest_email: meeting.guest_email } %>
           <%= form.submit "Agree to Meet at #{location.name}", class: "btn-success btn-sm" %>
           <% end %>
       <% end %>

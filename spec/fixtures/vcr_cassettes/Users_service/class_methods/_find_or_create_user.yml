@@ -23,17 +23,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"df8a0a68364203336eacc110223fa9a4"
+      - W/"a6efdca0f3f4741c689ff12f17a4b4a8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8326bf02-6973-4dd7-8642-11cfac5c1b24
+      - 17738440-ed3b-4ac4-99c1-548506c2dede
       X-Runtime:
-      - '0.006506'
+      - '0.003154'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"6","type":"user","attributes":{"name":"test user","email":"test@email.com","address":null}}}'
-  recorded_at: Tue, 07 Jun 2022 03:55:03 GMT
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
+        st, city, state, 80123"}}}'
+  recorded_at: Wed, 08 Jun 2022 03:58:35 GMT
 recorded_with: VCR 6.1.0
