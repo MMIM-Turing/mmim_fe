@@ -23,36 +23,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-<<<<<<< HEAD
       - W/"9c4d559f169f64515d32566d86fc6b71"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8b2d4d86-c814-4454-9e84-06d0b4592401
+      - f8412f78-67c7-4f69-b25b-0c13b357264a
       X-Runtime:
-      - '0.001969'
-=======
-      - W/"a6efdca0f3f4741c689ff12f17a4b4a8"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 7cac7a79-9acc-4efe-a946-2a39c1718f6d
-      X-Runtime:
-      - '0.004169'
->>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
+      - '0.003746'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-<<<<<<< HEAD
       string: '{"data":{"id":"6","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
         st, city, state, 80123"}}}'
-  recorded_at: Wed, 08 Jun 2022 05:01:35 GMT
-=======
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
-        st, city, state, 80123"}}}'
-  recorded_at: Wed, 08 Jun 2022 04:13:59 GMT
->>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
+  recorded_at: Wed, 08 Jun 2022 15:48:47 GMT
 - request:
     method: put
     uri: http://localhost:3000/api/v1/users?params=%7B%22email%22:%22test@email.com%22,%22address%22:%22123%20st,%20city,%20state,%2080123%22%7D
@@ -76,28 +60,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a6efdca0f3f4741c689ff12f17a4b4a8"
+      - W/"9c4d559f169f64515d32566d86fc6b71"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-<<<<<<< HEAD
-      - c9750482-0a59-4916-ae30-c3dc922ed12e
+      - df39937d-4511-467e-85bb-6f1b4d328376
       X-Runtime:
-      - '0.006629'
-=======
-      - 47f2dd49-3db8-4495-b64a-d3039010636e
-      X-Runtime:
-      - '0.009098'
->>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
+      - '0.005490'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
         st, city, state, 80123"}}}'
-<<<<<<< HEAD
-  recorded_at: Wed, 08 Jun 2022 05:01:35 GMT
-=======
-  recorded_at: Wed, 08 Jun 2022 04:13:59 GMT
->>>>>>> 1516d8d483f141986a9f36fbc6c889fe27cc45db
+  recorded_at: Wed, 08 Jun 2022 15:48:47 GMT
 recorded_with: VCR 6.1.0

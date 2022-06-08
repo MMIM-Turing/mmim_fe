@@ -31,3 +31,4 @@
 # Ignore application configuration
 /config/application.yml
 
+/spec/fixutres/vcr_cassettes
