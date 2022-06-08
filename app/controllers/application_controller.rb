@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
-  # include ApplicationHelper
-  helper_method :current_user
+    helper_method :current_user
 
   def current_user
     @current_user ||= UsersFacade.find_or_create_user({ email: session[:user_email] }) if session[:user_email]
@@ -14,8 +13,3 @@ class ApplicationController < ActionController::Base
   end
 end
 
-# module ApplicationHelper
-#   def current_user
-#     UsersFacade.find_or_create_user({ email: session[:user_email] }) if session[:user_email]
-#   end
-# end
