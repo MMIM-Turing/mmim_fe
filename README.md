@@ -26,12 +26,6 @@ Using Google API the user is then sent to a page where they can see their result
 
 ![results](./img/results.png)
 
-<details><summary>Logging in with OAuth - CLICK ME</summary>
-
-https://youtu.be/eDFN8X_4ftg
-
-</details>
-
 ### Requirements
 Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmim_be.git) for full functionality.
 
@@ -53,39 +47,47 @@ $ git clone git@github.com:MMIM-Turing/mmim_fe.git
 $ git clone https://github.com/MMIM-Turing/mmim_fe.git
 ```
 
-Once cloned, you'll have a new local copy in the directory you ran the clone command in.
+- Once cloned, you'll have a new local copy in the directory you ran the clone command in.
 
 2. Change to the project directory: In terminal, use `$cd` to navigate to the project directory.
-
 ```shell
 $ cd mmim_fe
 ```
 
 3. Install required Gems utilizing Bundler: <br>
-In terminal, use Bundler to install any missing Gems. If Bundler is not installed, first run the following command.
-
+- In terminal, use Bundler to install any missing Gems. If Bundler is not installed, first run the following command.
 ```shell
 $ gem install bundler
 ```
 
-If Bundler is already installed or after it has been installed, run the following command.
-
+- If Bundler is already installed or after it has been installed, run the following command.
 ```shell
 $ bundle install
 ```
 
 4. Database Migration<br>
-Before using the web application you will need to setup your databases locally by running the following command
-
+- Before using the web application you will need to setup your databases locally by running the following command
 ```shell
 $ rails db:{drop,create,migrate,seed}
 ```
+5. Run Figaro
+```shell
+$ bundle exec figaro install
+```
+- That will create an `config/application.yml` file.
+
+- Add your Google api to new this new file.
+```shell
+#config/application.yml
+google_maps_api_key: 'your google key here'
+GOOGLE_CLIENT_ID: 'your google oauth client id'
+GOOGLE_CLIENT_SECRET: 'your google secret code'
+```
 
 
-5. Startup and Access<br>
-Finally, in order to use the web app you will have to start the server locally and access the app through a web browser.
+6. Startup and Access<br>
+- Finally, in order to use the web app you will have to start the server locally and access the app through a web browser.
 - Start server
-
 ```shell
 $ rails s
 ```
