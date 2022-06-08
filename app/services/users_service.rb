@@ -17,7 +17,11 @@ class UsersService
 
 private 
     def conn(uri)
-      Faraday.new("#{ENV["backend_server"]}/#{uri}")
+      if Rails.env == 'development' || Rails.env == 'test'
+        Faraday.new("#{ENV["backend_server_dev"]}/#{uri}")
+      else 
+        Faraday.new("#{ENV["backend_server_pro"]}/#{uri}")
+      end
     end
   end
 end
