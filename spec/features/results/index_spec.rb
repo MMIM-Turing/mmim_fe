@@ -65,7 +65,7 @@ RSpec.describe 'results page' do
 
       it 'has a form to update category', :vcr do
         click_button 'Search'
-        fill_in :category, with: 'bar'
+        select 'bar', from: :category
         click_button 'Update Category'
 
         expect(current_path).to eq('/results')
