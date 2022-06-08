@@ -49,7 +49,7 @@ RSpec.describe 'results page' do
   describe 'result list card' do
     context 'category' do
       it 'displays category', :vcr do
-        fill_in :category, with: 'park'
+        select "park", from: :category
         click_button 'Search'
 
         expect(page).to have_content('Park')
@@ -65,7 +65,7 @@ RSpec.describe 'results page' do
 
       it 'has a form to update category', :vcr do
         click_button 'Search'
-        fill_in :category, with: 'bar'
+        select 'bar', from: :category
         click_button 'Update Category'
 
         expect(current_path).to eq('/results')

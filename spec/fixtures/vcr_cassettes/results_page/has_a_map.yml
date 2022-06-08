@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22gym%22%7D
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22cafe%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -21,18 +21,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3596aa5e76ccf1cace84a585c5682452"
+      - W/"b635134de8973e00787da7a5a16b1125"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c5df8061-aa2c-4888-b34f-2e48148cbf44
+      - 290a173a-1372-4cb9-89c1-5df4ac9a57e7
       X-Runtime:
-      - '0.861427'
+      - '0.655654'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjpbeyJpZCI6IjExMDUiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjoxMTA1LCJuYW1lIjoiQmxhY2sgU3dhbiBZb2dhIERlbnZlciBDYXBpdG9sIEhpbGwiLCJwbGFjZV9pZCI6IkNoSUpWVldlZmROLWJJY1I0VHc3aDVIZDktUSIsImFkZHJlc3MiOiIxMzA4IFBlYXJsIFN0cmVldCwgRGVudmVyIiwibGF0IjozOS43MzcxMDgxLCJsbmciOi0xMDQuOTc5Njk1NSwicmF0aW5nIjo0LjgsImltYWdlX3VybCI6IkFhcF91RUJsdzBDSUFqb1JUWHRNZnFGVjFkWGhmQ055X2MwMXpkV29KY05PZU5NR3Naa3FDMFpGMExJOE43TXo3ZkJRZnphWXQ5VGQ2YkxCUU1HenBBdm1GaFdoa05uYVVJOUFPdkM2S29mMUFwX2Qzd09lN1FmaWtqcEJsaE1mWjNhNFFvdVhXa0o2Q0pxajdNbVB5cW5fRlVMcWJobWF3alBlZ3ByYmRpS1hKTEw3RnA2RiIsInByaWNlX2xldmVsIjpudWxsfX0seyJpZCI6IjExMDYiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjoxMTA2LCJuYW1lIjoiT3BlbiBTcGFjZSBTdHVkaW8iLCJwbGFjZV9pZCI6IkNoSUpBYS1wd05KLWJJY1JBcnhtTEhLZlItOCIsImFkZHJlc3MiOiIxNDExIE5vcnRoIE9nZGVuIFN0cmVldCwgRGVudmVyIiwibGF0IjozOS43Mzg2OTQzLCJsbmciOi0xMDQuOTc1NDk2OSwicmF0aW5nIjpudWxsLCJpbWFnZV91cmwiOm51bGwsInByaWNlX2xldmVsIjpudWxsfX0seyJpZCI6IjExMDciLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjoxMTA3LCJuYW1lIjoiUm9vdGVkIEhlYXJ0IFlvZ2EgYW5kIFdlbGxuZXNzIiwicGxhY2VfaWQiOiJDaElKcjRMNkY0Wl9iSWNSUnFYVndJbzlPTlEiLCJhZGRyZXNzIjoiMTQwOSBOb3J0aCBPZ2RlbiBTdHJlZXQsIERlbnZlciIsImxhdCI6MzkuNzM4NzYyNSwibG5nIjotMTA0Ljk3NTQzOTcsInJhdGluZyI6NC43LCJpbWFnZV91cmwiOiJBYXBfdUVEZE56b3o4U1hsQklTWGsybVhfaUlaTHZDQl9aSEpueGswVUtsbkJ0LUNBVmgtSk5mU21NYXl0Tkh0bzdIdTVzamM0dXNSSlZWczB0NGJnTTlvTlpvWFAwS20tYk9SR0pacnlXZlY3VUxRSXNCYWhwSmV2c0o1c2hFVWotaEREdWd0SU9xc1E1RGhrX0NDMC1QRG8wRGF2RWU5dGN5NWN3SXZQSTVkQ2VUY0xLX0QiLCJwcmljZV9sZXZlbCI6bnVsbH19LHsiaWQiOiIxMTA4IiwidHlwZSI6ImxvY2F0aW9uIiwiYXR0cmlidXRlcyI6eyJpZCI6MTEwOCwibmFtZSI6IkNvbGZheCBTdHJvbmctIFN0cmVuZ3RoIFx1MDAyNiBDb25kaXRpb25pbmciLCJwbGFjZV9pZCI6IkNoSUppYW1KT1MxNWJJY1JQWjN3ek9GQV9mOCIsImFkZHJlc3MiOiIxNTE2IEVtZXJzb24gU3RyZWV0LCBEZW52ZXIiLCJsYXQiOjM5Ljc0MDQyMiwibG5nIjotMTA0Ljk3NTc0OCwicmF0aW5nIjo0LjksImltYWdlX3VybCI6IkFhcF91RURQMmJLZmdsNW1SQlV5dG4yZVA0V3I3T3RoNFRoeEFJQXZuOXVQR1AwYVh3bUlVbkh1X3dZZHdJZWRlZmE3Mlo2dnh2ajVMb2kxeXBfSU9MVEp5U1phVlJpV3BOOTNoTzFLc2txVXlHWFduQTlfRmVNQ0dreHh1SExMV0p3bHMycnBqMXd5TGlQSWVHMElDbnNEX0E3Q213R1VzU25NSXBTaXB2Um1nbEFDNE1KQSIsInByaWNlX2xldmVsIjpudWxsfX0seyJpZCI6IjExMDkiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjoxMTA5LCJuYW1lIjoi2LLZhduM2YYg2KjYs9qp2KrYqNin2YQiLCJwbGFjZV9pZCI6IkNoSUp2ZUpzQmlKNWJJY1JIVjduTmRqYXRZZyIsImFkZHJlc3MiOiJEZW52ZXIgQ291bnR5LCDYr9mG2YjYsdiMLCBEZW52ZXIiLCJsYXQiOjM5LjczOTAyMDgsImxuZyI6LTEwNC45ODI0MzgsInJhdGluZyI6bnVsbCwiaW1hZ2VfdXJsIjpudWxsLCJwcmljZV9sZXZlbCI6bnVsbH19XX0=
-  recorded_at: Wed, 08 Jun 2022 17:15:19 GMT
+      encoding: UTF-8
+      string: '{"data":[{"id":"1887","type":"location","attributes":{"id":1887,"name":"Hudson
+        Hill","place_id":"ChIJzUQzedN-bIcRwhZQzex-bBQ","address":"619 East 13th Avenue,
+        Denver","lat":39.736974,"lng":-104.9793807,"rating":4.6,"image_url":"Aap_uEAz6GC2jnIufWnoMYIhFDIvTXHL4hLRqIIKmlt7Yu-2OftEGWUcQR1EECUQwWnM73aP-wXFqJemU-5lTk4VMYPAutx6nCJHwMGc7ZRMz1gmrwDkxNDn4FIwzM9wec5jvnLB0uDwqMn_vqtJ71v1auq6_aCmVPh8T2lv4DGtiNOoZvL0","price_level":2}},{"id":"1888","type":"location","attributes":{"id":1888,"name":"Bang
+        Up To The Elephant!","place_id":"ChIJA63ffNN-bIcRDb-dxxrCFbU","address":"1310
+        Pearl Street, Denver","lat":39.7372196,"lng":-104.9795821,"rating":4.2,"image_url":"Aap_uEDR6ii9CeZS-rYNC4OHJjS19AVNV1hBHetuRicmvSlct-AniGYzCOy7pcDzJ6jknCfq1ZLX-hhIpVmFx56HvqJKqD8aDLpxN2J-crG9Bgmvbkq5fQLPd14TyLNY0dJklMy7Sx3d9lh2HiCxxJO_yZWiorGN_s4MbMgUa8mFFOTc0IlR","price_level":2}},{"id":"1889","type":"location","attributes":{"id":1889,"name":"Jelly
+        Cafe - 13th Ave","place_id":"ChIJKf_Bb9R_bIcRbTDH4sDJNCM","address":"600 East
+        13th Avenue, Denver","lat":39.7367423,"lng":-104.9797069,"rating":4.4,"image_url":"Aap_uEAjBo-ef0Wry3Wvk_9xV8FeA2m6qrisMd57kVnMnsQsP8y_SHFZPh7kyk4iU5u519KF79-c29kE-cTRY7WLbboVuSPjgvux-Z-O01SM0AHwpdEjDLL9Bl5Zk6GGrQnUHEzM5BlRICwTzOUuHBRjLqMu0aWyGTtnTpRfxXKG_lDks75z","price_level":null}},{"id":"1890","type":"location","attributes":{"id":1890,"name":"The
+        Network Coffee House","place_id":"ChIJ5faOV9N-bIcRdAsSYINDf60","address":"1402
+        Pearl Street, Denver","lat":39.7385992,"lng":-104.9796612,"rating":4.1,"image_url":"Aap_uEBSb-O4gSD2Awyfhz7uzGC9-Op27InQF-H7UwftCFcsD3DqU6Fuv2P9bwPZp53XVfNM245Ho2DIQKRXgzLaS7iPiJbWZK6hnu8cpsOgDFbq2eIBCuHucZpaPZyHdZTdvfuX826US9SCnu536LO8ukT-V9FxAz9fULmCJBMA1VnuPtYg","price_level":1}},{"id":"1891","type":"location","attributes":{"id":1891,"name":"Pablo''s
+        Coffee - Penn Street","place_id":"ChIJd7fdjVN-bIcRz7WBOJyCV3I","address":"1300
+        Pennsylvania Street #102, Denver","lat":39.737151,"lng":-104.980858,"rating":4.5,"image_url":"Aap_uEB6MWmDn-Qi1w1CAJ7F3JeQc_uKTZcorCZwzu-jftvNWPJK50dPYyU14Y1WM5lwIWfmR3cDoeE1i859DNmaVi5W0Lr-6fqhBQEHsVA0zXGdGRDjnZSZtUCfEp_xzEY8937L3xYuD-qfpxxVskhntOJI578d38fM7cJHN6QI0rv8UyhX","price_level":1}}]}'
+  recorded_at: Wed, 08 Jun 2022 18:28:47 GMT
 recorded_with: VCR 6.1.0

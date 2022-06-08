@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22gym%22%7D
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22park%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -21,18 +21,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4643ec57b10a4338d1a222af864918b8"
+      - W/"e747bb6603772869ce4682a41e41fe7d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 137c9431-fba0-41e2-86ea-3c40f4bbda7a
+      - 277cdce9-cca6-4219-a7c9-e7aaa7e36317
       X-Runtime:
-      - '0.918857'
+      - '1.011980'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjpbeyJpZCI6IjEwMjUiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjoxMDI1LCJuYW1lIjoiQmxhY2sgU3dhbiBZb2dhIERlbnZlciBDYXBpdG9sIEhpbGwiLCJwbGFjZV9pZCI6IkNoSUpWVldlZmROLWJJY1I0VHc3aDVIZDktUSIsImFkZHJlc3MiOiIxMzA4IFBlYXJsIFN0cmVldCwgRGVudmVyIiwibGF0IjozOS43MzcxMDgxLCJsbmciOi0xMDQuOTc5Njk1NSwicmF0aW5nIjo0LjgsImltYWdlX3VybCI6IkFhcF91RURDbkMyUWVWemNZaDlQY21yUVhTekd0TFBOZ3M2UjNUZkd4emNxX25oYTdxaEptbk9OazlYTkpCVnFTVVJNT2RvUTNpS0M4WWpjeWJvdlBLeDVUeXE1WkEzLXJkd1hlbDNCYXFLUnpmYXd1Qjc4YTdtLTRIS0tkeUM2OHVkSW1YaVZZbkJVSkl4a3RxMHhxbXlUUTVNRlFtQ2VsbnZkVjltZS1KV3c4c1ltcFNfSiIsInByaWNlX2xldmVsIjpudWxsfX0seyJpZCI6IjEwMjYiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjoxMDI2LCJuYW1lIjoiT3BlbiBTcGFjZSBTdHVkaW8iLCJwbGFjZV9pZCI6IkNoSUpBYS1wd05KLWJJY1JBcnhtTEhLZlItOCIsImFkZHJlc3MiOiIxNDExIE5vcnRoIE9nZGVuIFN0cmVldCwgRGVudmVyIiwibGF0IjozOS43Mzg2OTQzLCJsbmciOi0xMDQuOTc1NDk2OSwicmF0aW5nIjpudWxsLCJpbWFnZV91cmwiOm51bGwsInByaWNlX2xldmVsIjpudWxsfX0seyJpZCI6IjEwMjciLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjoxMDI3LCJuYW1lIjoiUm9vdGVkIEhlYXJ0IFlvZ2EgYW5kIFdlbGxuZXNzIiwicGxhY2VfaWQiOiJDaElKcjRMNkY0Wl9iSWNSUnFYVndJbzlPTlEiLCJhZGRyZXNzIjoiMTQwOSBOb3J0aCBPZ2RlbiBTdHJlZXQsIERlbnZlciIsImxhdCI6MzkuNzM4NzYyNSwibG5nIjotMTA0Ljk3NTQzOTcsInJhdGluZyI6NC43LCJpbWFnZV91cmwiOiJBYXBfdUVCQ2JDZEdidGEtQjQ3YlRhVFh4U2czVlZ2UnFKZWd6LWJzOWc5Sk8tN2pKX1ZpYUg0dE1iUDFNeFZ1dmpBODQyMTIwNXJ4M1BaUkx2T0NNZmFkTEozN3BweGpNaXBma3k5LWwyWVFTVk1fZzJOR08tLTRpMlpyM3V3ZXc2VHhlcUlwdzdCdTFJVWRwYmpZX281enFCb05HZmE2V2NMUlczSDJJTXpTRHZIallxZjgiLCJwcmljZV9sZXZlbCI6bnVsbH19LHsiaWQiOiIxMDI4IiwidHlwZSI6ImxvY2F0aW9uIiwiYXR0cmlidXRlcyI6eyJpZCI6MTAyOCwibmFtZSI6IkNvbGZheCBTdHJvbmctIFN0cmVuZ3RoIFx1MDAyNiBDb25kaXRpb25pbmciLCJwbGFjZV9pZCI6IkNoSUppYW1KT1MxNWJJY1JQWjN3ek9GQV9mOCIsImFkZHJlc3MiOiIxNTE2IEVtZXJzb24gU3RyZWV0LCBEZW52ZXIiLCJsYXQiOjM5Ljc0MDQyMiwibG5nIjotMTA0Ljk3NTc0OCwicmF0aW5nIjo0LjksImltYWdlX3VybCI6IkFhcF91RUFzRHlJbzBJQnl2YUZYdENadkppdnZpX2RLNXBnZTF0SVdWMS1MZE1DWGlPbjFiZlFaS3JwLV9Kem5UeGNjTUhvT3RrRS12YjRoWFlCTjZaYS1DZ3BCbDZURjM3VmtCNElLYXdISTZvSExmQ01uYjJ1ZFRxUVZjWUZJRVEtRWFlcnlPWGZLOFktWGNLc2NLTlVxNDV0SHRrUk9WY21IZi1wNUNBOFBfdWh0WnVuQiIsInByaWNlX2xldmVsIjpudWxsfX0seyJpZCI6IjEwMjkiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjoxMDI5LCJuYW1lIjoi2LLZhduM2YYg2KjYs9qp2KrYqNin2YQiLCJwbGFjZV9pZCI6IkNoSUp2ZUpzQmlKNWJJY1JIVjduTmRqYXRZZyIsImFkZHJlc3MiOiJEZW52ZXIgQ291bnR5LCDYr9mG2YjYsdiMLCBEZW52ZXIiLCJsYXQiOjM5LjczOTAyMDgsImxuZyI6LTEwNC45ODI0MzgsInJhdGluZyI6bnVsbCwiaW1hZ2VfdXJsIjpudWxsLCJwcmljZV9sZXZlbCI6bnVsbH19XX0=
-  recorded_at: Wed, 08 Jun 2022 17:15:15 GMT
+      encoding: UTF-8
+      string: '{"data":[{"id":"1807","type":"location","attributes":{"id":1807,"name":"Morey
+        Middle School Community Garden","place_id":"ChIJ_WLjHNN-bIcR8OLahVEj9p4","address":"840
+        East 14th Avenue, Denver","lat":39.7377335,"lng":-104.977059,"rating":3.0,"image_url":null,"price_level":null}},{"id":"1808","type":"location","attributes":{"id":1808,"name":"Dominick
+        Park","place_id":"ChIJES3IOdN-bIcRza7ZiHd9Jes","address":"729 East 14th Avenue,
+        Denver","lat":39.7386691,"lng":-104.9780975,"rating":4.3,"image_url":"Aap_uECEDw9tSphnLB5VvCX8YiF69v98Luymi63FE7bYJ7VLAEYPeyRsOHc1Bz9NhHuk_PBaw1klE91O6_2OJTyLTO7XB1xaDbD1UesVqU2VX9j2P9QBH2XV18pGiRRLc79nsOnM0R-_zmbhPaziW_kdhEUSPXUQNlMUTHsYUOzdaMi64mWn","price_level":null}},{"id":"1809","type":"location","attributes":{"id":1809,"name":"Corona
+        Park","place_id":"ChIJOXMfetJ-bIcRhSsoQPmPywY","address":"1086 East 13th Avenue,
+        Denver","lat":39.73677929999999,"lng":-104.9743332,"rating":4.3,"image_url":"Aap_uEBUPbXIfithj5VE6bZtVfZxXk144jeFkZwocCMnS3AMsn-o2ZH0TncANoVuVAodnoSoRwMCuBUBnFaAAaHtz6SkQ-7f87w29IwClYOggodEXY0NbN1xlECqCa3osCcO71GknHTKZytUN5AWEVWUXEA_TqMekpzW2uyW7TLwowUxfFP5","price_level":null}},{"id":"1810","type":"location","attributes":{"id":1810,"name":"Swallow
+        Hill Historic District","place_id":"ChIJiXB0DS15bIcRrBIk3TKBt4A","address":"Denver","lat":39.7416667,"lng":-104.9755556,"rating":null,"image_url":null,"price_level":null}},{"id":"1811","type":"location","attributes":{"id":1811,"name":"Colorado
+        Wildlife Federation","place_id":"ChIJVVXl0ip5bIcR0Td0k4kQjdU","address":"1410
+        Grant Street, Denver","lat":39.73881100000001,"lng":-104.9832898,"rating":null,"image_url":null,"price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 18:28:43 GMT
 recorded_with: VCR 6.1.0
