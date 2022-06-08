@@ -13,6 +13,9 @@ RSpec.describe 'user results page' do
 
   
   it 'searches by existing user email- happy path', :vcr do 
+    data_search = JSON.parse(File.read('spec/fixtures/user_search.json'), symbolize_names: true)
+    allow(UsersService).to receive(:find_user).and_return(data_search)
+
     within "#user_search" do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
       fill_in :user_b_email, with: "user_search@email.com"
@@ -38,6 +41,9 @@ RSpec.describe 'user results page' do
   end
 
   it 'searches by existing user email- no midpoints found', :vcr do 
+    data_search = JSON.parse(File.read('spec/fixtures/user_search.json'), symbolize_names: true)
+    allow(UsersService).to receive(:find_user).and_return(data_search)
+
     within "#user_search" do
       fill_in :address_1, with: "2300 Steele"
       fill_in :user_b_email, with: "user_search@email.com"
