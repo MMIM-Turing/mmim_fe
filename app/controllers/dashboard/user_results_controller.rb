@@ -10,6 +10,10 @@ class Dashboard::UserResultsController < ApplicationController
     @user_b = UsersFacade.find_or_create_user({email: search_params[:user_b_email]})
     @category = search_params[:category]
     @map_info = LocationsFacade.map_info(@locations)
+    if @locations == [] || @map_info == 'No results found'
+      redirect_to dashboard_path
+      flash[:alert] = 'No midpoints found-please try different addresses'
+    end
   end
 
   private

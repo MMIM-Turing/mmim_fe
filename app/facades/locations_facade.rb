@@ -11,9 +11,13 @@ class LocationsFacade
   end
 
   def self.user_search(params)
-    data = BackendService.get_locations_by_user(params)[:data]
-    list = data.map do |data|
-      Location.new(data[:attributes])
+    data = BackendService.get_locations_by_user(params)
+    if data[:status] == 500 
+      return []
+    else 
+      list = data[:data].map do |data|
+        Location.new(data[:attributes])
+      end
     end
   end
 
