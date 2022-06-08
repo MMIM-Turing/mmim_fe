@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22email@email.com%22%7D
+    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22user_search@email.com%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -21,23 +21,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8ec35f57a2c374f0e28a040317bf4e0f"
+      - W/"a0a037af925c6f1ac0429d4385d00288"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3e0a2233-cfa3-4efb-8eea-4a271ddf4b2c
+      - 7dff2566-a5d9-4882-9ddb-d674cde07801
       X-Runtime:
-      - '0.002043'
+      - '0.106518'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test","email":"email@email.com","address":"2001
+      string: '{"data":{"id":"8","type":"user","attributes":{"name":"usersearch base","email":"user_search@email.com","address":"2001
         Colorado Blvd, Denver, CO 80205"}}}'
-  recorded_at: Wed, 08 Jun 2022 15:48:42 GMT
+  recorded_at: Wed, 08 Jun 2022 16:22:49 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22user_b_email%22:%22email@email.com%22,%22category%22:%22cafe%22%7D
+    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22user_b_email%22:%22user_search@email.com%22,%22category%22:%22cafe%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -56,18 +56,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"651a7c892ef4af3f0c4448edc6b77db3"
+      - W/"24998f75ee1070317266488e74d871f8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e9baa662-97ff-45d9-98f4-7f221240e384
+      - e6d74ada-aa56-479c-a070-30357d91aee7
       X-Runtime:
-      - '0.660988'
+      - '0.604216'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjpbeyJpZCI6Ijc0MSIsInR5cGUiOiJsb2NhdGlvbiIsImF0dHJpYnV0ZXMiOnsiaWQiOjc0MSwibmFtZSI6IlRhdHRlcmVkIENvdmVyIEJvb2sgU3RvcmUgXHUwMDI2IENhZsOpIENvbGZheCIsInBsYWNlX2lkIjoiQ2hJSmYtcy1oN1ItYkljUm1ORmtPekYzMUtJIiwiYWRkcmVzcyI6IjI1MjYgRWFzdCBDb2xmYXggQXZlbnVlLCBEZW52ZXIiLCJsYXQiOjM5Ljc0MDAwMzQsImxuZyI6LTEwNC45NTY2NTY2LCJyYXRpbmciOjQuOCwiaW1hZ2VfdXJsIjoiQWFwX3VFQTFKV1FUUll3S0V5NWpqQTdBLU5pU2NYYWppMXhvOGZRbDZWRnhTU3FLQ0FQcC1XeUNqMWdJNDhfa2xvV29meGdmNnYwUkNmVGRUUDJvZmM4NWhvZWNTWFNUMGFWVnA0NlRGSTdUNkhMVmNCam5Ga2xqX0c3cTV4bnc4eXdfOW5FNkNSYmxGcWlNaU1UeXI2UkdkQXlyWTRtUlhPaTZpV2FQdGFPM0VCY0R0U1htIiwicHJpY2VfbGV2ZWwiOm51bGx9fSx7ImlkIjoiNzQyIiwidHlwZSI6ImxvY2F0aW9uIiwiYXR0cmlidXRlcyI6eyJpZCI6NzQyLCJuYW1lIjoiSG9va2VkIG9uIENvbGZheCIsInBsYWNlX2lkIjoiQ2hJSno5WjFuSzEtYkljUnZoXzRtNi1kYnlnIiwiYWRkcmVzcyI6IjMyMTMgRWFzdCBDb2xmYXggQXZlbnVlLCBEZW52ZXIiLCJsYXQiOjM5Ljc0MDM0MDI5OTk5OTk5LCJsbmciOi0xMDQuOTQ5NjU2NCwicmF0aW5nIjo0LjYsImltYWdlX3VybCI6IkFhcF91RUFUTll1WmVwR0txVkRHX2NhcjlOOGJFTURxZ3ZvM0lnaDVBZkNlb2xxNDlFa3VNbTJaVW9VNXRnY1c3NUlZaEl3TWMySzZWVmR4UTNXeTdMOFcxRFpkRmZ1cTA0V2V2c19GaWhRVU5yWWZNZmxEN01SLUJkajl0a2tfLUxzclNqQU13cHhOLTl3MWx1Q3N5cVR2V055aWY5Q1plc3lCYm05aFUxVjlpOFZRbExJIiwicHJpY2VfbGV2ZWwiOjF9fSx7ImlkIjoiNzQzIiwidHlwZSI6ImxvY2F0aW9uIiwiYXR0cmlidXRlcyI6eyJpZCI6NzQzLCJuYW1lIjoiU3QgTWFyaydzIENvZmZlZSBIb3VzZSIsInBsYWNlX2lkIjoiQ2hJSng3MmRlalY1YkljUmotSmhuN2tUOW1nIiwiYWRkcmVzcyI6IjIwMTkgRWFzdCAxN3RoIEF2ZW51ZSwgRGVudmVyIiwibGF0IjozOS43NDM0NTYzLCJsbmciOi0xMDQuOTYyOTM0MywicmF0aW5nIjo0LjQsImltYWdlX3VybCI6IkFhcF91RUFCSW1IN0ExUjJTQ3FPc3F6QndFTGlNTmxiVHd6R19CYWkzcVRIR0NxUGFiQ3NTUnNRdVhXOFliVkxBajcxSnB6X2pIbkc3bTd5R2N3QmRXdm94MGNFYWI3bHF0WWlZU1BBcTVxMURYQ2JheXBoY0psZG5JbmpjSTRVMGJUc1pPWi1WSUNnVmJyR2R4OXpBVE5mWmtYR0EwRVRmcjN0bDVPTlFINHVpQTRSVGtsYyIsInByaWNlX2xldmVsIjoxfX0seyJpZCI6Ijc0NCIsInR5cGUiOiJsb2NhdGlvbiIsImF0dHJpYnV0ZXMiOnsiaWQiOjc0NCwibmFtZSI6IlN0YXJidWNrcyIsInBsYWNlX2lkIjoiQ2hJSkx5LW84TEotYkljUjJjREdpbFBQbVFNIiwiYWRkcmVzcyI6IjI5NzUgRWFzdCBDb2xmYXggQXZlbnVlLCBEZW52ZXIiLCJsYXQiOjM5Ljc0MDQxOTk5OTk5OTk5LCJsbmciOi0xMDQuOTUyNzgsInJhdGluZyI6NC4wLCJpbWFnZV91cmwiOiJBYXBfdUVEMnQ3bzZMYWp1M0RrWGRYbktjU3JJMFZoaEpuU09faWdCSGt1QWtxWVR5OTVNZ2gxd3ZTb3pUdHdzQmluZUFwRk4td1laYkx5NnNqNnNBRG52TXdQQ29jMnJ1Nmd0NkhFbm01M1hVNHFmWV9ESVgwQTVyWEw2Z25jRko5UmNhWUZIRHZRNl9kRUkwV3hLa04xMDF2bGVyREQ3SFdqZWpIT0hPVDVVX3FtNi1welkiLCJwcmljZV9sZXZlbCI6Mn19LHsiaWQiOiI3NDUiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjo3NDUsIm5hbWUiOiJVbmRlciBUaGUgVW1icmVsbGEgQ2FmZSBhbmQgQmFrZXJ5IiwicGxhY2VfaWQiOiJDaElKRmNnbVBLOS1iSWNSSDQtVjE3LS1sakkiLCJhZGRyZXNzIjoiMzUwNyBFYXN0IDEydGggQXZlbnVlLCBEZW52ZXIiLCJsYXQiOjM5LjczNTI2MDY5OTk5OTk5LCJsbmciOi0xMDQuOTQ1ODc0NSwicmF0aW5nIjo0LjQsImltYWdlX3VybCI6IkFhcF91RUJSMTltNXZoWDd3aERSWjM3cnlSeVg0Z0J6N2RWSjFaNUpvd1RSbGI5TzZhaFROcTBQYWJLaF9JMnAxSUkwVFJUcV9DRkV3M0F0TkdrMmxtcFFnOGpZeDAteVdGM2Z2RmhHczhHNW5UQ0czM3lBQVE3eERBQm1pR1czTkdOZUZEbEJ3RUVrWmtuQzBnMHpmZm9zWV9lS1VwUGVDXzJTVWlFNmpHcDRINkNLd0JwciIsInByaWNlX2xldmVsIjoxfX1dfQ==
-  recorded_at: Wed, 08 Jun 2022 15:48:43 GMT
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"location","attributes":{"id":1,"name":"T-Rex
+        Cafe","place_id":"ChIJfy10SVR5bIcRIWTX0xPe2pU","address":"2001 Colorado Boulevard,
+        Denver","lat":39.74808609999999,"lng":-104.9422832,"rating":3.5,"image_url":"Aap_uEDwVHCf36EVFaHXPSLlO8suoGvqX2yleYLXp6Xf_28jZ_y0bDR5ExFtsO-xLwwDJ10gF5PQxdu57OLWyfUbeup0MJZQldyjMan8-AUgT81YY7IG5ROiRKEM-TN_XDc9Oh5BO6SSCAtcVrdaqDCZlTPgfg4LpaL9yO1e3QJLXldVvE8h","price_level":null}},{"id":"2","type":"location","attributes":{"id":2,"name":"Hooked
+        on Colfax","place_id":"ChIJz9Z1nK1-bIcRvh_4m6-dbyg","address":"3213 East Colfax
+        Avenue, Denver","lat":39.74034029999999,"lng":-104.9496564,"rating":4.6,"image_url":"Aap_uEDK9_oqwafSX3X_gxTV5DLsA3D2YpqkoGI1SznpysEjBespCO9y7zB8u7gxAwy_kQyRkgVAsyThjrvW4v0wq4cAbxYT70cmD8JG6emSaC-XC4gmiQZmjyUIrJbIQolfRkF4VnSvFZsA4unlkRQKxVaaublaxCr7PL984OyKuJjL8r0","price_level":1}},{"id":"3","type":"location","attributes":{"id":3,"name":"Sprouts
+        Market Corner Coffee","place_id":"ChIJfYjKd6x-bIcRIFAS1DYTt5c","address":"3625
+        East Colfax Avenue, Denver","lat":39.74047849999999,"lng":-104.9446879,"rating":4.1,"image_url":null,"price_level":null}},{"id":"4","type":"location","attributes":{"id":4,"name":"Lula
+        Rose General Store","place_id":"ChIJ81BWQKx-bIcRCDHqSj7x4eM","address":"3434
+        East Colfax Avenue, Denver","lat":39.740002,"lng":-104.9463515,"rating":4.6,"image_url":"Aap_uEDzltPVyLjkK5zWxIWHIDxUO5OGlE0Je-6LdHSA1jBdRg44rwvFm04LXaG-xTavjiNLK3BFFvMWNWotI57oXvu4H8a_wLi9rNC78bNJfyS9mIxP593jgMmH0gPSuhl6vj4okQI9n8bBbrYpFDT0h7vjrJEDdcVKIasvShR6r2PbtFkA","price_level":1}},{"id":"5","type":"location","attributes":{"id":5,"name":"Fox
+        Run Cafe","place_id":"ChIJGewDz5h_bIcRzNRho-LYCww","address":"3550 East Colfax
+        Avenue, Denver","lat":39.7398826,"lng":-104.945526,"rating":4.8,"image_url":"Aap_uED6ocBPAYFFFwMXMG0MobkeU4GPoSVQL8yYai2TL-8qnGCHmgDuQcTUeGoxjfhueOd4QgOYfTnUIelZnn9rcfeUpYgwvXaLUghbDPeqWrHbD_OGhpT58rkBLtdSM7SbNkSyLqNcgrgBvEodmV7PZx5r6UYtVkj9mSTBXnP3bt7lQUBz","price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 16:22:50 GMT
 recorded_with: VCR 6.1.0

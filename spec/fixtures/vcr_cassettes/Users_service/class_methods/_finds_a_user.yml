@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22test@test.com%22%7D
+    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22user_search@email.com%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -21,18 +21,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e2900693bb5e7604d9be3444948523e9"
+      - W/"a0a037af925c6f1ac0429d4385d00288"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ea087827-22b3-4234-ac72-b2d18f4415c1
+      - 846ff6d5-5baa-4bb9-91a2-8f84b7d9dccb
       X-Runtime:
-      - '0.001745'
+      - '0.008397'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Test User","email":"test@test.com","address":"1600
-        Pennsylvania Ave, Washington"}}}'
-  recorded_at: Wed, 08 Jun 2022 15:48:47 GMT
+      string: '{"data":{"id":"8","type":"user","attributes":{"name":"usersearch base","email":"user_search@email.com","address":"2001
+        Colorado Blvd, Denver, CO 80205"}}}'
+  recorded_at: Wed, 08 Jun 2022 16:23:22 GMT
 recorded_with: VCR 6.1.0

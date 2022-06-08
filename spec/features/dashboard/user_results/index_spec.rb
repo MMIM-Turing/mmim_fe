@@ -15,7 +15,7 @@ RSpec.describe 'user results page' do
   it 'searches by existing user email- happy path', :vcr do 
     within "#user_search" do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
-      fill_in :user_b_email, with: "email@email.com"
+      fill_in :user_b_email, with: "user_search@email.com"
       click_button 'Search'
     end 
 
@@ -40,7 +40,7 @@ RSpec.describe 'user results page' do
   it 'searches by existing user email- no midpoints found', :vcr do 
     within "#user_search" do
       fill_in :address_1, with: "2300 Steele"
-      fill_in :user_b_email, with: "email@email.com"
+      fill_in :user_b_email, with: "user_search@email.com"
       click_button 'Search'
     end 
 
