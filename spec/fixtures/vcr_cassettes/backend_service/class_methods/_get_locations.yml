@@ -21,6 +21,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
+<<<<<<< HEAD
       - W/"ae596674f7ea53a883b4af00b2d127ee"
       Cache-Control:
       - max-age=0, private, must-revalidate
@@ -28,10 +29,20 @@ http_interactions:
       - 9815442f-d634-4610-9b14-412bcf4e5cd9
       X-Runtime:
       - '0.494700'
+=======
+      - W/"68c9fdaf7d60b48541842b5b35167d5f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 699dd871-1298-47f0-9322-b00732f71cce
+      X-Runtime:
+      - '0.400822'
+>>>>>>> aaf16a8cffd9489f3d6459a8d58f474db91a93c0
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
+<<<<<<< HEAD
       string: '{"data":[{"id":"381","type":"location","attributes":{"id":381,"name":"Mercury
         Cafe","place_id":"ChIJl7-Ogyd5bIcRTgzca2cfXmw","address":"2199 California
         Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uECDGKpgrdBtdUiXVtUJz4lTcyD2gL3I9Uol6B6vScchdP1ScYCJFv4bVNjcmtXWR0Wl2basb8qiKP0_AfXpZFtdXkX_D6UqBS0zV3um3JN7kF33wNxmo8zO7ivoDljZef7RC5Yj8Gjwnf_d3mqg4pQ5-a-FZsAvteLz03Cc4EqW2uqb","price_level":2}},{"id":"382","type":"location","attributes":{"id":382,"name":"City
@@ -43,4 +54,17 @@ http_interactions:
         Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEBhgESdu6mpx3APNmfawfScgPzhpccc7r3P2qOM0u-U52GB7MLXkWzgqyF2GB_At6noc0yYUL-KbWJrFgDjALPzUYcpcRyYnB_mkVuQYn_HWcNMnc1sOo5ueGldrKXvDdpPGgm5kheV40JjRVHPDt-uuN4Ck27NLyK15D_Wp0xaY6Ll","price_level":1}},{"id":"385","type":"location","attributes":{"id":385,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
         16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uEDnrC3ujX25oPkqAZViIQ8NNiIk4ImGJqfvkAIunl_upJ8ckuYbD8xQE9AGw3loqI2s2bUms2g_3kvuLjosuClijavA4BkTFmhNwVOEG20d_XHXn7CaxqVSSQFbyR_eColBIw42vE8-7KiGWEkXzuyX1WPtu-XB6CKzCOcG1gZ1Ib2Q","price_level":1}}]}'
   recorded_at: Wed, 08 Jun 2022 04:13:59 GMT
+=======
+      string: '{"data":[{"id":"857","type":"location","attributes":{"id":857,"name":"Mercury
+        Cafe","place_id":"ChIJl7-Ogyd5bIcRTgzca2cfXmw","address":"2199 California
+        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uED2RcOYRl7VldNQPp1SaBMqqA2DP7Akd4j7xBOcrrPdiA-H_69uP4Jsq7qep9EXk3FlLG9_PQz5TSvA8Nkevol6QK-PLEME2aCv6RQVmK_CYa1vmrTQbFhDgM-3BmUSVRRhSkCdeVZDxY8WtpQZ4L3ploosv7CX6zxlJvq45QsJwK1P","price_level":2}},{"id":"858","type":"location","attributes":{"id":858,"name":"City
+        O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
+        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uECgrXokGh7MaSEMuHn2rZ4kg-icg86ehQt8iqoTiVZrLf3KME0DaSjlX8U_LtB64Nb7CNjjtoBigtOL8sNTdW8FEwLTyIllgwl0Thw9ZT-XmFthT0ml-NSb8uzNxVrV2xhdk_fQXhG-PqJPzq-pW1aD0ZtIwPm-sPm8SOAhI4w2dGwz","price_level":2}},{"id":"859","type":"location","attributes":{"id":859,"name":"D
+        Bar Denver","place_id":"ChIJZfxKmTN5bIcRZQSdZN7EZ0g","address":"494 East 19th
+        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEA2aKQrai-Hmc9GCpUlg-IEZm-XnNs0CFOrKOvVEOGfCbnEU4yT69SRCi6mNf0NCQsn3wjpK8JFgLjIACTDbvXzUUvH-H3hZb-8f8KIKq2KcWi2C6OlFfLoFfujftSckGQSBXjtAQECyzZKPz8_wU7KA1fuBGLJyGVVnbLlnO9y3kWd","price_level":2}},{"id":"860","type":"location","attributes":{"id":860,"name":"The
+        Delectable Egg","place_id":"ChIJvUaJ1tV4bIcRZA5jdVPJw-4","address":"1625 Court
+        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uED1QvEhgT_HBHLmgXsjJgaTv0MhsoBPsi9L4bKd1D4DWLKX5vDdGv0-gZQC0uNoNI8ZscOQsrDwULOel40TnSBzIvVeFTNd0ZZkS7J-_r5chz11GoXQDx4NpX1G36M4nJx5umPDYpVwJuqpcNISmSZIZb1Pb0mLbdlQhRPPGAh7ty2M","price_level":1}},{"id":"861","type":"location","attributes":{"id":861,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
+        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uEANTl2KopT6uV0DEbV4os91KyAiDzdqSgsigPcJvMUqdIAjeq0PvXSQU_bQUk3s-2dL5EjWdi78THJyHntCAfN_rx0QbW3tq453ro9p9WeldE8bCed4cC0dKOE24zdR4poiqobiTQu4iuyCc69JyNRXJMox2HqeaMyGwIQiPSqWTFm8","price_level":1}}]}'
+  recorded_at: Wed, 08 Jun 2022 15:48:47 GMT
+>>>>>>> aaf16a8cffd9489f3d6459a8d58f474db91a93c0
 recorded_with: VCR 6.1.0

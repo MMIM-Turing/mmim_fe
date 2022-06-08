@@ -3,6 +3,7 @@ http_interactions:
 - request:
     method: get
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uEB4uxQREttr1BNbrTWfHrlnP-DvZbMJHTXPQJKvliEm8dKBzohHESn8FJFzA6GnVSYC-xAoyIty-nFUPBc7f8JENWCIyVjacyBdFOpE1vOxFal-0hE1dHuXfRK9nKLG2SYoyFti-O37NgcUZYZglT9f75-jFTOpwKzXVyL8EEiWXlSS
     body:
@@ -201,6 +202,8 @@ http_interactions:
 - request:
     method: get
 >>>>>>> 50234b57f22fc2027c341de57b8cc5f232479fe5
+=======
+>>>>>>> aaf16a8cffd9489f3d6459a8d58f474db91a93c0
     uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22park%22%7D
     body:
       encoding: US-ASCII
@@ -221,6 +224,7 @@ http_interactions:
       - application/json; charset=utf-8
       Etag:
 <<<<<<< HEAD
+<<<<<<< HEAD
       - W/"dfc437371a9613d5593cf47a116a720a"
       Cache-Control:
       - max-age=0, private, must-revalidate
@@ -237,10 +241,20 @@ http_interactions:
       X-Runtime:
       - '0.444351'
 >>>>>>> 50234b57f22fc2027c341de57b8cc5f232479fe5
+=======
+      - W/"122f6614e57edc446c1b4f92fc879c4e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e553f5e9-f0db-44ca-b099-cfa036fcda25
+      X-Runtime:
+      - '0.464631'
+>>>>>>> aaf16a8cffd9489f3d6459a8d58f474db91a93c0
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
+<<<<<<< HEAD
 <<<<<<< HEAD
       string: '{"data":[{"id":"301","type":"location","attributes":{"id":301,"name":"Skyline
         Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
@@ -268,4 +282,18 @@ http_interactions:
         Market Street, Denver","lat":39.7501106,"lng":-104.9975082,"rating":null,"image_url":null,"price_level":null}}]}'
   recorded_at: Wed, 08 Jun 2022 05:01:33 GMT
 >>>>>>> 50234b57f22fc2027c341de57b8cc5f232479fe5
+=======
+      string: '{"data":[{"id":"777","type":"location","attributes":{"id":777,"name":"Skyline
+        Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
+        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uECVHtRBCXMwXHCs2JU933jHMNZml5zpCSZBxG0987M1cxFJOdvFB_oEfoVgn4CYejkc1Vpt50tjmqOhsVIP-sYKZrTPW2yFSUevlwETBhU8eBs_OA7bb4Z5jSomqATTmu1MjMj9LkOWYSM38v7-X7_bVSSsO-Jup43Gi0VdUJtgHP_X","price_level":null}},{"id":"778","type":"location","attributes":{"id":778,"name":"Civic
+        Center Park","place_id":"ChIJo_UsR9V4bIcRjC1WKfsrSEA","address":"101 14th
+        Avenue, Denver","lat":39.7392358,"lng":-104.9888592,"rating":4.3,"image_url":"Aap_uEAFs-e3ylKl1cYhdqLSW4ocS1keisyxsUYo881Yp809uKTxogPolJRDw4uGCCMyA0kaVxoshQvYViRfAFjmlP8iz17F4wXS5j6EgENa4fCwjfRuo8p7pQoP3pVhEH7EXfTVGlyPzvTMflsCb8zPfCVMXWVdB_E5OR8_GPNbCE5KPKu6","price_level":null}},{"id":"779","type":"location","attributes":{"id":779,"name":"Abraham
+        Lincoln Park","place_id":"ChIJ_ZWzCtl4bIcRgw32GAwZu88","address":"Curtis Street,
+        Denver","lat":39.7504666,"lng":-104.9899837,"rating":3.7,"image_url":"Aap_uEDc4SdMaoeOoWIc0_zx6WA5dT1wk2ewB2wa2lj0beppMXJeFs-js2XAtW-pU8m24p4Tk_SLXdBJjkxm4F-IUABf9lQ2YdVPm4z2tKJ7IW-31fSGC4PmFD_ry_FCvGli_LCoxJ3rfdkvOBeKF_G9-5C0ZLXEDZ4Q8fABtZQXpstL4sa4","price_level":null}},{"id":"780","type":"location","attributes":{"id":780,"name":"Lincoln
+        Memorial Park","place_id":"ChIJFTSEQ9V4bIcRn1dmE_9CpAQ","address":"1449 Lincoln
+        Street, Denver","lat":39.7392309,"lng":-104.9865636,"rating":4.6,"image_url":"Aap_uEDzvSyeF6OY_PlsG6j7DMN10qhLYR4_0jRwESIdoyUeY0o_yQH_XmYJ8hcQIyCFQ_QGQg4CFmV6UDvZlt4qnVf2R8v40P73ZddunA_6VWZcalHEz-dFnjXpQyRU5lg0ye-L-TOr4QS6IHkh_S3fR2LJnGylQo2VACeAeLaig9J89niK","price_level":null}},{"id":"781","type":"location","attributes":{"id":781,"name":"Neil
+        Walton, Your One Lincoln Park Expert","place_id":"ChIJq6qezcR4bIcRvUrQTd27ySQ","address":"1624
+        Market Street, Denver","lat":39.7501106,"lng":-104.9975082,"rating":null,"image_url":null,"price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 15:48:44 GMT
+>>>>>>> aaf16a8cffd9489f3d6459a8d58f474db91a93c0
 recorded_with: VCR 6.1.0
