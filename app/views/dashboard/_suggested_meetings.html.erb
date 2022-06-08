@@ -1,0 +1,13 @@
+<% @suggested_meetings.each do |meeting| %>
+<div>
+  <div style="padding:10px">
+    <h1>Pending Meeting</h1>
+    <p><strong><%= meeting.host_email %></strong> has invited<br>
+    <strong><%= meeting.guest_email %></strong> to meet at:</p>
+    <% meeting.locations.each do |location| %>
+      <p><strong><%= location.name %></strong> at:
+      <%= location.address %></p>
+    <% end %>
+<% end %>
+  </div>
+</div>
