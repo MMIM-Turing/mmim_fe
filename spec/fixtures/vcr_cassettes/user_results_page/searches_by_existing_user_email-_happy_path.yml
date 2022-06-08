@@ -25,58 +25,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7dff2566-a5d9-4882-9ddb-d674cde07801
+      - 2dd170b1-2a09-4e25-8671-17dbb8b37ce3
       X-Runtime:
-      - '0.106518'
+      - '0.001971'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"8","type":"user","attributes":{"name":"usersearch base","email":"user_search@email.com","address":"2001
         Colorado Blvd, Denver, CO 80205"}}}'
-  recorded_at: Wed, 08 Jun 2022 16:22:49 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22user_b_email%22:%22user_search@email.com%22,%22category%22:%22cafe%22%7D
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"24998f75ee1070317266488e74d871f8"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - e6d74ada-aa56-479c-a070-30357d91aee7
-      X-Runtime:
-      - '0.604216'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"location","attributes":{"id":1,"name":"T-Rex
-        Cafe","place_id":"ChIJfy10SVR5bIcRIWTX0xPe2pU","address":"2001 Colorado Boulevard,
-        Denver","lat":39.74808609999999,"lng":-104.9422832,"rating":3.5,"image_url":"Aap_uEDwVHCf36EVFaHXPSLlO8suoGvqX2yleYLXp6Xf_28jZ_y0bDR5ExFtsO-xLwwDJ10gF5PQxdu57OLWyfUbeup0MJZQldyjMan8-AUgT81YY7IG5ROiRKEM-TN_XDc9Oh5BO6SSCAtcVrdaqDCZlTPgfg4LpaL9yO1e3QJLXldVvE8h","price_level":null}},{"id":"2","type":"location","attributes":{"id":2,"name":"Hooked
-        on Colfax","place_id":"ChIJz9Z1nK1-bIcRvh_4m6-dbyg","address":"3213 East Colfax
-        Avenue, Denver","lat":39.74034029999999,"lng":-104.9496564,"rating":4.6,"image_url":"Aap_uEDK9_oqwafSX3X_gxTV5DLsA3D2YpqkoGI1SznpysEjBespCO9y7zB8u7gxAwy_kQyRkgVAsyThjrvW4v0wq4cAbxYT70cmD8JG6emSaC-XC4gmiQZmjyUIrJbIQolfRkF4VnSvFZsA4unlkRQKxVaaublaxCr7PL984OyKuJjL8r0","price_level":1}},{"id":"3","type":"location","attributes":{"id":3,"name":"Sprouts
-        Market Corner Coffee","place_id":"ChIJfYjKd6x-bIcRIFAS1DYTt5c","address":"3625
-        East Colfax Avenue, Denver","lat":39.74047849999999,"lng":-104.9446879,"rating":4.1,"image_url":null,"price_level":null}},{"id":"4","type":"location","attributes":{"id":4,"name":"Lula
-        Rose General Store","place_id":"ChIJ81BWQKx-bIcRCDHqSj7x4eM","address":"3434
-        East Colfax Avenue, Denver","lat":39.740002,"lng":-104.9463515,"rating":4.6,"image_url":"Aap_uEDzltPVyLjkK5zWxIWHIDxUO5OGlE0Je-6LdHSA1jBdRg44rwvFm04LXaG-xTavjiNLK3BFFvMWNWotI57oXvu4H8a_wLi9rNC78bNJfyS9mIxP593jgMmH0gPSuhl6vj4okQI9n8bBbrYpFDT0h7vjrJEDdcVKIasvShR6r2PbtFkA","price_level":1}},{"id":"5","type":"location","attributes":{"id":5,"name":"Fox
-        Run Cafe","place_id":"ChIJGewDz5h_bIcRzNRho-LYCww","address":"3550 East Colfax
-        Avenue, Denver","lat":39.7398826,"lng":-104.945526,"rating":4.8,"image_url":"Aap_uED6ocBPAYFFFwMXMG0MobkeU4GPoSVQL8yYai2TL-8qnGCHmgDuQcTUeGoxjfhueOd4QgOYfTnUIelZnn9rcfeUpYgwvXaLUghbDPeqWrHbD_OGhpT58rkBLtdSM7SbNkSyLqNcgrgBvEodmV7PZx5r6UYtVkj9mSTBXnP3bt7lQUBz","price_level":null}}]}'
-  recorded_at: Wed, 08 Jun 2022 16:22:50 GMT
+  recorded_at: Wed, 08 Jun 2022 16:52:58 GMT
 recorded_with: VCR 6.1.0

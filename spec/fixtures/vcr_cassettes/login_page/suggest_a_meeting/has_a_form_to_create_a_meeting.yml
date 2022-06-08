@@ -1,0 +1,283 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22test@test.com%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3a1ed68085714599cb7bd8818fd316e1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 66bd30fc-3f87-423c-8daf-07b11699e965
+      X-Runtime:
+      - '0.037379'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"name":"Test User","email":"test@test.com","address":"502
+        Rural Hill Rd, Nashville, TN 37217"}}}'
+  recorded_at: Wed, 08 Jun 2022 16:59:04 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyA0yPh_qrUtL8s8_D60Wb9la0STD1kDW_w&maxwidth=200&photo_reference=Aap_uECJAEWu2-DmMT00dFfy3Im3d33A-t9n1332k3EdSwxyyxjBTVnc4gXmF9YqraIFV1uy8nrGdXBewT90tKnaxFikykdvYyJ7kEou3OwOTA_jaCSt87qI3bIpNugId_FlAhOyEPNKoWEbdsYzTe-8xsECOZySuUShnYZzWaqKVrmNRHcz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Wed, 08 Jun 2022 16:59:04 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Location:
+      - https://lh3.googleusercontent.com/places/AAcXr8phOKd5M_lca9r7GI-tnqYL-z_kDUZmtD9hRnn_EMa0v3t7-dqvPvn-4bPdg82HcbjyTBaeOx_-BiP_B4mGB4OgRUa1RY5-kw=s1600-w200
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '351'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=72
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+    body:
+      encoding: UTF-8
+      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
+        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8phOKd5M_lca9r7GI-tnqYL-z_kDUZmtD9hRnn_EMa0v3t7-dqvPvn-4bPdg82HcbjyTBaeOx_-BiP_B4mGB4OgRUa1RY5-kw=s1600-w200\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Wed, 08 Jun 2022 16:59:04 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyA0yPh_qrUtL8s8_D60Wb9la0STD1kDW_w&maxwidth=200&photo_reference=Aap_uEAAmnskTlAxT6uHt2aqxMUEjmuaoi6ZZtW85aukRXN6qAOJJrolNJnelZitRKwazi5Uoe7nW-Jb0MdZhGRG_RegLUyF8WDsZNR1hyV_ibZOQe1yBAfySEN4PDmWUMezNUIGlFyFUazl942MwAjelHTmK2n8sJOgFdvRv6ktNSen7E3T
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Wed, 08 Jun 2022 16:59:05 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Location:
+      - https://lh3.googleusercontent.com/places/AAcXr8omdgSBJvnSTa53JVFcFhlPTSu0DHV-h4rcLM_Q-wgZ_o1rUb1_7bNwxtdFnFz99uNfq2GJRYOtf60Q3HTzxREccFmWBlaK4g=s1600-w200
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '351'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=54
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+    body:
+      encoding: UTF-8
+      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
+        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8omdgSBJvnSTa53JVFcFhlPTSu0DHV-h4rcLM_Q-wgZ_o1rUb1_7bNwxtdFnFz99uNfq2GJRYOtf60Q3HTzxREccFmWBlaK4g=s1600-w200\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Wed, 08 Jun 2022 16:59:05 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyA0yPh_qrUtL8s8_D60Wb9la0STD1kDW_w&maxwidth=200&photo_reference=Aap_uEC6tfHy8Xn1U9e8tMGNfILhOl1yRjNtPA0E77DQSlJPD5zb0qOToTUkF-MLMfe6HbGTM7EjfiavACXoJ_ZBnofwg52C2FdNQjdOD5cd0jYwLTASY6XsixOKFKA_HO-B2GUtD3TLrusj4XnDqq1F7QvwrwHsAEB3ScojDH2yNBg99ZQs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Wed, 08 Jun 2022 16:59:05 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Location:
+      - https://lh3.googleusercontent.com/places/AAcXr8rxSVqknaHfwyrg-Vaiuvs3wacnlkrWwZ3qTnaH3yR0JVUsi-91kRaBlrrhFk5QESsoKByy-MyxrCfnr1esHj-AnmcxX4MZEw=s1600-w200
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '351'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=60
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+    body:
+      encoding: UTF-8
+      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
+        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8rxSVqknaHfwyrg-Vaiuvs3wacnlkrWwZ3qTnaH3yR0JVUsi-91kRaBlrrhFk5QESsoKByy-MyxrCfnr1esHj-AnmcxX4MZEw=s1600-w200\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Wed, 08 Jun 2022 16:59:05 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyA0yPh_qrUtL8s8_D60Wb9la0STD1kDW_w&maxwidth=200&photo_reference=Aap_uEB1HzRxC1vIudmtEANv35A2wV7aG2X14QIsoK-yYxQ1XTle6DkYPegYgenq_PwOhcfIb_0ee9NTLQQodGByb5TaAudqoqgZDZBfS6AMpOY-_KVlFWXLXK5pEffK7ciaYHUyyfo43MLReIfGdLWgdSHOIfav5rEKnM-58fABWJyd05T8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Wed, 08 Jun 2022 16:59:05 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Location:
+      - https://lh3.googleusercontent.com/places/AAcXr8oai_WNi-MSVZ7xvlSp-boRX7eJuiUuLRXPPQWL4ujhKSlH9OA6dAUESAAEJT0ANuXuQSIdV9j_vaRQmXe2T9ZWW0qJFaFkxg=s1600-w200
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '351'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=60
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+    body:
+      encoding: UTF-8
+      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
+        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8oai_WNi-MSVZ7xvlSp-boRX7eJuiUuLRXPPQWL4ujhKSlH9OA6dAUESAAEJT0ANuXuQSIdV9j_vaRQmXe2T9ZWW0qJFaFkxg=s1600-w200\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Wed, 08 Jun 2022 16:59:05 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyA0yPh_qrUtL8s8_D60Wb9la0STD1kDW_w&maxwidth=200&photo_reference=Aap_uECxbEAgmdjWowkC3rpTOVKKa5rFzKV25AYKXuzag_N9rn19k74JPijtWhHw-aEpFnFKEqObPWD_bC1BUXY2PnFhJyb2NecsldyKBfkVJQRVMrv1Lz0eOz65UKUn0aCypE1bg19IkoIHwGi4Go6zNTypAKoL1c8xUe6ISowUEldJVZQj
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Wed, 08 Jun 2022 16:59:05 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Location:
+      - https://lh3.googleusercontent.com/places/AAcXr8o6KzCJ7RHkBswpnnb58Rsy4rQ0UK043-Nwdah-F216AieUx9iJ5pc03YNx64-VIZGRJzLudAhk4_ovQKXAutmj7EN_1G4_nQ=s1600-w200
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '351'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=63
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+    body:
+      encoding: UTF-8
+      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
+        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8o6KzCJ7RHkBswpnnb58Rsy4rQ0UK043-Nwdah-F216AieUx9iJ5pc03YNx64-VIZGRJzLudAhk4_ovQKXAutmj7EN_1G4_nQ=s1600-w200\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Wed, 08 Jun 2022 16:59:05 GMT
+recorded_with: VCR 6.1.0
