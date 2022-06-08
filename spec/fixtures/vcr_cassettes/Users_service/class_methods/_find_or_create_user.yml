@@ -27,14 +27,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f7b0a88b-530c-4628-b65b-37aa2d2d4f2a
+      - 1708e851-6121-4fb9-a4aa-e871bfbc6238
       X-Runtime:
-      - '0.003145'
+      - '0.003760'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
         st, city, state, 80123"}}}'
-  recorded_at: Wed, 08 Jun 2022 17:15:27 GMT
+  recorded_at: Wed, 08 Jun 2022 18:29:53 GMT
 recorded_with: VCR 6.1.0

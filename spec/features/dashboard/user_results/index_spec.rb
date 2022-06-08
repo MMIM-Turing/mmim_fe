@@ -11,8 +11,8 @@ RSpec.describe 'user results page' do
   end
 
 
-  
-  it 'searches by existing user email- happy path', :vcr do 
+
+  it 'searches by existing user email- happy path', :vcr do
     data_search = JSON.parse(File.read('spec/fixtures/user_search.json'), symbolize_names: true)
     allow(UsersService).to receive(:find_user).and_return(data_search)
 
@@ -20,14 +20,14 @@ RSpec.describe 'user results page' do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
       fill_in :user_b_email, with: "user_search@email.com"
       click_button 'Search'
-    end 
+    end
 
     expect(current_path).to eq('/dashboard/user_results')
   end
 
 
-  describe 'invalid search', :vcr do 
-    it 'redirect to dashboard and flash error message when emtpy address input' do 
+  describe 'invalid search', :vcr do
+    it 'redirect to dashboard and flash error message when emtpy address input' do
 
       within "#user_search" do
         fill_in :address_1, with: ''
@@ -40,7 +40,7 @@ RSpec.describe 'user results page' do
     end
   end
 
-  it 'searches by existing user email- no midpoints found', :vcr do 
+  it 'searches by existing user email- no midpoints found', :vcr do
     data_search = JSON.parse(File.read('spec/fixtures/user_search.json'), symbolize_names: true)
     allow(UsersService).to receive(:find_user).and_return(data_search)
 
@@ -48,20 +48,20 @@ RSpec.describe 'user results page' do
       fill_in :address_1, with: "2300 Steele"
       fill_in :user_b_email, with: "user_search@email.com"
       click_button 'Search'
-    end 
+    end
 
     expect(current_path).to eq('/dashboard')
     expect(page).to have_content('No midpoints found-please try different addresses')
   end
 
 
-  it 'searches by existing user email- sad path', :vcr do 
+  it 'searches by existing user email- sad path', :vcr do
     within "#user_search" do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
       fill_in :user_b_email, with: "nonexisting@email.com"
-      fill_in :category, with: "gym"
+      select "library", from: :category
       click_button 'Search'
-    end 
+    end
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content('Invalid user email. Please try again!')
   end
@@ -70,12 +70,11 @@ RSpec.describe 'user results page' do
     within "#user_search" do
       fill_in :address_1, with: "2300 Steele St, Denver, CO 80205"
       fill_in :user_b_email, with: "no_add@email.com"
-      fill_in :category, with: "gym"
+      select "library", from: :category
       click_button 'Search'
-    end 
+    end
 
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_content('no_add@email.com has not set a default address, please search by address instead!')
   end
 end
-  

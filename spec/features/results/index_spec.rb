@@ -49,7 +49,7 @@ RSpec.describe 'results page' do
   describe 'result list card' do
     context 'category' do
       it 'displays category', :vcr do
-        fill_in :category, with: 'park'
+        select "park", from: :category
         click_button 'Search'
 
         expect(page).to have_content('Park')
