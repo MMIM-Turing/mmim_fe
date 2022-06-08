@@ -1,2 +1,2 @@
 backend_server_dev: 'http://localhost:3000/api/v1'
-backend_server_pro: 'https://mmim-be.herokuapp.com/'
+backend_server_pro: 'https://mmim-be.herokuapp.com/api/v1'
