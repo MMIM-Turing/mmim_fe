@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/users?params=%7B%22name%22:%22test%20user%22,%22email%22:%22test@email.com%22%7D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6efdca0f3f4741c689ff12f17a4b4a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 21d38213-c508-457d-abac-681457a183bd
+      X-Runtime:
+      - '0.003586'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
+        st, city, state, 80123"}}}'
+  recorded_at: Wed, 08 Jun 2022 17:06:14 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/v1/users?params=%7B%22email%22:%22test@email.com%22,%22address%22:%22123%20st,%20city,%20state,%2080123%22%7D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6efdca0f3f4741c689ff12f17a4b4a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8ab009c4-11eb-4344-ae2b-cc9f168d953d
+      X-Runtime:
+      - '0.003914'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
+        st, city, state, 80123"}}}'
+  recorded_at: Wed, 08 Jun 2022 17:06:14 GMT
+recorded_with: VCR 6.1.0

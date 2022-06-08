@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22cafe%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c1697aea84256a19010bdea36ee1b420"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1c3bb548-cb25-46e7-a9e8-3bed5d25da68
+      X-Runtime:
+      - '0.828698'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"719","type":"location","attributes":{"id":719,"name":"Hudson
+        Hill","place_id":"ChIJzUQzedN-bIcRwhZQzex-bBQ","address":"619 East 13th Avenue,
+        Denver","lat":39.736974,"lng":-104.9793807,"rating":4.6,"image_url":"Aap_uEABDE9fPuJK8h5f-oC6Hn9c9y96lUL3gpfWDor6zo4CCQwG9_KtNUOPCKrjeZKrMMGlSZDtqWCwiWqQSAmq3BLt3-YtUUyvIWiTGwxiNsyGglkDW4xDtWL151bMsu59moCfJYpKNLEAhmnzK11vMSTwAdhkxAJvRhUD0B5teHlbNRyZ","price_level":2}},{"id":"720","type":"location","attributes":{"id":720,"name":"Bang
+        Up To The Elephant!","place_id":"ChIJA63ffNN-bIcRDb-dxxrCFbU","address":"1310
+        Pearl Street, Denver","lat":39.7372196,"lng":-104.9795821,"rating":4.2,"image_url":"Aap_uEB0A7xOywcxUCGL6NuWP7nopCMaz9Rk7LIbi9-NbCcEp4EeacUgf4skC1ybPGiVLclxhZfuxViy2ix6RjaL5H-jUNCyRW8Vc8P-6Fpm8M_tARG9Pn6ySE9EMBtSJcA6uQfK5KF-OVZ6KgK19d1iN6jxYbBs4aXzuygC4HNpP8nT-va2","price_level":2}},{"id":"721","type":"location","attributes":{"id":721,"name":"Jelly
+        Cafe - 13th Ave","place_id":"ChIJKf_Bb9R_bIcRbTDH4sDJNCM","address":"600 East
+        13th Avenue, Denver","lat":39.7367423,"lng":-104.9797069,"rating":4.4,"image_url":"Aap_uEAEuXZVQNL2-GJWciRK4V0pRmLqQwbPdvFYKnnWOZbodizOYJ9jkKvAJTSyLUs0sDkIt_-EV2deILMf6C-Ni4v8tPGAeFA-_lU_K6MdCdDvZIm6upp27iTs8z7qFdrEf7elOS0ZeG_Gq0ON015Q2oSNZ4Lf__6Bep4hvjvM8nA0y71m","price_level":null}},{"id":"722","type":"location","attributes":{"id":722,"name":"The
+        Network Coffee House","place_id":"ChIJ5faOV9N-bIcRdAsSYINDf60","address":"1402
+        Pearl Street, Denver","lat":39.7385992,"lng":-104.9796612,"rating":4.1,"image_url":"Aap_uEBQvHWTi3rz4foDcNEW_qtGd1vDG6SO5E8htMfFAoAOXU3A_K553O4Nc5YIwc5NWCFr43-ip0QQ7gP3OvEVSJ91_NQI8i05iIrpj_-PggdB7AIx2WrQd4Y9W0EFAZoa3NG3_L-2cYCjen375L4XbddNqgCiU9g-xjzmGVDfqES_uosS","price_level":1}},{"id":"723","type":"location","attributes":{"id":723,"name":"Pablo''s
+        Coffee - Penn Street","place_id":"ChIJd7fdjVN-bIcRz7WBOJyCV3I","address":"1300
+        Pennsylvania Street #102, Denver","lat":39.737151,"lng":-104.980858,"rating":4.5,"image_url":"Aap_uEC4_O_M1AhpYEMVfVEiig2MSPdM1BLiUqRmHNL81IWtw-MIzPK5KjcWpieLUZTOGEEFyAQlndjYpuPQMgH25CLnDtWb1TijeCoj6myPUCqQzbff4kHdHjlpZL63vaU_M26yymAOP3cNfeI7VHP4sbEFUK9Xi88b8OmLvUPrPQgjIxRp","price_level":1}}]}'
+  recorded_at: Wed, 08 Jun 2022 17:04:57 GMT
+recorded_with: VCR 6.1.0

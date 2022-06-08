@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22gym%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"831b8b5fffd5c6baf7f28132ab4842de"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 78572db0-3ae4-48ce-85f7-db3ae167361b
+      X-Runtime:
+      - '0.772625'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjczOSIsInR5cGUiOiJsb2NhdGlvbiIsImF0dHJpYnV0ZXMiOnsiaWQiOjczOSwibmFtZSI6IkJsYWNrIFN3YW4gWW9nYSBEZW52ZXIgQ2FwaXRvbCBIaWxsIiwicGxhY2VfaWQiOiJDaElKVlZXZWZkTi1iSWNSNFR3N2g1SGQ5LVEiLCJhZGRyZXNzIjoiMTMwOCBQZWFybCBTdHJlZXQsIERlbnZlciIsImxhdCI6MzkuNzM3MTA4MSwibG5nIjotMTA0Ljk3OTY5NTUsInJhdGluZyI6NC44LCJpbWFnZV91cmwiOiJBYXBfdUVCNkpoYmNUZ3gwa3c2NjhMVmc2TUQtQUthLTQwV3NmN1d0S2sybGk5Q2g5OTNrQWREUTZfWWlDNjFqSWZDTGxLdFVzUVdlYklDcnhhbnFvRGJsdVBiMUVfWFd4M2ZiZjJPYVdEQ0lnYnlDT21qeDBNS2lMMTdPOTlSNXJYQkpqU0kyVVc5UHpfQUR3eDlrenZLRWg2WF9YakxDNjI1QXpHeWVraU9KRjJNNnNsVDAiLCJwcmljZV9sZXZlbCI6bnVsbH19LHsiaWQiOiI3NDAiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjo3NDAsIm5hbWUiOiJPcGVuIFNwYWNlIFN0dWRpbyIsInBsYWNlX2lkIjoiQ2hJSkFhLXB3TkotYkljUkFyeG1MSEtmUi04IiwiYWRkcmVzcyI6IjE0MTEgTm9ydGggT2dkZW4gU3RyZWV0LCBEZW52ZXIiLCJsYXQiOjM5LjczODY5NDMsImxuZyI6LTEwNC45NzU0OTY5LCJyYXRpbmciOm51bGwsImltYWdlX3VybCI6bnVsbCwicHJpY2VfbGV2ZWwiOm51bGx9fSx7ImlkIjoiNzQxIiwidHlwZSI6ImxvY2F0aW9uIiwiYXR0cmlidXRlcyI6eyJpZCI6NzQxLCJuYW1lIjoiUm9vdGVkIEhlYXJ0IFlvZ2EgYW5kIFdlbGxuZXNzIiwicGxhY2VfaWQiOiJDaElKcjRMNkY0Wl9iSWNSUnFYVndJbzlPTlEiLCJhZGRyZXNzIjoiMTQwOSBOb3J0aCBPZ2RlbiBTdHJlZXQsIERlbnZlciIsImxhdCI6MzkuNzM4NzYyNSwibG5nIjotMTA0Ljk3NTQzOTcsInJhdGluZyI6NC43LCJpbWFnZV91cmwiOiJBYXBfdUVCTEQwN0E0TURnakhJR1A1RzV0bHhEczFaekxYLVd2VmMyRzF3eWpoZWJUd0wyc0RiNDZDNF9acG4tbV92R1RpdWh0cUhJQURxOUNlTXBZeTdsTzM0N29sS21kU1pXOFVOMG1wazQtS2JaUnU4V3RJS3I0QUpKd2duMmpaczY2SVNhalBpdzViR0N6ZUR1ZDdmSGVrdUtnb0d6T1FISlY4Z1Bycmk2dFlkSmhVRWEiLCJwcmljZV9sZXZlbCI6bnVsbH19LHsiaWQiOiI3NDIiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjo3NDIsIm5hbWUiOiJDb2xmYXggU3Ryb25nLSBTdHJlbmd0aCBcdTAwMjYgQ29uZGl0aW9uaW5nIiwicGxhY2VfaWQiOiJDaElKaWFtSk9TMTViSWNSUFozd3pPRkFfZjgiLCJhZGRyZXNzIjoiMTUxNiBFbWVyc29uIFN0cmVldCwgRGVudmVyIiwibGF0IjozOS43NDA0MjIsImxuZyI6LTEwNC45NzU3NDgsInJhdGluZyI6NC45LCJpbWFnZV91cmwiOiJBYXBfdUVEVjhjVUFGd09CczNsYlNtSERTbUV0TXVsVGJDeXp4UmRBcWZEY29hSE5jLVNlbU9GenZvQXNoSDF5aVl3S2l5R0RPNUNmSVVoXzlHWndyZ2hObkJ5WGFaX0Q3Q1BaTEJTdHpWV0ZoNFBKRTBfU3ZCd2hoZ1dNYWNyTzVSS3lqOGNjRTZJUkpJU2RNNXB4X3F6X3ExcmNKUVBUUy1lcE1ma1NtUUlObUtwMXFqYzYiLCJwcmljZV9sZXZlbCI6bnVsbH19LHsiaWQiOiI3NDMiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjo3NDMsIm5hbWUiOiLYstmF24zZhiDYqNiz2qnYqtio2KfZhCIsInBsYWNlX2lkIjoiQ2hJSnZlSnNCaUo1YkljUkhWN25OZGphdFlnIiwiYWRkcmVzcyI6IkRlbnZlciBDb3VudHksINiv2YbZiNix2IwsIERlbnZlciIsImxhdCI6MzkuNzM5MDIwOCwibG5nIjotMTA0Ljk4MjQzOCwicmF0aW5nIjpudWxsLCJpbWFnZV91cmwiOm51bGwsInByaWNlX2xldmVsIjpudWxsfX1dfQ==
+  recorded_at: Wed, 08 Jun 2022 17:04:58 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22bar%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"29c31848565c5fdd2d418f8133b0cc33"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c2021b11-aa0c-4f86-8c2f-22e70dcc05c5
+      X-Runtime:
+      - '0.859748'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"759","type":"location","attributes":{"id":759,"name":"Hudson
+        Hill","place_id":"ChIJzUQzedN-bIcRwhZQzex-bBQ","address":"619 East 13th Avenue,
+        Denver","lat":39.736974,"lng":-104.9793807,"rating":4.6,"image_url":"Aap_uEDC0P7DQhdwqNRSFClIzJeFHXDiTNv8T8c5ZM8Io6JNS1_NuJ3N5Gjt6d_Ze8ytyn9ytOYcKZhaDytVIkRv9nokjMcZ5Vi9iyTdkKcYorZMhHv5cNyPomVDpj8jJfM-dVj3MaZ3kqEOf_1ARtLAs_6I1ac-hcmpfDkHawvq2I3QuWD3","price_level":2}},{"id":"760","type":"location","attributes":{"id":760,"name":"Your
+        Mom''s House","place_id":"ChIJe8lrf9N-bIcRFCugBtF5cFI","address":"608 East
+        13th Avenue, Denver","lat":39.7367324,"lng":-104.9795145,"rating":4.5,"image_url":"Aap_uEAGpJW-QdYJ1WL7voQTNo8QvfPpTRo2B4UMPeKTmK2WxDNasgVVKr0jUJib2LF6qg7gkVM9Jx6f8ib0LlfwAH4CY6IZZ7x33sLay0plbxn2loeakmkQJT8JnrJx0K6HjCD0foqKaFh9CT01NjEEUkfX7OXIYJKfz6XHrxVNJ3zIrPQw","price_level":null}},{"id":"761","type":"location","attributes":{"id":761,"name":"Jelly
+        Cafe - 13th Ave","place_id":"ChIJKf_Bb9R_bIcRbTDH4sDJNCM","address":"600 East
+        13th Avenue, Denver","lat":39.7367423,"lng":-104.9797069,"rating":4.4,"image_url":"Aap_uED-Blttqyqkxc-kGTB9h7TOHdw_ptsPDA3hQyHbPzkxTMEhegWSvMB1LJTQDf9pVDyKInJ4Jz_LxfAUUjvhS201srPFmfWsKxOCZQWQYkhVSUd5L7qc7x9UqR3SpvJ4b79agatCFaUb8xct-D7IQM51b8XkM0nWDWNbSItwcHzxj-sS","price_level":null}},{"id":"762","type":"location","attributes":{"id":762,"name":"Charlie''s
+        Denver","place_id":"ChIJydsjLC15bIcRcnnY3EIbTgs","address":"900 East Colfax
+        Avenue, Denver","lat":39.7397694,"lng":-104.9762033,"rating":3.6,"image_url":"Aap_uEAPTYnPWVwlVADCmRrl5Kxt2ZlBKeA6knFOL7bzQ_y3UO2gUQbLAlW33Mt5FuQiJE1jmlW7ysek0l4xsbB7jJum466MGzYC-MzB3rX8CViN88NsMb-4RkGkq0UnKvD8g1HHhfEogpeoEWCl4kgVQqFogCw3ih6pkSUiZP6qEEiuvEQF","price_level":1}},{"id":"763","type":"location","attributes":{"id":763,"name":"Pub
+        on Penn","place_id":"ChIJ5e74itR-bIcRBymHHQRL9jE","address":"1278 Pennsylvania
+        Street, Denver","lat":39.7367753,"lng":-104.980827,"rating":4.1,"image_url":"Aap_uECUUKn1CmcXJ5sJ9nMyAwQftDlAdiHZJwDnKDFMJAl5T-Otnt2kVnoLJQeIN_4RhlUWEvdZeAEvuOYYE-D3ZJ5WfpyqvLEjoSsrUgceGWGWy4YRknRjonEcfl18nkVjliUxNOdwYGzpSSxghv0DE37hbnng7kFBsxOZS9575xYOPT0v","price_level":1}}]}'
+  recorded_at: Wed, 08 Jun 2022 17:04:59 GMT
+recorded_with: VCR 6.1.0

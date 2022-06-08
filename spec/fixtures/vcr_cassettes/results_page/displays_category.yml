@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22gym%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1e3e614305511e02403e4fb03dcf672c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4d2a196c-d7b5-4c3b-84ee-2e55da89a1ac
+      X-Runtime:
+      - '0.933966'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjY5OSIsInR5cGUiOiJsb2NhdGlvbiIsImF0dHJpYnV0ZXMiOnsiaWQiOjY5OSwibmFtZSI6IkJsYWNrIFN3YW4gWW9nYSBEZW52ZXIgQ2FwaXRvbCBIaWxsIiwicGxhY2VfaWQiOiJDaElKVlZXZWZkTi1iSWNSNFR3N2g1SGQ5LVEiLCJhZGRyZXNzIjoiMTMwOCBQZWFybCBTdHJlZXQsIERlbnZlciIsImxhdCI6MzkuNzM3MTA4MSwibG5nIjotMTA0Ljk3OTY5NTUsInJhdGluZyI6NC44LCJpbWFnZV91cmwiOiJBYXBfdUVBelN5YnZOOWtfUFNaa3VlaHVBN2ZYZ2VzU19taDFBVUE2aERyZ0owMW9oRW1VNzNNb0J1Z241NmZPTzlESXJiczdrTFFXM0tUc2RGdmg5ZmlCZ3NkQm92SkJBc0JudFFPM0pKbGFmdEQ5Um15SmFCNVF4LW9VeEZDQWwya0RFNGZwWTRVSExtNjlLUndmamdlX3k4LThCY2JJV1NjbDBIQ1l6OEZudkFWM2psT2siLCJwcmljZV9sZXZlbCI6bnVsbH19LHsiaWQiOiI3MDAiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjo3MDAsIm5hbWUiOiJPcGVuIFNwYWNlIFN0dWRpbyIsInBsYWNlX2lkIjoiQ2hJSkFhLXB3TkotYkljUkFyeG1MSEtmUi04IiwiYWRkcmVzcyI6IjE0MTEgTm9ydGggT2dkZW4gU3RyZWV0LCBEZW52ZXIiLCJsYXQiOjM5LjczODY5NDMsImxuZyI6LTEwNC45NzU0OTY5LCJyYXRpbmciOm51bGwsImltYWdlX3VybCI6bnVsbCwicHJpY2VfbGV2ZWwiOm51bGx9fSx7ImlkIjoiNzAxIiwidHlwZSI6ImxvY2F0aW9uIiwiYXR0cmlidXRlcyI6eyJpZCI6NzAxLCJuYW1lIjoiUm9vdGVkIEhlYXJ0IFlvZ2EgYW5kIFdlbGxuZXNzIiwicGxhY2VfaWQiOiJDaElKcjRMNkY0Wl9iSWNSUnFYVndJbzlPTlEiLCJhZGRyZXNzIjoiMTQwOSBOb3J0aCBPZ2RlbiBTdHJlZXQsIERlbnZlciIsImxhdCI6MzkuNzM4NzYyNSwibG5nIjotMTA0Ljk3NTQzOTcsInJhdGluZyI6NC43LCJpbWFnZV91cmwiOiJBYXBfdUVCT0MtaEloN2x4dGJxdFpNdEZjdUVmLS1ta215MGxUR1NtWXFIOW5CcVlUU3ZITkl3cnRZZk5CMGJPS1NrcnhtME5RVXVfdHEweWxuWUFzd2Z0N2czNE5YckZOdjNXbHp0bHdMRVB2Z1hVWTVtc3FDendIaUhXSk1IQW9WS1BsVFdYQjh5WmRQSmxZVUdSbWtpaTZOZk91NDlEOGpMSmZQVGlzek5MeDBBd1BUcDIiLCJwcmljZV9sZXZlbCI6bnVsbH19LHsiaWQiOiI3MDIiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjo3MDIsIm5hbWUiOiJDb2xmYXggU3Ryb25nLSBTdHJlbmd0aCBcdTAwMjYgQ29uZGl0aW9uaW5nIiwicGxhY2VfaWQiOiJDaElKaWFtSk9TMTViSWNSUFozd3pPRkFfZjgiLCJhZGRyZXNzIjoiMTUxNiBFbWVyc29uIFN0cmVldCwgRGVudmVyIiwibGF0IjozOS43NDA0MjIsImxuZyI6LTEwNC45NzU3NDgsInJhdGluZyI6NC45LCJpbWFnZV91cmwiOiJBYXBfdUVCRGdJZ1I2N0tGc0EtSGkwRTNlWG5UVEViRFZvWGhPLTJLMVhfWHFma0hkUEZJejZmOEdCcVBSc21iVXZMZUVXVS1Sd1BqVUV3dDlKQ2ptemQyclN4TTM2cEl6TzM5MkJtTnZfREVxMU1YckNGWV9VYmtwTmlwZVJQOXI1eEhlZDgyUi02U190WVJ4M1ppOXZEUFJLM2lzMnh4SERISnNoVHNmSkloWm53Tl9NSHAiLCJwcmljZV9sZXZlbCI6bnVsbH19LHsiaWQiOiI3MDMiLCJ0eXBlIjoibG9jYXRpb24iLCJhdHRyaWJ1dGVzIjp7ImlkIjo3MDMsIm5hbWUiOiLYstmF24zZhiDYqNiz2qnYqtio2KfZhCIsInBsYWNlX2lkIjoiQ2hJSnZlSnNCaUo1YkljUkhWN25OZGphdFlnIiwiYWRkcmVzcyI6IkRlbnZlciBDb3VudHksINiv2YbZiNix2IwsIERlbnZlciIsImxhdCI6MzkuNzM5MDIwOCwibG5nIjotMTA0Ljk4MjQzOCwicmF0aW5nIjpudWxsLCJpbWFnZV91cmwiOm51bGwsInByaWNlX2xldmVsIjpudWxsfX1dfQ==
+  recorded_at: Wed, 08 Jun 2022 17:04:56 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22park%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"75707ec0e02006e63ae23e056d4e9a00"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f6889131-5681-4332-9e25-5618bd6817a6
+      X-Runtime:
+      - '0.705832'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"859","type":"location","attributes":{"id":859,"name":"Garden
+        Block Denver Botanic Gardens","place_id":"ChIJlULQiNB4bIcR_mLJlJF9GjY","address":"United
+        States","lat":39.7466012,"lng":-104.9940559,"rating":null,"image_url":"Aap_uEA_TZI7E8RJxPxRHatXSb-QbPtK4LBAza5PCy-WMlQoO7IdoJMDi73YzVdJ63Rjk_aXf3tQ79jNcm26gcjYjye3vtr8_lFSnv7qJkGm2rtgVTMC5aZXp5VTAVZzcZWIbGDKRTt4ShfV-sink-cdJoveQCWSg9JmDWz5wHlgEBIWWZCb","price_level":null}},{"id":"860","type":"location","attributes":{"id":860,"name":"The
+        Outer Space","place_id":"ChIJ-VosgGx5bIcRsKcX-k7zXAc","address":"601-649 16th
+        Street Mall, Denver","lat":39.744784,"lng":-104.9914661,"rating":5.0,"image_url":"Aap_uEAv8vNtyKL4x0aYxY6E19lJMhPTj8ccYcV7c7A_MotQaJoQSR8GtaxfNSzSfDOw8pVpEhERRJF_cWrwwaML0UoulsF_NWSrbJLNqjZZd4VBIRUr2Z2QUjsqpxG9BQ7xzEWAMDJOA6ThVgMBFzclpwmlMZKvY4aZU5omhMy8ecMhCgpf","price_level":null}},{"id":"861","type":"location","attributes":{"id":861,"name":"Skyline
+        Park","place_id":"ChIJL8iusWJ5bIcRO5pObllFGOU","address":"Denver","lat":39.7473389,"lng":-104.9966741,"rating":4.4,"image_url":"Aap_uEBy9ZanIkWtFgjFEp7C1r58L6cxpjRBMzkbzdkBwV1uDG6n5-4QVa-ZywTiuPClJxskYtYZhmED5KFMdTC4Y2uqMW0B9mUWTORJo523adEFNrBXwO89nzxzl8w2WO3tA5Ya-Eg4EVINlDdgd5QV-RcDu5TujGmd4_B6VzG0CWmeBZx9","price_level":null}},{"id":"862","type":"location","attributes":{"id":862,"name":"Downtown
+        Denver Rink Presented by Southwest","place_id":"ChIJk_zOun95bIcRhOwTvlN9FQs","address":"1601
+        Arapahoe Street, Denver","lat":39.7481068,"lng":-104.9956824,"rating":4.3,"image_url":"Aap_uEBGzCgfcNLOKJxmyPoq3HBk5sb-SmnD41cs0JqKI41tUXtDNCdBPbRY15txd4fLPpN3WqT4BB4dHD3le5oxpx1-us3qVH5PeDMYRVy4_sSgc8vISSMrzs9vjsMtfKITyc2gEhzp-sqUtqvkJFHEs_kMZqtgZal9nXqjvfSmhCnnNlA","price_level":null}},{"id":"863","type":"location","attributes":{"id":863,"name":"Skyline
+        Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
+        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEA3dvhMBoIQTsQAX8uaJrZQl0uqtoMKdxD1idpzcJKeSyO7j7Vf2tXuOuZkI5FosntWnwXV4BuLsjvRLHxaBlBj4dJW_1SecUrLUXMe3wiRc7b1WV2QziJ61wHuvDXpOHzWE5lPDRVjql7JV_LU4GFykg6lvLVvxZdJqf5_DeQh38Fb","price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 17:05:05 GMT
+recorded_with: VCR 6.1.0

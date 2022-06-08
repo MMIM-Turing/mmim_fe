@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22address_2%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22category%22:%22cafe%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"283bbe8465722cfc005429b19d52f052"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6208ac57-a22f-474f-b77a-a83366afe504
+      X-Runtime:
+      - '0.662491'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"839","type":"location","attributes":{"id":839,"name":"Starbucks","place_id":"ChIJG8obq9F4bIcRUTFp_7aKC-0","address":"1420
+        Stout Street, Denver","lat":39.7442439,"lng":-104.9948669,"rating":3.5,"image_url":"Aap_uECYUgM-sit_gdi1K7fkud1XNnJrT1OXfpRZoILLn9_jSyHZMX8Ycov1ZKuMqH_mSNjXF-biNBzHIkl0daEdIMs1LGk6PWK6F1bMYOx0zkbYO-ctea8gJyKZN-yVfZUFyt-wqSWv05FebhPQ4j-BSBqkyAoyzIWlrJ8VrqQ5Yk655hAD","price_level":2}},{"id":"840","type":"location","attributes":{"id":840,"name":"Patio16
+        On The Mall","place_id":"ChIJBXbY29B4bIcRw9URUfL_5-U","address":"Denver","lat":39.7453661,"lng":-104.9924259,"rating":null,"image_url":null,"price_level":null}},{"id":"841","type":"location","attributes":{"id":841,"name":"Tuscany
+        Coffee \u0026 Deli","place_id":"ChIJqSqAw9B4bIcRNq_GuBECrAs","address":"1600
+        Stout Street, Denver","lat":39.7458333,"lng":-104.9927778,"rating":4.5,"image_url":"Aap_uEDoSl1-MR0hNWhiFuP7bzgXfTp3Z3G-pFgVQsnUMmM8nnOpYe4B77wj67wdcyAMdWOi1YIhyzGpTv2TMrVWg8oIUr8bhKr3u9YYgl34-Kwolj2xWHnvNnZYVv4GZQ_SsYPXH_BshnZgQiyBtyBQu4utc3jtVo6MA6SlXg3MvTguRnY","price_level":1}},{"id":"842","type":"location","attributes":{"id":842,"name":"Assembly
+        Hall Bar + Market","place_id":"ChIJx4fr8cB5bIcRnIWSYa1IbPQ","address":"650
+        15th Street, Denver","lat":39.7434054,"lng":-104.9935598,"rating":3.0,"image_url":"Aap_uEDJ5aaetL3ydBZs5ViZTdBTISr2mbzjAxARjhc85ieL5h99PkXCpdUfh_2WA8p82AUZwkMOwBHp9RC2tXyRgORPpWHkQJB6FLLR6aqWIdtrZciZCrZuVDtJlRRz7JCgJASTJPF1aGIBgi-Le9rFuEAwvW1NUNGUaSEpcOjnGnbzN_aX","price_level":null}},{"id":"843","type":"location","attributes":{"id":843,"name":"Starbucks
+        Coffee","place_id":"ChIJbXA1kql5bIcRPJUuS7ZrEYY","address":"650 15th Street,
+        Denver","lat":39.7434022,"lng":-104.9935322,"rating":null,"image_url":null,"price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 17:05:04 GMT
+recorded_with: VCR 6.1.0
