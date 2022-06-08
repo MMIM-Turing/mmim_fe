@@ -26,7 +26,11 @@ Using Google API the user is then sent to a page where they can see their result
 
 ![results](./img/results.png)
 
-![login_logout](./media/login_logout.mov)
+<details><summary>Logging in with OAuth - CLICK ME</summary>
+
+https://youtu.be/eDFN8X_4ftg
+
+</details>
 
 ### Requirements
 Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmim_be.git) for full functionality.
