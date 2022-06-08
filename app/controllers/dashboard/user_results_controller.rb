@@ -3,6 +3,7 @@ class Dashboard::UserResultsController < ApplicationController
   before_action :default_category
 
   def index
+    @user_b = UsersFacade.find_or_create_user({email: search_params[:user_b_email]})
     @locations = LocationsFacade.user_search(search_params)
     @category = search_params[:category]
     @map_info = LocationsFacade.map_info(@locations)
