@@ -34,15 +34,24 @@ Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmi
 - Create a [Google Geocode API](https://developers.google.com/maps/documentation/geocoding/start).
 - Create a [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview).
 
-#### Setup
+### OAuth
+- Go to [Google](https://developers.google.com) and follow instructions for Google Developer to get a client id and a client secret.
+- The App uses Google to authenticate users.
+
+![login](./img/login.png)
+
+- Once the user clicks on `Log in with Google` they are sent to Google to authenticate their identity.
+- After giving Google the proper permissions, the user is directed to their dashboard.
+
+### Setup
 1. Clone this repository: On your local machine, open a terminal session and enter the following commands for SSH or HTTPS to clone the repo.
 
-- using SSH key <br>
+- using SSH key:
 ```shell
 $ git clone git@github.com:MMIM-Turing/mmim_fe.git
 ```
 
-- using HTTPS <br>
+- using HTTPS:
 ```shell
 $ git clone https://github.com/MMIM-Turing/mmim_fe.git
 ```
@@ -76,7 +85,7 @@ $ bundle exec figaro install
 ```
 - That will create an `config/application.yml` file.
 
-- Add your Google api to new this new file.
+- Add your Google api, client id, and client secret to new this new file.
 ```shell
 #config/application.yml
 google_maps_api_key: 'your google key here'
