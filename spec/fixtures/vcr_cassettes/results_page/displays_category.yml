@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22gym%22%7D
+    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22park%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -21,27 +21,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8f6fc74d8a168346bc5103b2755fd430"
+      - W/"e747bb6603772869ce4682a41e41fe7d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4e02b51f-b4d8-4c84-846a-17b3b80893bc
+      - 277cdce9-cca6-4219-a7c9-e7aaa7e36317
       X-Runtime:
-      - '0.590301'
+      - '1.011980'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"255","type":"location","attributes":{"id":255,"name":"CorePower
-        Yoga","place_id":"ChIJkbiCHNV-bIcREkhwQY7LubM","address":"333 East 13th Avenue,
-        Denver","lat":39.7370696,"lng":-104.9830572,"rating":4.4,"image_url":"Aap_uEChPO9AEzaKUHCViPXQuadwblF44sG15PKbx2jArMix8wjoiFvxV6tpCIBhNi1XlNBjX-r-8_x0pvNe8562W3xW_lFqBj5rJLUwvSiQ5pCU-qxWLQ41tXKeT25-mOFHBW2G-gDNO9xDmZX0m04BAOIwbAUaruD9I5q6JDWp-UB4da9r","price_level":null}},{"id":"256","type":"location","attributes":{"id":256,"name":"Downtown
-        Denver YMCA","place_id":"ChIJN83ojdV4bIcRgwOjx8qpmN0","address":"25 East 16th
-        Avenue Unit B, Denver","lat":39.74182640000001,"lng":-104.9863131,"rating":4.1,"image_url":"Aap_uEDfj5SEW9__z7K1pQPnmOuzUtgRo5ipVNxjfssaad0fbpMXtNV_iEUbyXd1uvTT69cgf_0QZcD0AL1seHbYkoADgzd7La-yoUFzHq_MsiGq4mhtOv0jL8-sjdiBvYxYGHO380JL-536bYNyu5SIJ1U0RQfIuqOsy3JOuRdjKCAFW3o-","price_level":null}},{"id":"257","type":"location","attributes":{"id":257,"name":"Samadhi
-        Yoga Sangha","place_id":"ChIJnf220y55bIcRv5cLuIqca-A","address":"639 East
-        19th Avenue, Denver","lat":39.746416,"lng":-104.979468,"rating":4.5,"image_url":"Aap_uED2rJmugsFUaApVXe8d86J4opKoFbnPg9XtbhdmrvlvnZs25o3WlPMKZSMppRbt_1R5lA2dl3lJLuKeHgJb9IM3N9VmYiQPFy6C3YZN2pFqT1BVbNfJSXKyqHBYQWRBbG5eo2YMmONmjE0002O6cZQgEBg9K00btr26Lk5LO2Q3hps3","price_level":null}},{"id":"258","type":"location","attributes":{"id":258,"name":"La
-        Rumba","place_id":"ChIJjzh3ACl_bIcREN-vglORVF8","address":"99 West 9th Avenue,
-        Denver","lat":39.7305946,"lng":-104.9886474,"rating":4.1,"image_url":"Aap_uEDTVUd4xW9NNyLRqQzslpgUPcvX9oJph-AW7yu5BJRfOzS58HSvVQ9yqHWHFuv245yw4zJr64mKJ3s0zoONaoLR8wiX8NLzxGmzsAhwwvUM9Z0vNGsp5a4tJ9keRZ6jVyNIxqrXQPrTorN83l7CjtxFMk7A9fjEhf1K130hatO2bH-H","price_level":1}},{"id":"259","type":"location","attributes":{"id":259,"name":"The
-        Denver Athletic Club","place_id":"ChIJLRP7z9N4bIcRT6PfN5O1xMo","address":"1325
-        Glenarm Place, Denver","lat":39.7416927,"lng":-104.9936792,"rating":4.4,"image_url":"Aap_uEBkhwrkORBQ-c_bc3ksGm3ePsK7UgIPEGKTes1vZ5fErIQ3WuMlOojAcr9GapxH0RLajtiCTtEmGiv3u1bLi2kaoXDbUgWiy8YgCIFwTWffTwXLRHDW5OY6cY1ea0dY6Ol-fWROxcBWQhwht55VRIevwKwoj9gFPo62dwoT7PwDlveF","price_level":null}}]}'
-  recorded_at: Tue, 07 Jun 2022 03:54:53 GMT
+      string: '{"data":[{"id":"1807","type":"location","attributes":{"id":1807,"name":"Morey
+        Middle School Community Garden","place_id":"ChIJ_WLjHNN-bIcR8OLahVEj9p4","address":"840
+        East 14th Avenue, Denver","lat":39.7377335,"lng":-104.977059,"rating":3.0,"image_url":null,"price_level":null}},{"id":"1808","type":"location","attributes":{"id":1808,"name":"Dominick
+        Park","place_id":"ChIJES3IOdN-bIcRza7ZiHd9Jes","address":"729 East 14th Avenue,
+        Denver","lat":39.7386691,"lng":-104.9780975,"rating":4.3,"image_url":"Aap_uECEDw9tSphnLB5VvCX8YiF69v98Luymi63FE7bYJ7VLAEYPeyRsOHc1Bz9NhHuk_PBaw1klE91O6_2OJTyLTO7XB1xaDbD1UesVqU2VX9j2P9QBH2XV18pGiRRLc79nsOnM0R-_zmbhPaziW_kdhEUSPXUQNlMUTHsYUOzdaMi64mWn","price_level":null}},{"id":"1809","type":"location","attributes":{"id":1809,"name":"Corona
+        Park","place_id":"ChIJOXMfetJ-bIcRhSsoQPmPywY","address":"1086 East 13th Avenue,
+        Denver","lat":39.73677929999999,"lng":-104.9743332,"rating":4.3,"image_url":"Aap_uEBUPbXIfithj5VE6bZtVfZxXk144jeFkZwocCMnS3AMsn-o2ZH0TncANoVuVAodnoSoRwMCuBUBnFaAAaHtz6SkQ-7f87w29IwClYOggodEXY0NbN1xlECqCa3osCcO71GknHTKZytUN5AWEVWUXEA_TqMekpzW2uyW7TLwowUxfFP5","price_level":null}},{"id":"1810","type":"location","attributes":{"id":1810,"name":"Swallow
+        Hill Historic District","place_id":"ChIJiXB0DS15bIcRrBIk3TKBt4A","address":"Denver","lat":39.7416667,"lng":-104.9755556,"rating":null,"image_url":null,"price_level":null}},{"id":"1811","type":"location","attributes":{"id":1811,"name":"Colorado
+        Wildlife Federation","place_id":"ChIJVVXl0ip5bIcR0Td0k4kQjdU","address":"1410
+        Grant Street, Denver","lat":39.73881100000001,"lng":-104.9832898,"rating":null,"image_url":null,"price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 18:28:43 GMT
 recorded_with: VCR 6.1.0

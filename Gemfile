@@ -18,6 +18,7 @@ gem 'rails', '~> 5.2.8'
 gem 'rspec_junit_formatter'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'dalli'
 
 group :development, :test do
   gem 'capybara'

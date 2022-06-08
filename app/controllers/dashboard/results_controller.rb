@@ -6,6 +6,10 @@ class Dashboard::ResultsController < ApplicationController
     @locations = LocationsFacade.address_location_search(search_params)
     @category = search_params[:category]
     @map_info = LocationsFacade.map_info(@locations)
+    if @locations == [] || @map_info == 'No results found'
+      redirect_to dashboard_path
+      flash[:alert] = 'No midpoints found-please try different addresses'
+    end
   end
 
   private

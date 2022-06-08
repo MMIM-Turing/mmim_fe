@@ -31,7 +31,7 @@ RSpec.describe 'landing page' do
 
       fill_in :address_1, with: '2300 Steele St Denver CO 80205'
       fill_in :address_2, with: '3643 W Colfax Ave, Denver, CO 80204'
-      fill_in :category, with: 'cafe'
+      select "cafe", from: :category
 
       click_button 'Search'
 

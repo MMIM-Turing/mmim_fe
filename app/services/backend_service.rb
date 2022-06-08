@@ -1,6 +1,11 @@
 class BackendService
   def self.conn
-    Faraday.new('http://localhost:3000/api/v1')
+    if Rails.env == 'development' || Rails.env == 'test'
+      Faraday.new(ENV["backend_server_dev"])
+    else
+      Faraday.new(ENV["backend_server_pro"])
+    end
+
   end
 
   def self.get_locations(params)

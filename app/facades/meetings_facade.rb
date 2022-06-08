@@ -1,6 +1,6 @@
 class MeetingsFacade
 
-  def self.suggested_meeting(params)
-    binding.pry
+  def self.suggested_meeting(hash)
+    SuggestedMeeting.new(hash)
   end
 end

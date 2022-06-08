@@ -9,19 +9,19 @@ RSpec.describe 'results page' do
     fill_in :address_1, with: '3643 W Colfax Ave, Denver, CO 80204'
     fill_in :address_2, with: '2300 Steele St Denver CO 80205'
     allow(PhotoService).to receive(:get_url).and_return('http//url')
-    
+
   end
 
-  describe 'map card' do
-    xit 'displays a map' do
+  describe 'map card', :vcr do
+    it 'displays a map' do
       click_button 'Search'
 
-      expect(page).to have_xpath('//a')
+      expect(page).to have_css('#map')
     end
   end
 
-  describe 'invalid search' do 
-    it 'redirect to dashboard and flash error message when emtpy address input' do 
+  describe 'invalid search' do
+    it 'redirect to dashboard and flash error message when emtpy address input' do
       visit '/'
       fill_in :address_1, with: ''
       fill_in :address_2, with: ''
@@ -33,8 +33,8 @@ RSpec.describe 'results page' do
     end
   end
 
-  describe 'no results search' do 
-    it 'redirect to dashboard and flash alert message when no results found', :vcr do 
+  describe 'no results search' do
+    it 'redirect to dashboard and flash alert message when no results found', :vcr do
       visit '/'
       fill_in :address_1, with: '123 st'
       fill_in :address_2, with: '249 st'
@@ -49,7 +49,7 @@ RSpec.describe 'results page' do
   describe 'result list card' do
     context 'category' do
       it 'displays category', :vcr do
-        fill_in :category, with: 'park'
+        select "park", from: :category
         click_button 'Search'
 
         expect(page).to have_content('Park')
@@ -65,7 +65,7 @@ RSpec.describe 'results page' do
 
       it 'has a form to update category', :vcr do
         click_button 'Search'
-        fill_in :category, with: 'bar'
+        select 'bar', from: :category
         click_button 'Update Category'
 
         expect(current_path).to eq('/results')
