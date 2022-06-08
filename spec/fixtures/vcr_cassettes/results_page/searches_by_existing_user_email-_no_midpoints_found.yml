@@ -2,7 +2,42 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%22123%20st%22,%22address_2%22:%22249%20st%22,%22category%22:%22cafe%22%7D
+    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22email@email.com%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8ec35f57a2c374f0e28a040317bf4e0f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 83893024-572b-490e-86e2-cfddccccdcb4
+      X-Runtime:
+      - '0.009884'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"test","email":"email@email.com","address":"2001
+        Colorado Blvd, Denver, CO 80205"}}}'
+  recorded_at: Wed, 08 Jun 2022 01:55:38 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/search_by_user?params=%7B%22address_1%22:%222300%20Steele%22,%22user_b_email%22:%22email@email.com%22,%22category%22:%22cafe%22%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -21,23 +56,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Request-Id:
-<<<<<<< HEAD
-      - 77f3fc2f-a91b-49e8-bf99-736a26df6472
+      - 1d3fd4c0-4a84-4246-ae84-a8702af2a1a9
       X-Runtime:
-      - '0.474433'
-=======
-      - 14b483f6-cab1-49f9-bdf1-0f3d10f7a675
-      X-Runtime:
-      - '0.276408'
->>>>>>> 50234b57f22fc2027c341de57b8cc5f232479fe5
+      - '0.216662'
       Content-Length:
-      - '10274'
+      - '10290'
     body:
       encoding: UTF-8
       string: '{"status":500,"error":"Internal Server Error","exception":"#\u003cNoMethodError:
         undefined method `dig'' for nil:NilClass\u003e","traces":{"Application Trace":[{"id":0,"trace":"app/facades/midpoint_facade.rb:8:in
-        `address_to_geocode''"},{"id":1,"trace":"app/facades/midpoint_facade.rb:14:in
-        `find_midpoint''"},{"id":2,"trace":"app/controllers/api/v1/search_controller.rb:3:in
+        `address_to_geocode''"},{"id":1,"trace":"app/facades/midpoint_facade.rb:13:in
+        `find_midpoint''"},{"id":2,"trace":"app/controllers/api/v1/search_by_user_controller.rb:4:in
         `index''"}],"Framework Trace":[{"id":3,"trace":"actionpack (5.2.8) lib/action_controller/metal/basic_implicit_render.rb:6:in
         `send_action''"},{"id":4,"trace":"actionpack (5.2.8) lib/abstract_controller/base.rb:194:in
         `process_action''"},{"id":5,"trace":"actionpack (5.2.8) lib/action_controller/metal/rendering.rb:30:in
@@ -90,8 +119,8 @@ http_interactions:
         lib/puma/server.rb:476:in `process_client''"},{"id":53,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":54,"trace":"puma (3.12.6)
         lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}],"Full Trace":[{"id":0,"trace":"app/facades/midpoint_facade.rb:8:in
-        `address_to_geocode''"},{"id":1,"trace":"app/facades/midpoint_facade.rb:14:in
-        `find_midpoint''"},{"id":2,"trace":"app/controllers/api/v1/search_controller.rb:3:in
+        `address_to_geocode''"},{"id":1,"trace":"app/facades/midpoint_facade.rb:13:in
+        `find_midpoint''"},{"id":2,"trace":"app/controllers/api/v1/search_by_user_controller.rb:4:in
         `index''"},{"id":3,"trace":"actionpack (5.2.8) lib/action_controller/metal/basic_implicit_render.rb:6:in
         `send_action''"},{"id":4,"trace":"actionpack (5.2.8) lib/abstract_controller/base.rb:194:in
         `process_action''"},{"id":5,"trace":"actionpack (5.2.8) lib/action_controller/metal/rendering.rb:30:in
@@ -144,9 +173,5 @@ http_interactions:
         lib/puma/server.rb:476:in `process_client''"},{"id":53,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":54,"trace":"puma (3.12.6)
         lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-<<<<<<< HEAD
-  recorded_at: Wed, 08 Jun 2022 04:13:56 GMT
-=======
-  recorded_at: Wed, 08 Jun 2022 05:01:32 GMT
->>>>>>> 50234b57f22fc2027c341de57b8cc5f232479fe5
+  recorded_at: Wed, 08 Jun 2022 01:55:38 GMT
 recorded_with: VCR 6.1.0

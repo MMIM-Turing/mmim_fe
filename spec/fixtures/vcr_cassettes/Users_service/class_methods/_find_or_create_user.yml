@@ -23,6 +23,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
+<<<<<<< HEAD
       - W/"a6efdca0f3f4741c689ff12f17a4b4a8"
       Cache-Control:
       - max-age=0, private, must-revalidate
@@ -30,11 +31,26 @@ http_interactions:
       - 9c6ff73a-11ba-4881-977f-a2861e4f4d1d
       X-Runtime:
       - '0.007002'
+=======
+      - W/"9c4d559f169f64515d32566d86fc6b71"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ac264dbb-3c4b-42e2-9c64-e5931fa44edd
+      X-Runtime:
+      - '0.002216'
+>>>>>>> 50234b57f22fc2027c341de57b8cc5f232479fe5
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
+<<<<<<< HEAD
       string: '{"data":{"id":"4","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
         st, city, state, 80123"}}}'
   recorded_at: Wed, 08 Jun 2022 04:13:59 GMT
+=======
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
+        st, city, state, 80123"}}}'
+  recorded_at: Wed, 08 Jun 2022 05:01:35 GMT
+>>>>>>> 50234b57f22fc2027c341de57b8cc5f232479fe5
 recorded_with: VCR 6.1.0
