@@ -1,0 +1,11 @@
+{
+  "data": {
+    "type": "user",
+    "id": "1",
+    "attributes": {
+      "name": "usersearch base",
+      "email": "user_search@email.com",
+      "address": "2001 Colorado Blvd, Denver, CO 80205"
+    }
+  }
+}

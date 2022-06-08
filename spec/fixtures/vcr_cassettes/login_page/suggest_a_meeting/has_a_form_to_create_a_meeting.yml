@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22test@test.com%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3a1ed68085714599cb7bd8818fd316e1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9a882c9a-9b04-4f3d-84ea-64ed2850ecbb
+      X-Runtime:
+      - '0.003221'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"name":"Test User","email":"test@test.com","address":"502
+        Rural Hill Rd, Nashville, TN 37217"}}}'
+  recorded_at: Wed, 08 Jun 2022 17:15:21 GMT
+recorded_with: VCR 6.1.0

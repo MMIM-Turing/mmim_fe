@@ -21,26 +21,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ae596674f7ea53a883b4af00b2d127ee"
+      - W/"1cec4308eeca08c9c3193cb92d31ad1c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9815442f-d634-4610-9b14-412bcf4e5cd9
+      - 828e9be8-f59f-4180-8297-14b4987d6e03
       X-Runtime:
-      - '0.494700'
+      - '0.670016'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"381","type":"location","attributes":{"id":381,"name":"Mercury
-        Cafe","place_id":"ChIJl7-Ogyd5bIcRTgzca2cfXmw","address":"2199 California
-        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uECDGKpgrdBtdUiXVtUJz4lTcyD2gL3I9Uol6B6vScchdP1ScYCJFv4bVNjcmtXWR0Wl2basb8qiKP0_AfXpZFtdXkX_D6UqBS0zV3um3JN7kF33wNxmo8zO7ivoDljZef7RC5Yj8Gjwnf_d3mqg4pQ5-a-FZsAvteLz03Cc4EqW2uqb","price_level":2}},{"id":"382","type":"location","attributes":{"id":382,"name":"City
-        O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
-        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uECSap2iQ5zoCHcREV5gF2uWYoh6m40AGmtt5kNvav1GS6nYCx2xRFfc86H_jqCdwPgeQQ8VRuowOjmrkwS2JRytuNl_BU5IknYYtmnXqGFCmnGg-Uo5m5ixDljUMac5VTxBh0qpY4dZS0e8oA5XWTr4-Yxapk5JtEOnJB8ol8_DNZKv","price_level":2}},{"id":"383","type":"location","attributes":{"id":383,"name":"D
-        Bar Denver","place_id":"ChIJZfxKmTN5bIcRZQSdZN7EZ0g","address":"494 East 19th
-        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uECviwn_7tKqDbb4JZtdzD3iTNAo7cphP0gJpN5Epi6ikBtPzQ3JKwtHjkyw33bPyDsqJWOE5Dtit8IPwPihNRJEVQdbDnRMSkoclGSE5TnZQ1CeO4ZHcF40rQRgop_7b_E0jbw-QJfnIpG4ceHD8_kyAWplw5gvNhg_zKLXeLMh72yM","price_level":2}},{"id":"384","type":"location","attributes":{"id":384,"name":"The
-        Delectable Egg","place_id":"ChIJvUaJ1tV4bIcRZA5jdVPJw-4","address":"1625 Court
-        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEBhgESdu6mpx3APNmfawfScgPzhpccc7r3P2qOM0u-U52GB7MLXkWzgqyF2GB_At6noc0yYUL-KbWJrFgDjALPzUYcpcRyYnB_mkVuQYn_HWcNMnc1sOo5ueGldrKXvDdpPGgm5kheV40JjRVHPDt-uuN4Ck27NLyK15D_Wp0xaY6Ll","price_level":1}},{"id":"385","type":"location","attributes":{"id":385,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
-        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uEDnrC3ujX25oPkqAZViIQ8NNiIk4ImGJqfvkAIunl_upJ8ckuYbD8xQE9AGw3loqI2s2bUms2g_3kvuLjosuClijavA4BkTFmhNwVOEG20d_XHXn7CaxqVSSQFbyR_eColBIw42vE8-7KiGWEkXzuyX1WPtu-XB6CKzCOcG1gZ1Ib2Q","price_level":1}}]}'
-  recorded_at: Wed, 08 Jun 2022 04:13:59 GMT
+      string: '{"data":[{"id":"1265","type":"location","attributes":{"id":1265,"name":"Starbucks","place_id":"ChIJG8obq9F4bIcRUTFp_7aKC-0","address":"1420
+        Stout Street, Denver","lat":39.7442439,"lng":-104.9948669,"rating":3.5,"image_url":"Aap_uEDzUQRtT8PHleM8uoqfYSguTM9PBtmoSwbLEITD5e02m7-2ASt7WuMREzfoQAOdct6om-0DVu9HbGFBEpv56GDrBZfxexEw9F72iMyDUndPznSxiw2zESgL7HQAzQKh_hVzbXjwk0mfrl_Nky5DOAv3KbhqqsWoK1zdSM2CAuPqk6O9","price_level":2}},{"id":"1266","type":"location","attributes":{"id":1266,"name":"Patio16
+        On The Mall","place_id":"ChIJBXbY29B4bIcRw9URUfL_5-U","address":"Denver","lat":39.7453661,"lng":-104.9924259,"rating":null,"image_url":null,"price_level":null}},{"id":"1267","type":"location","attributes":{"id":1267,"name":"Tuscany
+        Coffee \u0026 Deli","place_id":"ChIJqSqAw9B4bIcRNq_GuBECrAs","address":"1600
+        Stout Street, Denver","lat":39.7458333,"lng":-104.9927778,"rating":4.5,"image_url":"Aap_uEA8OjlClKc6rKcqCP8juZiL3vQX6QZGTUPXBseuTgi5-89sfinovXHmIVMPzVQfRsxuY9D361-07vq-NgmDUYVucM9oY-dd9cwJbtV_SLyQFysT82caHuygCaZ45NYXA7OFIOX0uEkcvtEfkdzOs-klq5-q9JOiNbDbveF65bwppe0","price_level":1}},{"id":"1268","type":"location","attributes":{"id":1268,"name":"Assembly
+        Hall Bar + Market","place_id":"ChIJx4fr8cB5bIcRnIWSYa1IbPQ","address":"650
+        15th Street, Denver","lat":39.7434054,"lng":-104.9935598,"rating":3.0,"image_url":"Aap_uEA9dQ9cBcTlxRLjgbiwCcU6c4xO9spYCzUgpJS2tAB9ogxa4F5YHKGvqBUMfoWdrlahG4klRtYldyUZT59GF-DWdwfLRJm8xOBd8fhKX-Q3pBrqLchy1H8umeD0dtj_U5ZefP-sRDCFaTXCWlYhZ72h6HNDUdjdGAgkGfxvtpb5fj9X","price_level":null}},{"id":"1269","type":"location","attributes":{"id":1269,"name":"Starbucks
+        Coffee","place_id":"ChIJbXA1kql5bIcRPJUuS7ZrEYY","address":"650 15th Street,
+        Denver","lat":39.7434022,"lng":-104.9935322,"rating":null,"image_url":null,"price_level":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 17:15:27 GMT
 recorded_with: VCR 6.1.0
