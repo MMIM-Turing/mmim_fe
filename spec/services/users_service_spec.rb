@@ -21,5 +21,16 @@ RSpec.describe 'Users service' do
       expect(user_updated[:data][:attributes][:email]).to eq('test@email.com')
       expect(user_updated[:data][:attributes][:address]).to eq('123 st, city, state, 80123')
     end
+
+    it '#finds a user' , :vcr do
+      params = {email: 'test@test.com'}
+      user = UsersService.find_user(params)
+
+
+
+
+
+    end
+
   end
 end
