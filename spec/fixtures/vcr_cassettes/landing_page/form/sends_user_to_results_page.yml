@@ -2,251 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uEAw7QaEJ2qJp-rGVjUzDYG7IVELGRXhglGrvPSsxop7eAI6zNooWY7zpAb34NGXV3Z1NCLGaWZ1m8loTKvs9ILcL03p5JQNBiq2nV0_Mlw5Ai34pBKgx0AgNmixB6SlLIA__DCSy-kFG7stREGWS7sr2n3CKEvy3lpfuFv9KF4V1v8t
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 302
-      message: Found
-    headers:
-      Date:
-      - Tue, 07 Jun 2022 03:54:57 GMT
-      Pragma:
-      - no-cache
-      Expires:
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      Cache-Control:
-      - no-cache, must-revalidate
-      Location:
-      - https://lh3.googleusercontent.com/places/AAcXr8r576LhobHGzbiRzhmZC_fng-hje-8UO57AQvJS6VeTkYupkwdCVq3QqBUExmiPPU9SXfglwkdH8fr5Z2gp3tPxT6D7ma_XSR4=s1600-w400
-      Content-Type:
-      - text/html; charset=UTF-8
-      Server:
-      - scaffolding on HTTPServer2
-      Content-Length:
-      - '352'
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      Server-Timing:
-      - gfet4t7; dur=55
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
-    body:
-      encoding: UTF-8
-      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
-        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
-        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8r576LhobHGzbiRzhmZC_fng-hje-8UO57AQvJS6VeTkYupkwdCVq3QqBUExmiPPU9SXfglwkdH8fr5Z2gp3tPxT6D7ma_XSR4=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
-  recorded_at: Tue, 07 Jun 2022 03:54:57 GMT
-- request:
-    method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uECvMrVas8v0y1HF0uAMHomqnGmZz6Tij0v_4FoggL7rTZf5H7qESCGIS7mScEzTDmmwdS8QpEASlUicQAZMTPNFBSgzBoc3REwPHk8w32lL0QHRkdA8V6RFzIMMTlyDFv5bjxmEIp67HFLkAAB481mU_dpWUB8XDUUc1kwMwJY1xXPW
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 302
-      message: Found
-    headers:
-      Date:
-      - Tue, 07 Jun 2022 03:54:57 GMT
-      Pragma:
-      - no-cache
-      Expires:
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      Cache-Control:
-      - no-cache, must-revalidate
-      Location:
-      - https://lh3.googleusercontent.com/places/AAcXr8pOJBVUNWqgAqJ-AO2He5oFUI68lFvsywJ0k9bZafokTPp7-C8JjZYyScUya3lzJUVVrHVp7Kbfek-Zxlwkkrm9w71JzYCzG6M=s1600-w400
-      Content-Type:
-      - text/html; charset=UTF-8
-      Server:
-      - scaffolding on HTTPServer2
-      Content-Length:
-      - '352'
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      Server-Timing:
-      - gfet4t7; dur=41
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
-    body:
-      encoding: UTF-8
-      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
-        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
-        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8pOJBVUNWqgAqJ-AO2He5oFUI68lFvsywJ0k9bZafokTPp7-C8JjZYyScUya3lzJUVVrHVp7Kbfek-Zxlwkkrm9w71JzYCzG6M=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
-  recorded_at: Tue, 07 Jun 2022 03:54:57 GMT
-- request:
-    method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uEBp91tb65gf_SEVnhrVFF45o952SD02v2R6nsCLEKXv6gLRgHc7S3SEXgOrm-IliuN3sisHIiEhAXTH4GeMIGb0VZyI7BLCzHXn93L0U0rMU9GlTAiO5_T9DOoQ679ZqS3NLhxWe15pwmJGDMadeihN4uW1rjrcJbke-irplLxMCAlb
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 302
-      message: Found
-    headers:
-      Date:
-      - Tue, 07 Jun 2022 03:54:58 GMT
-      Pragma:
-      - no-cache
-      Expires:
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      Cache-Control:
-      - no-cache, must-revalidate
-      Location:
-      - https://lh3.googleusercontent.com/places/AAcXr8r3TCaaWBfbqwHdZJqR2lKlCmCOzVgWx_ygX4Q5XeS4LtBi1AD_2DJ3pqnr68zVTH2lDVwC-SCHk4vWvpXLjZTiPYKwvJ6-gwc=s1600-w400
-      Content-Type:
-      - text/html; charset=UTF-8
-      Server:
-      - scaffolding on HTTPServer2
-      Content-Length:
-      - '352'
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      Server-Timing:
-      - gfet4t7; dur=32
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
-    body:
-      encoding: UTF-8
-      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
-        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
-        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8r3TCaaWBfbqwHdZJqR2lKlCmCOzVgWx_ygX4Q5XeS4LtBi1AD_2DJ3pqnr68zVTH2lDVwC-SCHk4vWvpXLjZTiPYKwvJ6-gwc=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
-  recorded_at: Tue, 07 Jun 2022 03:54:57 GMT
-- request:
-    method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uECO0uIXlBxstq5CToe00xJF592JzachRkFAddMVpo92MRME-l1EV5Pufjdmo_CKqWdcKLmzsjZaJPotOG9JfRGHRg9RrPBbxIEFeFwqLO_LsYx4zAySxsJazLJqWdvbHgBkUXQK2d5ntvGjakUx6-I-1oZ9mEwnHDDb_Ma9kZ7fohPG
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 302
-      message: Found
-    headers:
-      Date:
-      - Tue, 07 Jun 2022 03:54:58 GMT
-      Pragma:
-      - no-cache
-      Expires:
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      Cache-Control:
-      - no-cache, must-revalidate
-      Location:
-      - https://lh3.googleusercontent.com/places/AAcXr8rVJjU5kCFDUcAM8yrqsQljDlrxYTAG174heoBX6U2Ivnkg2aa31huUW_JtaqbI1pX2JxysswS8jWA9SrFocSb-UBFEqkUEXx4=s1600-w400
-      Content-Type:
-      - text/html; charset=UTF-8
-      Server:
-      - scaffolding on HTTPServer2
-      Content-Length:
-      - '352'
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      Server-Timing:
-      - gfet4t7; dur=20
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
-    body:
-      encoding: UTF-8
-      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
-        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
-        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8rVJjU5kCFDUcAM8yrqsQljDlrxYTAG174heoBX6U2Ivnkg2aa31huUW_JtaqbI1pX2JxysswS8jWA9SrFocSb-UBFEqkUEXx4=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
-  recorded_at: Tue, 07 Jun 2022 03:54:58 GMT
-- request:
-    method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDgBhSMfHRHnA0olbYRMm28abhvR4VGqBg&maxwidth=400&photo_reference=Aap_uEAuoA9breNWiPvK2G4uU2jfOExPIqXUBloGDMtES-ZGOkk6U39DgS-RRgPSylhgf4PXe6QNdvgHlh1MKYq6qZi3s-0jgUvHk_sdfOp5w2pkUzoVNiuN_DpB66K8P2sMhFAGBLOmsa1cFZkzc1kfhwFzkk3BWYmGFupgrOWGhvpUuAtF
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 302
-      message: Found
-    headers:
-      Date:
-      - Tue, 07 Jun 2022 03:54:58 GMT
-      Pragma:
-      - no-cache
-      Expires:
-      - Fri, 01 Jan 1990 00:00:00 GMT
-      Cache-Control:
-      - no-cache, must-revalidate
-      Location:
-      - https://lh3.googleusercontent.com/places/AAcXr8ouqfezcWIWzgrAIpsn4HYkD7ok88UxY4BGLa_-6neeYCJM3Oab1tQtjFsxtPVsczXi_x6wNc37pSZ__piQzWMnQNsO07VsL50=s1600-w400
-      Content-Type:
-      - text/html; charset=UTF-8
-      Server:
-      - scaffolding on HTTPServer2
-      Content-Length:
-      - '352'
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      Server-Timing:
-      - gfet4t7; dur=54
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
-    body:
-      encoding: UTF-8
-      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
-        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
-        HREF=\"https://lh3.googleusercontent.com/places/AAcXr8ouqfezcWIWzgrAIpsn4HYkD7ok88UxY4BGLa_-6neeYCJM3Oab1tQtjFsxtPVsczXi_x6wNc37pSZ__piQzWMnQNsO07VsL50=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
-  recorded_at: Tue, 07 Jun 2022 03:54:58 GMT
-- request:
-    method: get
     uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St%20Denver%20CO%2080205%22,%22address_2%22:%223643%20W%20Colfax%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22cafe%22%7D
     body:
       encoding: US-ASCII
@@ -266,26 +21,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"438616f595033d678fa85bfcbb0d69d1"
+      - W/"2d8d0d0c41d5a8e2d4ffbdf25d52002e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 47fd3162-3b6c-4ddf-af2c-fc131fd71f98
+      - 28e502fd-940f-4c65-91f7-fa21d5229de6
       X-Runtime:
-      - '0.496920'
+      - '0.637676'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"365","type":"location","attributes":{"id":365,"name":"Mercury
+      string: '{"data":[{"id":"281","type":"location","attributes":{"id":281,"name":"Mercury
         Cafe","place_id":"ChIJl7-Ogyd5bIcRTgzca2cfXmw","address":"2199 California
-        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uEAKYn6Swcb2EPSmpoJ6Wn6ZJwn8kodivqrdPbfGaZ-w1tQuT5cO2DzSpiPA8h3HZSjIdYnspdK69LtOmn33ep4SNs352ub6U2bJbtiSlKZ3WT4WawNtggL88OzTOVxUwsulmPDa4mRaaF0-LLXkZfu6Y8_84bOghGx2zdNTUZLJf7vU","price_level":2}},{"id":"366","type":"location","attributes":{"id":366,"name":"City
+        Street, Denver","lat":39.7508417,"lng":-104.9853639,"rating":4.5,"image_url":"Aap_uEDicnPozkJTN1SNpLaeH9bp2ULpmApic1ty-5y2efTwGMEPChTNbcAjEDbTQVGSODVLg4IS6uYVNzqwNyrxxWIxcz-ztXfvWv5HlUT_kQQWcJZvpjm_KWtF9urIbpan9n-NGu4mbwfvco2Y9aGLQ5alz2hTA6RgE_h_AkNAThXkMY96","price_level":2}},{"id":"282","type":"location","attributes":{"id":282,"name":"City
         O'' City","place_id":"ChIJHwJJbNV-bIcRPRt9CACJxTs","address":"206 East 13th
-        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uEDPNwSgw9xo_fsC33tl7fria0Pv05cHEaavawwEytKW8vVdZmBalJFhEMZ2aSdwyTCGEgfqjgvapUgn6rB0fumTk5H1AX5eft2zbKyVn5NQjG1XyqVVcNNMkzCKpG2URrL7agLz2l9lSbN5kjoUAFXCyJl_bz6HIyf5L_0VVSub1g22","price_level":2}},{"id":"367","type":"location","attributes":{"id":367,"name":"D
+        Avenue, Denver","lat":39.7366908,"lng":-104.9846353,"rating":4.5,"image_url":"Aap_uECs48O00GwtMtSuXs53FazSi1XCZGIXWzeByApxlPT5LIkDTrrOC5_iVqMFdPSM3kIXyI0gbt8BRSplamZswfsBgZohBbCIaij2JLfB1hCEKizKkq1Mk26oFSqoCZz0naom05sJ25NDQcNSMODbKCbuIC4rsSvk8wfWTKzR0iZsiMOl","price_level":2}},{"id":"283","type":"location","attributes":{"id":283,"name":"D
         Bar Denver","place_id":"ChIJZfxKmTN5bIcRZQSdZN7EZ0g","address":"494 East 19th
-        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEA-CuMnpaXn15SvpznbjPvM0QGqRuPkkL3xJLKlrWq1mcsPfZo5wXrjHYVuCUPqTvy_dyzce0oF8YjPkaa3LoO3-kghMhZbQ7AdB2eY76qrumncbbbm2ox3bqqur2h78ahG4bSJpHw1WnKRHYOOk8b1izG80hYpfOV-fYxjPgCvCEg-","price_level":2}},{"id":"368","type":"location","attributes":{"id":368,"name":"The
+        Avenue, Denver","lat":39.7459557,"lng":-104.9813577,"rating":4.4,"image_url":"Aap_uEBxu0J5CbiwSbOxZmHR2OVezcBV3i0e9hyeOHZsKQoJDK9ojNDPOIjaVyfiGbuq_Wfbf1heM8At68B5WsmO1kIUS4SXMsuZofeWpXBhQmG_QJeh4i9qKrDF5eDA6HhQR9Ve8PygVHhz8DA13cPrOG6nl028P6nmIbOt-ZfS8mXm3fpx","price_level":2}},{"id":"284","type":"location","attributes":{"id":284,"name":"The
         Delectable Egg","place_id":"ChIJvUaJ1tV4bIcRZA5jdVPJw-4","address":"1625 Court
-        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uED06Xgf3XZJCt8pZfkWW7I0TBzhwBo6lr36ZT7-U2etFrmGgaywmbZ3NFnaTVJQ_4mxsYB3owayB60bpbZ-iBkCLZA60N0B60vYi6skUxIKd7L6ZidPlACYonBnuidrvxLgClOvJkPz7Xd_4O3kfIGXxebUA2GIInkKa976LMJqMnyI","price_level":1}},{"id":"369","type":"location","attributes":{"id":369,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
-        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uED4RXfqlCFB3vGkXSbcoCfYheT-pOzsaL2wGSuibdKqG9Txluj25GtdnyKks7HjLE7QzpBBEX-PAh6IcdadWnVj6s2osjt5Uh73IgIatAcEK_5QT5wLTr03Jnk1E9t1t3gDs4KG14ZA4ImF1-_NH_0lvdp-zNBnfPcwVPCjYTOrwFiF","price_level":1}}]}'
-  recorded_at: Wed, 08 Jun 2022 03:58:31 GMT
+        Place, Denver","lat":39.7430442,"lng":-104.9883113,"rating":4.1,"image_url":"Aap_uEBtWKnLrMrQ6nlXKi8F1_ZZicebO-15Nmrw_bgeHFNOx4ME6G5g9Otn5uOqMu_KWJreGDFDeFIwcjXXHDZaK4fvGf4w87V421ARsT9qGcIjmB2h1AM48oK0rOh-OOIgMmq6-5YFiEIZMRFmgkq6DZ6GQe-CjgozlbxbNBI9O5A310Ui","price_level":1}},{"id":"285","type":"location","attributes":{"id":285,"name":"McDonald''s","place_id":"ChIJ9RVsttV4bIcRmTJi56P8BH0","address":"200
+        16th Street Mall, Denver","lat":39.74179299999999,"lng":-104.9881641,"rating":3.2,"image_url":"Aap_uEC4ktLjimgu5iiS4V6mlNdHx1R2kzPFooSiByBoz2m9R5grndD2FcFRaYrqp6s0kqzXKJFjUdBRxbmLOFJb24MBjuvYqhg9gpN3vLvjkAfFTLGOa0E54s2ySDhIOjaEMJfni5JH9YLhfCjVqiisCy7iFqMNL2OgQh9SjyDXCWqGXJsj","price_level":1}}]}'
+  recorded_at: Wed, 08 Jun 2022 04:13:56 GMT
 recorded_with: VCR 6.1.0
