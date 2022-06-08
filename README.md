@@ -11,12 +11,12 @@
 - [Requirements](#requirements)
 - [Contributors](#contributors)
 
-### App
+## App
 
 Meet Me in the Middle app can be found on [heroku](https://mmim.herokuapp.com/).
 
 
-### Background
+## Background
 
 Have you ever wanted to meet up with friend but did not know where to go? This app lets a user enter two addresses and then search for a location in the middle of those two addresses. The user can also chose to search for a specific category of results.
 
@@ -35,7 +35,7 @@ https://youtu.be/eDFN8X_4ftg
 ### Requirements
 Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmim_be.git) for full functionality.
 
-#### API
+### API
 - Go to [Google](https://developers.google.com) and follow instructions for Google Developer setup and to create an API key.
 - Create a [Google Geocode API](https://developers.google.com/maps/documentation/geocoding/start).
 - Create a [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview).
@@ -93,7 +93,7 @@ $ rails s
 - Open web browser and visit link
     http://localhost:5000 <br><br>
 
-### Contributors
+## Contributors
 
 |  | |
 | --- | --- |
