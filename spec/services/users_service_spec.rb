@@ -32,5 +32,13 @@ RSpec.describe 'Users service' do
       expect(user_data[:data][:attributes][:address]).to eq('1600 Pennsylvania Ave, Washington')
     end
 
+    it '#finds a user sad path', :vcr do 
+      params = {email: 'nonexisting@test.com'}
+      user_data = UsersService.find_user(params)
+      
+      expect(user_data).to have_key(:data)
+      expect(user_data[:data]).to eq(nil)
+    end
+
   end
 end
