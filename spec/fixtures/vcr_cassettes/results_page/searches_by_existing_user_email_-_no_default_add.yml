@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/find_user?params=%7B%22email%22:%22no_add@email.com%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"736cab0cbff740aa9d89cf964f4d6aac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c092fa94-4891-4ff0-a060-5ea9eae2f70d
+      X-Runtime:
+      - '0.011534'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"no_address","email":"no_add@email.com","address":null}}}'
+  recorded_at: Wed, 08 Jun 2022 01:48:36 GMT
+recorded_with: VCR 6.1.0
