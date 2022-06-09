@@ -66,9 +66,14 @@ Rails.application.configure do
   #                    :socket_failure_delay => 0.2,
   #                    :down_retry_delay => 60
   #                  }
-  
+
   config.cache_store = :file_store, "/tmp/cache/"
-  
+
+  config.public_file_server.enabled = true
+  config.public_file_server.headers = {
+    'Cache-Control' => "public, max-age=#{1.hour.to_i}"
+  }
+
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "mmim_fe_#{Rails.env}"
