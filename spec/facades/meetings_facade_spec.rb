@@ -21,11 +21,13 @@ RSpec.describe MeetingsFacade do
     expect(results[:status]).to eq('ok')
   end
 
-  xit 'finds user by email -sad path' do 
-    data = {data:nil}
-    allow(UsersService).to receive(:find_user).and_return(data)
-    results = UsersFacade.find_user({email: 'nonexisting@email.com' })
+  it 'gets existing meetings for a user' do 
+    data = JSON.parse(File.read('spec/fixtures/meetings.json'), symbolize_names: true)
+    allow(BackendService).to receive(:get_meetings).and_return(data)
+    results = MeetingsFacade.get_meetings({email: 'user1@email.com'})
 
-    expect(results).to eq('invalid email')
+    expect(results).to be_all(Meeting)
+    expect(results.first.host_name).to eq('user1')
+    expect(results.last.guest_name).to eq('user1')
   end
 end

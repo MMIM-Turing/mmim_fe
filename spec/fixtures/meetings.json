@@ -1,0 +1,17 @@
+ {"data":
+  [{"id":"11",
+    "type":"meeting",
+    "attributes":{"host_name":"user1", 
+                  "guest_name":"user2", 
+                  "location_name":"Lucile's Creole Cafe", 
+                  "location_address":"2852 West Bowles Avenue, Littleton"}
+   },
+   {"id":"12",
+    "type":"meeting",
+    "attributes":{"host_name":"user2", 
+                  "guest_name":"user1", 
+                  "location_name":"Lucile's Creole Cafe", 
+                  "location_address":"2852 West Bowles Avenue, Littleton"}
+    }
+ ]
+}
