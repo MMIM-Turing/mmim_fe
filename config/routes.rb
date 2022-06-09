@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   end
 
   post 'dashboard/meeting', to: 'dashboard#new_meeting'
-  post 'dashboard/accept', to: 'dashboard#accept'
+  post 'dashboard/accept', to: 'dashboard#accept_meeting'
   get 'login', to: 'sessions#new'
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
