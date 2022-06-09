@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/meeting?params=%7B%22host_email%22:%22kimmieguo@gmail.com%22,%22guest_email%22:%22xiaole.guo1@gmail.com%22,%22location_name%22:%22Lucile's%20Creole%20Cafe%22,%22location_address%22:%222852%20West%20Bowles%20Avenue,%20Littleton%22%7D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a29ee2b15c494311c52521766e44af56"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e6beedc9-29c4-48bd-bd0e-321c3f2584dc
+      X-Runtime:
+      - '0.010975'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok"}'
+  recorded_at: Thu, 09 Jun 2022 16:16:29 GMT
+recorded_with: VCR 6.1.0
