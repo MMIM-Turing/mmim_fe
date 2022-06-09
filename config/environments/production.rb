@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
-  config.cache_classes = true
+  config.cache_classes = false
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
@@ -67,11 +67,15 @@ Rails.application.configure do
   #                    :down_retry_delay => 60
   #                  }
 
+<<<<<<< HEAD
+  config.action_controller.perform_caching = true
+=======
   config.cache_store = :file_store, "/tmp/cache/"
+>>>>>>> 189b8c657f78bfb3096c92de7dc7360bf816268e
 
-  config.public_file_server.enabled = true
+  config.cache_store = :memory_store
   config.public_file_server.headers = {
-    'Cache-Control' => "public, max-age=#{1.hour.to_i}"
+    'Cache-Control' => "public, max-age=#{2.days.to_i}"
   }
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
