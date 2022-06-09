@@ -27,7 +27,7 @@ Using Google API the user is then sent to a page where they can see their result
 
 ![results](./img/results.png)
 
-### Requirements
+## Requirements
 Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmim_be.git) for full functionality.
 
 ### API
@@ -44,7 +44,7 @@ Note: You must also install and run [mmie_be](https://github.com/MMIM-Turing/mmi
 - Once the user clicks on `Log in with Google` they are sent to Google to authenticate their identity.
 - After giving Google the proper permissions, the user is directed to their dashboard.
 
-### Setup
+## Setup
 1. Clone this repository: On your local machine, open a terminal session and enter the following commands for SSH or HTTPS to clone the repo.
 
 - using SSH key:
@@ -101,6 +101,7 @@ GOOGLE_CLIENT_SECRET: 'your google secret code'
 ```shell
 $ rails s
 ```
+- Note: You must run mmie_be server simultaneously.
 
 - Open web browser and visit link
     http://localhost:5000 <br><br>

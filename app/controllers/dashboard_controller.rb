@@ -67,7 +67,7 @@ class DashboardController < ApplicationController
   def suggested_locations
     all_locations = Rails.cache.read("locations - #{params_from_user_results_controller}")
     suggested_locations = all_locations.find_all { |location| new_meeting_params[:place_ids].include?(location.place_id)}
-    Rails.cache.fetch("#{new_meeting_params.values.join}") do
+    Rails.cache.fetch("#{new_meeting_params.values.join}", expires_in: 1.hour) do
       meetings = MeetingsFacade.suggested_meeting({ locations: suggested_locations, host_email: new_meeting_params[:host_email], guest_email: new_meeting_params[:guest_email] })
     end
   end
