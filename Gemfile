@@ -19,6 +19,7 @@ gem 'rspec_junit_formatter'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'dalli'
+gem 'memcachier'
 
 group :development, :test do
   gem 'capybara'
