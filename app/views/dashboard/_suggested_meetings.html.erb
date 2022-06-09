@@ -21,6 +21,7 @@
             <%= form.hidden_field :location_address, value: location.address %>
             <%= form.hidden_field :host_email, value: meeting.host_email %>
             <%= form.hidden_field :guest_email, value: meeting.guest_email %>
+            <%= form.hidden_field :place_ids, value: meeting.place_ids %>
             <%= form.submit "Agree to Meet at #{location.name}", class: "btn-success btn-sm" %>
             <% end %>
         <% end %>
