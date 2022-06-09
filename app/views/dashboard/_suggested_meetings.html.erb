@@ -1,34 +1,37 @@
-<% if !@suggested_meetings.empty? %>
-  <div class="card" style="width: 25rem;">
-        <div class="card-body">
-          <div class="mb-3">
-            <h1 class="display-6">Pending Meetings:</h1>
-            <% @suggested_meetings.each do |meeting| %>
-            <hr>
-      <% if current_user.email == meeting.host_email %>
-      <% elsif current_user.email == meeting.guest_email %>
-        <h1 class="display-6">You've Been Invited!</h1>
-      <% end %>
-      <p><strong><%= meeting.host_email %></strong> has invited<br>
-      <strong><%= meeting.guest_email %></strong> to meet at:</p>
-      <% meeting.locations.each do |location| %>
-        <p><strong><%= location.name %></strong> -
-        <%= location.address %></p>
-        <% if current_user.email == meeting.guest_email%>
-          <%= form_with url: 'dashboard/accept', local: true do |form| %>
-          <%= form.hidden_field :location_name, value: location.name %>
-          <%= form.hidden_field :location_address, value: location.address %>
-          <%= form.hidden_field :host_email, value: meeting.host_email %>
-          <%= form.hidden_field :guest_email, value: meeting.guest_email %>
-          <%= form.submit "Agree to Meet at #{location.name}", class: "btn-success btn-sm" %>
-          <% end %>
-      <% end %>
-  <% end %>
-  <% if current_user.email == meeting.host_email %>
-  <button class="btn-warning btn-sm">Awaiting Reply From <%= meeting.guest_email %></button>
-  <% end %>
+<% if @suggested_meetings %>
+  <% if !@suggested_meetings.empty? %>
+    <div class="card" style="width: 25rem;">
+          <div class="card-body">
+            <div class="mb-3">
+              <h1 class="display-6">Pending Meetings:</h1>
+              <% @suggested_meetings.each do |meeting| %>
+              <hr>
+        <% if current_user.email == meeting.host_email %>
+        <% elsif current_user.email == meeting.guest_email %>
+          <h1 class="display-6">You've Been Invited!</h1>
+        <% end %>
+        <p><strong><%= meeting.host_email %></strong> has invited<br>
+        <strong><%= meeting.guest_email %></strong> to meet at:</p>
+        <% meeting.locations.each do |location| %>
+          <p><strong><%= location.name %></strong> -
+          <%= location.address %></p>
+          <% if current_user.email == meeting.guest_email%>
+            <%= form_with url: 'dashboard/accept', local: true do |form| %>
+            <%= form.hidden_field :location_name, value: location.name %>
+            <%= form.hidden_field :location_address, value: location.address %>
+            <%= form.hidden_field :host_email, value: meeting.host_email %>
+            <%= form.hidden_field :guest_email, value: meeting.guest_email %>
+            <%= form.submit "Agree to Meet at #{location.name}", class: "btn-success btn-sm" %>
+            <% end %>
+        <% end %>
+    <% end %>
+    <% if current_user.email == meeting.host_email %>
+    <button class="btn-warning btn-sm">Awaiting Reply From <%= meeting.guest_email %></button>
+    <% end %>
   <% end %>
 <% end %>
-</div>
+
+<% end %>
+  </div>
     </div>
   </div>
