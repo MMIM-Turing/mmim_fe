@@ -63,7 +63,7 @@ class DashboardController < ApplicationController
     if Rails.cache.instance_variable_get(:@data)
       keys = Rails.cache.instance_variable_get(:@data).keys.find_all { |k| k.include?(current_user.email) }
       keys = keys.find_all { |k| !k.include?('user_b_email') }
-      @suggested_meetings = keys.map { |k| Rails.cache.read(k) }
+      keys.map { |k| Rails.cache.read(k) }
     end
   end
 
@@ -72,7 +72,7 @@ class DashboardController < ApplicationController
     suggested_locations = all_locations.find_all do |location|
       new_meeting_params[:place_ids].include?(location.place_id)
     end
-    Rails.cache.fetch(new_meeting_params.values.join.to_s) do
+    Rails.cache.fetch(new_meeting_params.values.join.to_s, expires_in: 1.week) do
       meetings = MeetingsFacade.suggested_meeting({ locations: suggested_locations,
                                                     host_email: new_meeting_params[:host_email], guest_email: new_meeting_params[:guest_email] })
     end

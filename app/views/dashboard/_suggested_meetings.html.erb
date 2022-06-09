@@ -7,13 +7,15 @@
             <% @suggested_meetings.each do |meeting| %>
             <hr>
       <% if current_user.email == meeting.host_email %>
+        <p><strong>You have invited<br>
+        <strong><%= meeting.guest_email %></strong> to meet at:</p>
+
       <% elsif current_user.email == meeting.guest_email %>
-        <h1 class="display-6">You've Been Invited!</h1>
+        <h5>You've Been Invited to meet <%= meeting.host_email %></h5>
+        <p>Respond by <strong><%= meeting.meeting_ddl%></storng> :</p>
       <% end %>
-      <p><strong><%= meeting.host_email %></strong> has invited<br>
-      <strong><%= meeting.guest_email %></strong> to meet at:</p>
       <% meeting.locations.each do |location| %>
-        <p><strong><%= location.name %></strong> -
+        <p><strong><%= location.name %></strong> 
         <%= location.address %></p>
         <% if current_user.email == meeting.guest_email%>
           <%= form_with url: 'dashboard/accept', local: true do |form| %>
@@ -26,6 +28,7 @@
       <% end %>
   <% end %>
   <% if current_user.email == meeting.host_email %>
+  <h5>They have until <%= meeting.meeting_ddl %> to accept!</h5>
   <button class="btn-warning btn-sm">Awaiting Reply From <%= meeting.guest_email %></button>
   <% end %>
   <% end %>

@@ -21,27 +21,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2a6898f071c64dc1625862b7ea72de73"
+      - W/"621ebaa8bf368531c920ab0d744ca391"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d5af5b1d-8016-465f-8dfa-19ba52d6c6e3
+      - 9fc27ae8-2fcf-437c-8f6f-5b20442c3948
       X-Runtime:
-      - '1.031374'
+      - '0.472085'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1907","type":"location","attributes":{"id":1907,"name":"Hudson
+      string: '{"data":[{"id":"401","type":"location","attributes":{"id":401,"name":"Hudson
         Hill","place_id":"ChIJzUQzedN-bIcRwhZQzex-bBQ","address":"619 East 13th Avenue,
-        Denver","lat":39.736974,"lng":-104.9793807,"rating":4.6,"image_url":"Aap_uEDsChvwEe5msZd_BsFkvJhHWvXlGKJUmmQgugg89Zy6-xlHfA7VJiM45egQiuOUtd1lONyd9VQfXecjdpx2UrQn-iUN7IgUP8poxh6lOjZyJWojAKBgcGMmJ_Sbt28wrFMvHp3_sAW2alGJKc5VpGzUiwbhNWl9UkwPnEtAWzSkTBir","price_level":2}},{"id":"1908","type":"location","attributes":{"id":1908,"name":"Benny
+        Denver","lat":39.736974,"lng":-104.9793807,"rating":4.6,"image_url":"Aap_uECo-bkSA_EKgqtf9s0fb4r38aViyNI3JcqH-wk2Gm3t4Dxyr9VQORHr9uK01gGJV4R_GexhKT951_2oUNg-j7w8Ek1XmN8oagXV0-qXmQKWSvWL5FPoNu7EbnIcZQbfKIyTr5jJBHB4PwDxD8fZe4XslcGwchOx9DDAACqCh5eg6W9h","price_level":2}},{"id":"402","type":"location","attributes":{"id":402,"name":"Benny
         Blancos Slice Of The Bronx","place_id":"ChIJKQDEeNN-bIcRIYBxqb7HX00","address":"616
-        East 13th Avenue, Denver","lat":39.736768,"lng":-104.979363,"rating":4.3,"image_url":"Aap_uEDhR4r-_iZ7SOjsnTeurKkSbGqnlsxv0IEYto4Waf7h4hSRpYI2vPwBZPfWqvHIto4D9-ilHhgaRLAqg_ZYJfvQGVGC6lfZjXWpxlIzl6s9Jvzh-U7WciSdBtRIDOrtS5TjuYULyO68cpqiY4vKowZreg0FR4hqkRZVXcqo6o1UPipl","price_level":1}},{"id":"1909","type":"location","attributes":{"id":1909,"name":"Bang
+        East 13th Avenue, Denver","lat":39.736768,"lng":-104.979363,"rating":4.3,"image_url":"Aap_uEAKuq-AhT5NwqTdjySR_lzCymnw-CGc-cJn5Hf5GxBpgYzXSxNmRl02tPUH6wF606IH_2rTHgYtwF_Hvi01VbGjzBRv82QDPIjErqQSprPoPrv5nOHoz1xkL0RYXD_WJy_yz67GqSWS6vXE3k2OZl0zz6KXfGtOnnJfwCEZ3e5OfWBF","price_level":1}},{"id":"403","type":"location","attributes":{"id":403,"name":"Bang
         Up To The Elephant!","place_id":"ChIJA63ffNN-bIcRDb-dxxrCFbU","address":"1310
-        Pearl Street, Denver","lat":39.7372196,"lng":-104.9795821,"rating":4.2,"image_url":"Aap_uEDFD1OtAstnfPN59Ita5ycdE0xhJUHeZo4C5iuqq6y-QxkOPEnlNdY4wkLNZeE23nnFJgDqLLWJSyM0xx3wqZ0UF9zl3mRK8DmSozcnq_gtGCKpn9Vs-K5ydKbRrjlEXy8Nc5NpfL2n7wnvRAxWfleIfKZNRdJTr-DrLJGwbzpNIUi0","price_level":2}},{"id":"1910","type":"location","attributes":{"id":1910,"name":"Jelly
+        Pearl Street, Denver","lat":39.7372196,"lng":-104.9795821,"rating":4.2,"image_url":"Aap_uECs9HvuCrt-PWCi2JEnwve4HURAqqnDUz4gtvOOjpC3YBI_A32XIYo9XJ7QDe4FAo874ivvjdUS25h7nV1AwVrJ-WpNx8-M24XZ3-ckTAyqHVqTVURIOZxvMhkbE4JGmVV7CmVJqx5TkfMGE7SIXI9Ogh3Fcq--lML-lK5u8wQCm_4M","price_level":2}},{"id":"404","type":"location","attributes":{"id":404,"name":"Jelly
         Cafe - 13th Ave","place_id":"ChIJKf_Bb9R_bIcRbTDH4sDJNCM","address":"600 East
-        13th Avenue, Denver","lat":39.7367423,"lng":-104.9797069,"rating":4.4,"image_url":"Aap_uEDb3J0vp9-t3wY8miKdvpbVxs4K4t38994jOgGbuERKlU4z-Ikdwo0VXI-xzRyJ7qfTmoO0svULy1j6cupNVBEgj9pIa4xhcaEPauZLXUWrdL2RPsFBRC628OHTwzuI51hKa0BxoVFJf5MEMjzemkdZ00zmrgPQDRlVTMp2Fq4SjKPW","price_level":null}},{"id":"1911","type":"location","attributes":{"id":1911,"name":"Denver
+        13th Avenue, Denver","lat":39.7367423,"lng":-104.9797069,"rating":4.4,"image_url":"Aap_uEBFxXVrPDE2rXFV112GfBgH0LCoearjctpjjeTnWTpadym4S7f0VzUuwFOh57sdV9Swfy-YzUwuWuVNFahhfgdHTeEhQPJYJHji_sIiADOja3hGB9gsG3VoGt22ECppOzaLcK1DPHcUUBkQn2Pze43-qOzoHFmmPIzcJWdGHw216tYG","price_level":null}},{"id":"405","type":"location","attributes":{"id":405,"name":"Denver
         Food Trucks","place_id":"ChIJ061usyV5bIcRjjdVz1D0K4Q","address":"1233 North
-        Ogden Street, Denver","lat":39.7356971,"lng":-104.9755495,"rating":3.9,"image_url":"Aap_uEA4L7JQ2zCvN2rwwMCkKwJDXYjfUV-17CItCDaAgptpoyTOsB0Hs1MFjvSijctcnSWYQwMd6us_vXeURtk93nq6eky2Y0i4cCia52kSMqfIuH_GCAvuVwZxXtDGJ-ADDsORzdLb5JtKA9LlZfFZAU4sn463PokRK7XFxMpIJ2X6mv8e","price_level":null}}]}'
-  recorded_at: Wed, 08 Jun 2022 18:28:48 GMT
+        Ogden Street, Denver","lat":39.7356971,"lng":-104.9755495,"rating":3.9,"image_url":"Aap_uEABNj3-n7H-vZy660fxrop7TbPjX2Kc4OUGZn8Z3Xnbq8H8ooGWTqjLZZxqY7F8J9oBIGGhIYuZjK1m60Q6hV8baF3Xm0tZ0INtOkBwwUZ4AIqgJ95I6AYMKDLbhbSwQks3EOguPNTz52qTSPxaqMzIS8a9EzjoMgefU1qi9PyCJPre","price_level":null}}]}'
+  recorded_at: Thu, 09 Jun 2022 18:44:05 GMT
 recorded_with: VCR 6.1.0

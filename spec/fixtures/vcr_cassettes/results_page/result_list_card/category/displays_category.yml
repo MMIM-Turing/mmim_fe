@@ -21,26 +21,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4847801a3fdb07afc0bfd7b0d131ae54"
+      - W/"6792e411243873a68b506c9ae623e4b3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '093d30da-ed73-4950-9627-7631b6203dfd'
+      - 35dfc8f3-bae0-4b7f-84a2-e4a59ca3e9b9
       X-Runtime:
-      - '0.795244'
+      - '0.527265'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1967","type":"location","attributes":{"id":1967,"name":"Garden
+      string: '{"data":[{"id":"461","type":"location","attributes":{"id":461,"name":"Garden
         Block Denver Botanic Gardens","place_id":"ChIJlULQiNB4bIcR_mLJlJF9GjY","address":"United
-        States","lat":39.7466012,"lng":-104.9940559,"rating":null,"image_url":"Aap_uEB0WK8eKSXWfb6YKotXuC7TDmfNvQuPsqmzeZdYTS7h0j4GJLWlUnyaPge5Sa0mtoFfszcAsz9e9l_q0FpgY2W0tSN6GbHz-cOLpnFIPMQTKoXDSZVHdZWi822M9gSY6Js0hxkk61sLr1wd1RS7ZQ3JmRoKolDFr0TnmLsu9vlNN87i","price_level":null}},{"id":"1968","type":"location","attributes":{"id":1968,"name":"The
+        States","lat":39.7466012,"lng":-104.9940559,"rating":null,"image_url":"Aap_uEA5XXx2ABspWb8xjOlh7fBRlKbOk_XooLTYAtuPvH6yveRC-Mv5QRgdHCt4rXp5BL-ffDdRFC_voYzSwmlIgNDfitqmIUAO-rqld5RF7POcP7J4xNnhWgSnyRcmfTR1dlSluGIBXdQ9NtusDf4Gf26JaSlIpN1HjJh9dnc4FZxi1JZ8","price_level":null}},{"id":"462","type":"location","attributes":{"id":462,"name":"The
         Outer Space","place_id":"ChIJ-VosgGx5bIcRsKcX-k7zXAc","address":"601-649 16th
-        Street Mall, Denver","lat":39.744784,"lng":-104.9914661,"rating":5.0,"image_url":"Aap_uEAt77XblxaVImDbG6DGB_RwXMmkw3VtjeppXiGHzPgCOHF20eof0Ju-7QrXpnvYXf-g67iXfFLyx3Obv0VBJUv6IXPO5-Wq2h3ZyA2qzWVgNaYU7R53D3EQjOGiXtr4bIBZGSvIQDZ5FynpftE-AvXC26DFVwsLJCfqL2FaMPlAJPbJ","price_level":null}},{"id":"1969","type":"location","attributes":{"id":1969,"name":"Skyline
-        Park","place_id":"ChIJL8iusWJ5bIcRO5pObllFGOU","address":"Denver","lat":39.7473389,"lng":-104.9966741,"rating":4.4,"image_url":"Aap_uEDir6J7zSok_us7rljpnm9XDvR5quhXwzUq7sN-A6KX-Pr5BM9h1obULtph-kbkphyIa0d6Ykr-zxXGvFBzQoEtUKGWr6jfq7nI4UYENxZ2JBQ_AXahe42kRbsgtDGVmLDlMHb1a_9spfRwm37BepOejleEA071QSgYuOpNlxaMOEgh","price_level":null}},{"id":"1970","type":"location","attributes":{"id":1970,"name":"Downtown
+        Street Mall, Denver","lat":39.744784,"lng":-104.9914661,"rating":5.0,"image_url":"Aap_uEAtrYxyahqwqb5-X2HS7GZd4thQNZFJS58SdxQGzthN9eksKP0otVYmzDoVSMsufXU5a5tEcd85_lO_FNk1Mqu6lWXLQdV2a09iHuSu7MYrX7dsfrFRTV6IalGFppUpjiTDw0EZ5xNkGkPmARLqb__jqd6z5i6pKsH2nUly-pdmvz5J","price_level":null}},{"id":"463","type":"location","attributes":{"id":463,"name":"Skyline
+        Park","place_id":"ChIJL8iusWJ5bIcRO5pObllFGOU","address":"Denver","lat":39.7473389,"lng":-104.9966741,"rating":4.4,"image_url":"Aap_uEC8hL0RPhptRk1qRMkDgOU8RocAA4ejyEEGPAqcfeg0hQrAATJ1SsmJLKBeINR1UwjFf43Cn_eYKTyn0wMEs9IiwUxzpxe50X7bxQ1LOYuI3l8czyXnl8c4aW_qB771tX-cqoWeYL-7rhuIuBLqDLsDk_LOxoE2FTSdMcSmHCCLMriJ","price_level":null}},{"id":"464","type":"location","attributes":{"id":464,"name":"Downtown
         Denver Rink Presented by Southwest","place_id":"ChIJk_zOun95bIcRhOwTvlN9FQs","address":"1601
-        Arapahoe Street, Denver","lat":39.7481068,"lng":-104.9956824,"rating":4.3,"image_url":"Aap_uEDcCaAMvGl-j3GZzh4nYLQZejOJKu9pplao_INPkMR4d6oZVDxzI28Lv3leSvGTx3LqsUMGG2nJ-UzTvi4C2Nd0aCdo4mVO8ypnzsaOQqtkCXUaasiUQjR7HH4lDCZNA0_e4ol-4zLSNyx6HELonvMc83Keaka_5S92Kd3M6xmhHmo","price_level":null}},{"id":"1971","type":"location","attributes":{"id":1971,"name":"Skyline
+        Arapahoe Street, Denver","lat":39.7481068,"lng":-104.9956824,"rating":4.3,"image_url":"Aap_uEB2ljltkIS-ZseDK3GGHlyx_l5sW1_G_urcU1oouxsEqa2ybCHk0rPekGvebuDVTL6KRxaFDAIEks_xK1yOki7f4gh9GQ4joRhVKcpov5BjwRR8-qiKRD7E_5GV9mdHSs0p4dU3H8DXIq8i8X4Qus-DXYiJezfZmygcNztCbi7sgtI","price_level":null}},{"id":"465","type":"location","attributes":{"id":465,"name":"Skyline
         Beer Garden","place_id":"ChIJVWKFlNp4bIcReRJM6HBRwbQ","address":"1601 Arapahoe
-        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEASeTLMqC4UozZSSJFAK4eyfqJcotBLZyY6TORCdiC7cVcDGKDYj1CW15z5sr9keeDGbhia-VFuaCo-trt_wvTvFRhIJ90NumV6CGU9Himspek3761Squ7U2usLoLrkR1HhPURAqCV_hsqxYRj8XpXoT7F0TcI9eXgVfHx_ZFqMxQPh","price_level":null}}]}'
-  recorded_at: Wed, 08 Jun 2022 18:28:51 GMT
+        Street, Denver","lat":39.7484986,"lng":-104.9951895,"rating":4.3,"image_url":"Aap_uEDLc9GA088c2_vvnG1ujjnbVSDleLJCnE2uyL1xDE9twLXrjCsdLrknqMrubU8dLLQDXgMFM2wmpq9xJQU6_ySXrVNlDXSIYfL4qXqmppMmSxVPgfG7mC_IsNvVjDMl5yyuF-g6dpuy6eVTQlF0SpXAVVTqj-sFjZmGKlMbL1ZskRMH","price_level":null}}]}'
+  recorded_at: Thu, 09 Jun 2022 18:44:07 GMT
 recorded_with: VCR 6.1.0
