@@ -12,7 +12,7 @@ class Dashboard::UserResultsController < ApplicationController
       redirect_to dashboard_path
       flash[:alert] = "#{search_params[:user_b_email]} has not set a default address, please search by address instead!"
     else
-      @locations = Rails.cache.fetch("locations - #{search_params}") do
+      @locations = Rails.cache.fetch("locations - #{search_params}", expires_in: 1.hour) do
         LocationsFacade.user_search(search_params)
       end
       @category = search_params[:category]
