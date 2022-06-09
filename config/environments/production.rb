@@ -67,7 +67,7 @@ Rails.application.configure do
   #                    :down_retry_delay => 60
   #                  }
 
-  config.cache_store = :file_store, "app/tmp/cache/"
+  config.cache_store = :file_store, "/tmp/cache/"
 
   config.public_file_server.enabled = true
   config.public_file_server.headers = {
