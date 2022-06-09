@@ -101,6 +101,7 @@ GOOGLE_CLIENT_SECRET: 'your google secret code'
 ```shell
 $ rails s
 ```
+- Note: You must run mmie_be server simultaneously.
 
 - Open web browser and visit link
     http://localhost:5000 <br><br>
