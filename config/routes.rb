@@ -20,5 +20,4 @@ Rails.application.routes.draw do
   patch '/results', to: 'results#index'
   patch '/dashboard/results', to: 'dashboard/results#index'
   patch '/dashboard/user_results', to: 'dashboard/user_results#index'
-
 end

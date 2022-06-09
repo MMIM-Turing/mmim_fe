@@ -1,10 +1,11 @@
 class DashboardController < ApplicationController
   before_action :require_user
   before_action :require_address_params, only: :update
+  before_action :require_checkbox, only: :new_meeting
 
   def show
     @suggested_meetings = suggested_meetings
-    @accepted_meetings = MeetingsFacade.get_meetings({email: current_user.email})
+    @accepted_meetings = MeetingsFacade.get_meetings({ email: current_user.email })
   end
 
   def edit; end
@@ -32,21 +33,23 @@ class DashboardController < ApplicationController
   end
 
   def require_address_params
-    if params[:street].empty? || params[:city].empty?  || params[:state].empty? || params[:zipcode].empty?
+    if params[:street].empty? || params[:city].empty? || params[:state].empty? || params[:zipcode].empty?
       flash[:alert] = 'Please fill out all required area'
-      if params[:commit] == "Update Default Address"
+      if params[:commit] == 'Update Default Address'
         redirect_to '/dashboard/address?type=update'
       else
         redirect_to '/dashboard/address?type=new'
       end
     end
   end
+
   def info_params
     { email: current_user.email, address: address_params }
   end
 
   def accepted_meeting_params
-     { host_email: params[:host_email], guest_email: params[:guest_email], location_name: params[:location_name], location_address: params[:location_address]}
+    { host_email: params[:host_email], guest_email: params[:guest_email], location_name: params[:location_name],
+      location_address: params[:location_address] }
   end
 
   def suggested_meeting_key
@@ -59,23 +62,32 @@ class DashboardController < ApplicationController
   end
 
   def params_from_user_results_controller
-    { "address_1" => params[:address_1], "user_b_email" => params[:user_b_email], "category" => params[:category] }
+    { 'address_1' => params[:address_1], 'user_b_email' => params[:user_b_email], 'category' => params[:category] }
   end
 
   def suggested_meetings
     if Rails.cache.instance_variable_get(:@data)
-      keys = Rails.cache.instance_variable_get(:@data).keys.find_all {|k| k.include?(current_user.email)}
-      keys = keys.find_all {|k| !k.include?("user_b_email") }
-      @suggested_meetings = keys.map { |k| Rails.cache.read(k) }
+      keys = Rails.cache.instance_variable_get(:@data).keys.find_all { |k| k.include?(current_user.email) }
+      keys = keys.find_all { |k| !k.include?('user_b_email') }
+      keys.map { |k| Rails.cache.read(k) }
     end
   end
 
   def suggested_locations
     all_locations = Rails.cache.read("locations - #{params_from_user_results_controller}")
-    suggested_locations = all_locations.find_all { |location| new_meeting_params[:place_ids].include?(location.place_id)}
-    Rails.cache.fetch("#{new_meeting_params.values.join}", expires_in: 1.hour) do
-      meetings = MeetingsFacade.suggested_meeting({ locations: suggested_locations, host_email: new_meeting_params[:host_email], guest_email: new_meeting_params[:guest_email] })
+    suggested_locations = all_locations.find_all do |location|
+      new_meeting_params[:place_ids].include?(location.place_id)
+    end
+    Rails.cache.fetch(new_meeting_params.values.join.to_s, expires_in: 1.day) do
+      meetings = MeetingsFacade.suggested_meeting({ locations: suggested_locations,
+                                                    host_email: new_meeting_params[:host_email], guest_email: new_meeting_params[:guest_email] })
     end
   end
 
+  def require_checkbox
+    if params[:place_ids].nil?
+      flash[:alert] = 'Please select at least one location'
+      render :show
+    end
+  end
 end

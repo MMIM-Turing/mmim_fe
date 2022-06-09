@@ -21,18 +21,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a0a037af925c6f1ac0429d4385d00288"
+      - W/"75e4f6d1214d1840d6776591f1a5c6e1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0b71d203-0a5f-43e2-8804-20abe551c710
+      - bb9b11de-13cf-46b1-b456-2ee6a5c6be1e
       X-Runtime:
-      - '0.002186'
+      - '0.002836'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"8","type":"user","attributes":{"name":"usersearch base","email":"user_search@email.com","address":"2001
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"usersearch base","email":"user_search@email.com","address":"2001
         Colorado Blvd, Denver, CO 80205"}}}'
-  recorded_at: Wed, 08 Jun 2022 18:29:53 GMT
+  recorded_at: Thu, 09 Jun 2022 18:44:09 GMT
 recorded_with: VCR 6.1.0

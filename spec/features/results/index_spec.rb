@@ -9,7 +9,6 @@ RSpec.describe 'results page' do
     fill_in :address_1, with: '3643 W Colfax Ave, Denver, CO 80204'
     fill_in :address_2, with: '2300 Steele St Denver CO 80205'
     allow(PhotoService).to receive(:get_url).and_return('http//url')
-
   end
 
   describe 'map card', :vcr do
@@ -29,7 +28,6 @@ RSpec.describe 'results page' do
 
       expect(current_path).to eq(root_path)
       expect(page).to have_content('Please fill out both address fields')
-
     end
   end
 
@@ -45,11 +43,10 @@ RSpec.describe 'results page' do
     end
   end
 
-
   describe 'result list card' do
     context 'category' do
       it 'displays category', :vcr do
-        select "park", from: :category
+        select 'park', from: :category
         click_button 'Search'
 
         expect(page).to have_content('Park')

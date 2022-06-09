@@ -28,8 +28,6 @@ class Location
   end
 
   def url_image
-    if @image_url
-      PhotoService.get_url(@image_url)
-    end
+    PhotoService.get_url(@image_url) if @image_url
   end
 end

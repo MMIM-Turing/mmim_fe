@@ -7,7 +7,7 @@ class UsersService
 
     def find_user(params)
       response = conn("find_user?params=#{params.to_json}").get
-      JSON.parse(response.body, symbolize_names:true)
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     def create_or_update_address(params)
@@ -15,12 +15,13 @@ class UsersService
       JSON.parse(response.body, symbolize_names: true)
     end
 
-private 
+    private
+
     def conn(uri)
-      if Rails.env == 'development' || Rails.env == 'test'
-        Faraday.new("#{ENV["backend_server_dev"]}/#{uri}")
-      else 
-        Faraday.new("#{ENV["backend_server_pro"]}/#{uri}")
+      if Rails.env.development? || Rails.env.test?
+        Faraday.new("#{ENV['backend_server_dev']}/#{uri}")
+      else
+        Faraday.new("#{ENV['backend_server_pro']}/#{uri}")
       end
     end
   end

@@ -21,25 +21,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"952544160cbcdc4f2f88533dec16dac3"
+      - W/"5cad8bb478a79fea9ae2174fc8d43bde"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 26daeb8e-29f1-4405-8ba5-e416c544b53a
+      - '08ec98f9-3d57-42ec-a4aa-14e8b0fea852'
       X-Runtime:
-      - '0.680521'
+      - '0.450187'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1987","type":"location","attributes":{"id":1987,"name":"Starbucks","place_id":"ChIJG8obq9F4bIcRUTFp_7aKC-0","address":"1420
-        Stout Street, Denver","lat":39.7442439,"lng":-104.9948669,"rating":3.5,"image_url":"Aap_uEDuLYgsx1dJ_UNIK3PsrunMq5U4g1R4ywrKwWx6rb79bkldGG5K-XF4GdWV8KG9sKUwcqCXp6iZr92jqHd2_T2dT5jXRv_6-ZeY3UclQZMxzuEQ0Fr3C9ebmvS-c0LbnrmW3xOCwbk8KiWtUBTAOt7yN7QIvIHVkvJgdM-v0wKzd1Dy","price_level":2}},{"id":"1988","type":"location","attributes":{"id":1988,"name":"Patio16
-        On The Mall","place_id":"ChIJBXbY29B4bIcRw9URUfL_5-U","address":"Denver","lat":39.7453661,"lng":-104.9924259,"rating":null,"image_url":null,"price_level":null}},{"id":"1989","type":"location","attributes":{"id":1989,"name":"Tuscany
+      string: '{"data":[{"id":"481","type":"location","attributes":{"id":481,"name":"Starbucks","place_id":"ChIJG8obq9F4bIcRUTFp_7aKC-0","address":"1420
+        Stout Street, Denver","lat":39.7442439,"lng":-104.9948669,"rating":3.5,"image_url":"Aap_uECWQYVCkkQytaptFwdbBP0ySS1ZhjmvN6s8CME-A1r0kl-UWmXkIYG0FpmTKVVV40C9FFtNHmS5Gi521Nwy436iTa5EIz9xvTSye-iNc56Yw_AR0gsgPhLFzwYqvAMrhwFNRDz0RL-h2GXWuFTwdLgZHDr87Kos_qi-CJOtSP9wWuZF","price_level":2}},{"id":"482","type":"location","attributes":{"id":482,"name":"Patio16
+        On The Mall","place_id":"ChIJBXbY29B4bIcRw9URUfL_5-U","address":"Denver","lat":39.7453661,"lng":-104.9924259,"rating":null,"image_url":null,"price_level":null}},{"id":"483","type":"location","attributes":{"id":483,"name":"Tuscany
         Coffee \u0026 Deli","place_id":"ChIJqSqAw9B4bIcRNq_GuBECrAs","address":"1600
-        Stout Street, Denver","lat":39.7458333,"lng":-104.9927778,"rating":4.5,"image_url":"Aap_uEBYzIs9vkcogJQgQhJk6tY5CxBIJOfbBFfa_oCI4lxX-XtBQvxktCBxKUZ7KpGAzP5WBZUQQYOxX1AvFNfoKdLQbZBwX5AmSYslUGwvU1VZyuB017PwDve_PYFUwT7xCmoAxiQQVf0lRFPi13RHRJHSLUgjPZ1WtGxUtRC4g7Mgw9g","price_level":1}},{"id":"1990","type":"location","attributes":{"id":1990,"name":"Assembly
+        Stout Street, Denver","lat":39.7458333,"lng":-104.9927778,"rating":4.5,"image_url":"Aap_uEAEa-4bQDqpMyw103pSrALzCcEjCmUTejtlG887dyG7f67DAdgeQuKdbDQvF8TZhcP7Gy2p9whnW_o194FQ9YhgRhv2HHG38AnZRjhYbm-MB19XklgaG3CAsod-hqdfgk4s0aG-LOuDxO-NSmS5IjFpxbSXEMuSjIcBX1ouqT8SqVc","price_level":1}},{"id":"484","type":"location","attributes":{"id":484,"name":"Assembly
         Hall Bar + Market","place_id":"ChIJx4fr8cB5bIcRnIWSYa1IbPQ","address":"650
-        15th Street, Denver","lat":39.7434054,"lng":-104.9935598,"rating":3.0,"image_url":"Aap_uEBR9Rja6VKTABeOxrzhbk2X1uHpwg85RIQpXatR3H6HHN8G-SvPgvjBGylE7PigZyt5jmCCTg9KmaynVJGFUS52ENQn54yzCmar5p0nitkIWYal7nSPr1bTKVUs--z_P_wdXEb3CZOJlWl5IwKagkS_LKHAg-8JVhnGYZ9JgXaRR-sD","price_level":null}},{"id":"1991","type":"location","attributes":{"id":1991,"name":"Starbucks
+        15th Street, Denver","lat":39.7434054,"lng":-104.9935598,"rating":3.0,"image_url":"Aap_uECjVTsux-u6m80C6NZMMlXpUJLfzGUWj6Fi5mTbhHt-bkPZCEGzxTlRO3dCWgjSBtX3sVIR2u9UO2sPySJcDX-OfXoPygr_tf4mlCqTiKq3relRFhYUsTJ2XJtXTg2dpJVjyD3LuNSOwVCAdmyFkdSas1XARNFFUJMTq72yvZEPL3Ux","price_level":null}},{"id":"485","type":"location","attributes":{"id":485,"name":"Starbucks
         Coffee","place_id":"ChIJbXA1kql5bIcRPJUuS7ZrEYY","address":"650 15th Street,
         Denver","lat":39.7434022,"lng":-104.9935322,"rating":null,"image_url":null,"price_level":null}}]}'
-  recorded_at: Wed, 08 Jun 2022 18:28:52 GMT
+  recorded_at: Thu, 09 Jun 2022 18:44:07 GMT
 recorded_with: VCR 6.1.0

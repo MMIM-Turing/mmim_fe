@@ -2,7 +2,7 @@ class LocationsFacade
   def self.address_location_search(params)
     data = BackendService.get_locations(params)
     if data[:status] == 500
-      return []
+      []
     else
       list = data[:data].map do |data|
         Location.new(data[:attributes])
@@ -12,9 +12,9 @@ class LocationsFacade
 
   def self.user_search(params)
     data = BackendService.get_locations_by_user(params)
-    if data[:status] == 500 
-      return []
-    else 
+    if data[:status] == 500
+      []
+    else
       list = data[:data].map do |data|
         Location.new(data[:attributes])
       end
