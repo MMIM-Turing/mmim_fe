@@ -67,11 +67,11 @@ Rails.application.configure do
   #                    :down_retry_delay => 60
   #                  }
 
-  config.cache_store = :file_store, "app/tmp/cache/"
+  config.action_controller.perform_caching = true
 
-  config.public_file_server.enabled = true
+  config.cache_store = :memory_store
   config.public_file_server.headers = {
-    'Cache-Control' => "public, max-age=#{1.hour.to_i}"
+    'Cache-Control' => "public, max-age=#{2.days.to_i}"
   }
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
