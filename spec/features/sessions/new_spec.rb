@@ -17,7 +17,7 @@ RSpec.describe 'login page' do
 
     expect(current_path).to eq dashboard_path
     expect(page).to_not have_link('Login')
-    expect(page).to have_content('Welcome someone!')
+    expect(page).to have_content("someone's Dashboard")
     # test user's name configured is someone
     expect(page).to have_content('You have successfully logged in!
 ')

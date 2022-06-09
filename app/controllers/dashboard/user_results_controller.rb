@@ -3,23 +3,27 @@ class Dashboard::UserResultsController < ApplicationController
   before_action :default_category
 
   def index
-
-    @user_b = UsersFacade.find_user({email: search_params[:user_b_email]})
-    if @user_b == 'invalid email'
+    if current_user.email == search_params[:user_b_email]
       redirect_to dashboard_path
-      flash[:alert] = 'Invalid user email. Please try again!'
-    elsif @user_b.address == nil
-      redirect_to dashboard_path
-      flash[:alert] = "#{search_params[:user_b_email]} has not set a default address, please search by address instead!"
+      flash[:alert] = "You've entered your own email. Please try again!"
     else
-      @locations = Rails.cache.fetch("locations - #{search_params}") do
-        LocationsFacade.user_search(search_params)
-      end
-      @category = search_params[:category]
-      @map_info = LocationsFacade.map_info(@locations)
-      if @locations == [] || @map_info == 'No results found'
+      @user_b = UsersFacade.find_user({email: search_params[:user_b_email]})
+      if @user_b == 'invalid email'
         redirect_to dashboard_path
-        flash[:alert] = 'No midpoints found-please try different addresses'
+        flash[:alert] = 'Invalid user email. Please try again!'
+      elsif @user_b.address == nil
+        redirect_to dashboard_path
+        flash[:alert] = "#{search_params[:user_b_email]} has not set a default address, please search by address instead!"
+      else
+        @locations = Rails.cache.fetch("locations - #{search_params}") do
+          LocationsFacade.user_search(search_params)
+        end
+        @category = search_params[:category]
+        @map_info = LocationsFacade.map_info(@locations)
+        if @locations == [] || @map_info == 'No results found'
+          redirect_to dashboard_path
+          flash[:alert] = 'No midpoints found-please try different addresses'
+        end
       end
     end
   end
