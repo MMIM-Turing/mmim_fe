@@ -1,3 +1,4 @@
+<% if @suggested_meetings %>
 <% if !@suggested_meetings.empty? %>
   <div class="card" style="width: 25rem;">
         <div class="card-body">
@@ -28,6 +29,7 @@
   <button class="btn-warning btn-sm">Awaiting Reply From <%= meeting.guest_email %></button>
   <% end %>
   <% end %>
+<% end %>
 <% end %>
 </div>
     </div>

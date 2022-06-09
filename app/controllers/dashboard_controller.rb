@@ -1,6 +1,7 @@
 class DashboardController < ApplicationController
   before_action :require_user
   before_action :require_address_params, only: :update
+  before_action :require_checkbox, only: :new_meeting
 
   def show
     @suggested_meetings = suggested_meetings
@@ -69,6 +70,13 @@ class DashboardController < ApplicationController
     suggested_locations = all_locations.find_all { |location| new_meeting_params[:place_ids].include?(location.place_id)}
     Rails.cache.fetch("#{new_meeting_params.values.join}") do
       meetings = MeetingsFacade.suggested_meeting({ locations: suggested_locations, host_email: new_meeting_params[:host_email], guest_email: new_meeting_params[:guest_email] })
+    end
+  end
+
+  def require_checkbox
+    if params[:place_ids] == nil 
+      flash[:alert] = 'Please select at least one location'
+      render :show
     end
   end
 

@@ -1,3 +1,4 @@
+<% if @accepted_meetings %>
     <% if !@accepted_meetings.empty? %>
     <div class="card" style="width: 25rem;">
     <div class="card-body">
@@ -13,6 +14,7 @@
           <p>Location: <%= meeting.location_name %></p>
           <p>Address: <%= meeting.location_address %> </p>
       <% end %>
+    <% end %>
     <% end %>
   </div>
 </div>
