@@ -4,6 +4,7 @@ class DashboardController < ApplicationController
 
   def show
     @suggested_meetings = suggested_meetings
+    @accepted_meetings = MeetingsFacade.get_meetings({email: current_user.email})
   end
 
   def edit; end
@@ -13,8 +14,9 @@ class DashboardController < ApplicationController
     redirect_to dashboard_path
   end
 
-  def accept
-    binding.pry
+  def accept_meeting
+    MeetingsFacade.create_meeting(accepted_meeting_params)
+    redirect_to dashboard_path
   end
 
   def new_meeting
@@ -40,6 +42,10 @@ class DashboardController < ApplicationController
   end
   def info_params
     { email: current_user.email, address: address_params }
+  end
+
+  def accepted_meeting_params
+     { host_email: params[:host_email], guest_email: params[:guest_email], location_name: params[:location_name], location_address: params[:location_address]}
   end
 
   def new_meeting_params
