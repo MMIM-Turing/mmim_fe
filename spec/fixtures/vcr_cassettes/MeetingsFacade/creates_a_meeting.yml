@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:3000/api/v1/users?params=%7B%22name%22:%22test%20user%22,%22email%22:%22test@email.com%22%7D
+    uri: http://localhost:3000/api/v1/meeting?params=%7B%22host_email%22:%22kimmieguo@gmail.com%22,%22guest_email%22:%22xiaole.guo1@gmail.com%22,%22location_name%22:%22Lucile's%20Creole%20Cafe%22,%22location_address%22:%222852%20West%20Bowles%20Avenue,%20Littleton%22%7D
     body:
       encoding: UTF-8
       string: ''
@@ -23,18 +23,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d4472528739364ec13b8b1e39576202c"
+      - W/"a29ee2b15c494311c52521766e44af56"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e5fd756f-3820-49f7-9161-52e7dd4d6f68
+      - e6beedc9-29c4-48bd-bd0e-321c3f2584dc
       X-Runtime:
-      - '0.002091'
+      - '0.010975'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"8","type":"user","attributes":{"name":"test user","email":"test@email.com","address":"123
-        st, city, state, 80123"}}}'
-  recorded_at: Thu, 09 Jun 2022 18:44:09 GMT
+      string: '{"status":"ok"}'
+  recorded_at: Thu, 09 Jun 2022 16:16:29 GMT
 recorded_with: VCR 6.1.0

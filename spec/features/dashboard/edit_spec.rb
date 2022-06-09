@@ -8,7 +8,7 @@ RSpec.describe '/dashboard/address page' do
       data = JSON.parse(File.read('spec/fixtures/user.json'), symbolize_names: true)
       allow(UsersService).to receive(:find_or_create_user).and_return(data)
       allow(MeetingsFacade).to receive(:get_meetings).and_return([])
-      allow(BackendService).to receive(:get_meetings).and_return({data: []})
+      allow(BackendService).to receive(:get_meetings).and_return({ data: [] })
       allow_any_instance_of(DashboardController).to receive(:suggested_meetings).and_return([])
       visit '/login'
       click_on 'Log in with Google'
@@ -36,7 +36,7 @@ RSpec.describe '/dashboard/address page' do
       expect(page).to have_link('Update Default Address')
     end
 
-    it 'flash alert message and remain on update page if no user input' do 
+    it 'flash alert message and remain on update page if no user input' do
       data = JSON.parse(File.read('spec/fixtures/user_add.json'), symbolize_names: true)
       allow(UsersService).to receive(:create_or_update_address).and_return(data)
       user_data = { name: 'someone', email: 'sample@email.com', address: '123 st, Denver, CO 80123' }
@@ -50,7 +50,7 @@ RSpec.describe '/dashboard/address page' do
       fill_in :state, with: 'Colorado'
       fill_in :zipcode, with: '80123'
       click_on 'Set Default Address'
-      
+
       expect(current_path).to eq('/dashboard/address')
       expect(page).to have_content('Please fill out all required area')
     end
@@ -63,7 +63,7 @@ RSpec.describe '/dashboard/address page' do
       allow(UsersService).to receive(:find_or_create_user).and_return(data)
       visit '/login'
       allow(MeetingsFacade).to receive(:get_meetings).and_return([])
-      allow(BackendService).to receive(:get_meetings).and_return({data: []})
+      allow(BackendService).to receive(:get_meetings).and_return({ data: [] })
       allow_any_instance_of(DashboardController).to receive(:suggested_meetings).and_return([])
       click_on 'Log in with Google'
     end
@@ -88,7 +88,7 @@ RSpec.describe '/dashboard/address page' do
       expect(page).to_not have_content('123 St, Denver, CO 80123')
     end
 
-    it 'flash alert message and remain on update page if no user input' do 
+    it 'flash alert message and remain on update page if no user input' do
       click_on 'Update Default Address'
       fill_in :street, with: ''
       fill_in :city, with: 'littleton'

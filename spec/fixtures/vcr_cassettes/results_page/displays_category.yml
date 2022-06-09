@@ -21,26 +21,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e747bb6603772869ce4682a41e41fe7d"
+      - W/"2fe3a8dbcf0fa2f764e22e1b2dbdd250"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 277cdce9-cca6-4219-a7c9-e7aaa7e36317
+      - 3c22f991-9a21-42a4-b5e7-03848d24c462
       X-Runtime:
-      - '1.011980'
+      - '0.615062'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1807","type":"location","attributes":{"id":1807,"name":"Morey
+      string: '{"data":[{"id":"301","type":"location","attributes":{"id":301,"name":"Morey
         Middle School Community Garden","place_id":"ChIJ_WLjHNN-bIcR8OLahVEj9p4","address":"840
-        East 14th Avenue, Denver","lat":39.7377335,"lng":-104.977059,"rating":3.0,"image_url":null,"price_level":null}},{"id":"1808","type":"location","attributes":{"id":1808,"name":"Dominick
+        East 14th Avenue, Denver","lat":39.7377335,"lng":-104.977059,"rating":3.0,"image_url":null,"price_level":null}},{"id":"302","type":"location","attributes":{"id":302,"name":"Dominick
         Park","place_id":"ChIJES3IOdN-bIcRza7ZiHd9Jes","address":"729 East 14th Avenue,
-        Denver","lat":39.7386691,"lng":-104.9780975,"rating":4.3,"image_url":"Aap_uECEDw9tSphnLB5VvCX8YiF69v98Luymi63FE7bYJ7VLAEYPeyRsOHc1Bz9NhHuk_PBaw1klE91O6_2OJTyLTO7XB1xaDbD1UesVqU2VX9j2P9QBH2XV18pGiRRLc79nsOnM0R-_zmbhPaziW_kdhEUSPXUQNlMUTHsYUOzdaMi64mWn","price_level":null}},{"id":"1809","type":"location","attributes":{"id":1809,"name":"Corona
+        Denver","lat":39.7386691,"lng":-104.9780975,"rating":4.3,"image_url":"Aap_uEA6pw90mrBjbXA5wq1maq5Bg6YcMvy5SmACIjUm8SMGKsdW6Bzbd4Bi8i5xBWpx-ZefTRIMx182hS44ogLMj8f9hKi0bmJVtFp7pm-TR84i9tJZLsYV7_Mv1V5GPxLfBG3mTFTyW1KmTv5ddD6ql2o8sFlZ5hjXPjIv-rrNEZIFHqVY","price_level":null}},{"id":"303","type":"location","attributes":{"id":303,"name":"Corona
         Park","place_id":"ChIJOXMfetJ-bIcRhSsoQPmPywY","address":"1086 East 13th Avenue,
-        Denver","lat":39.73677929999999,"lng":-104.9743332,"rating":4.3,"image_url":"Aap_uEBUPbXIfithj5VE6bZtVfZxXk144jeFkZwocCMnS3AMsn-o2ZH0TncANoVuVAodnoSoRwMCuBUBnFaAAaHtz6SkQ-7f87w29IwClYOggodEXY0NbN1xlECqCa3osCcO71GknHTKZytUN5AWEVWUXEA_TqMekpzW2uyW7TLwowUxfFP5","price_level":null}},{"id":"1810","type":"location","attributes":{"id":1810,"name":"Swallow
-        Hill Historic District","place_id":"ChIJiXB0DS15bIcRrBIk3TKBt4A","address":"Denver","lat":39.7416667,"lng":-104.9755556,"rating":null,"image_url":null,"price_level":null}},{"id":"1811","type":"location","attributes":{"id":1811,"name":"Colorado
+        Denver","lat":39.73677929999999,"lng":-104.9743332,"rating":4.3,"image_url":"Aap_uEC0laKp7cG4aLJVK30LDRH1R5cLH7n-2-8UXP0l6Txn394R4ex7N1Hqm-oS4KzkESJXYsrWznawyBNaYWfEtOuWwR8N-ZThCDqSNrOlJvPQ2ydB8u_s5wTlDhlUKd07seufU29Nue1cYzL-UGZwrYxmZYMB3P2KNILc5c4RgXP8OiR3","price_level":null}},{"id":"304","type":"location","attributes":{"id":304,"name":"Swallow
+        Hill Historic District","place_id":"ChIJiXB0DS15bIcRrBIk3TKBt4A","address":"Denver","lat":39.7416667,"lng":-104.9755556,"rating":null,"image_url":null,"price_level":null}},{"id":"305","type":"location","attributes":{"id":305,"name":"Colorado
         Wildlife Federation","place_id":"ChIJVVXl0ip5bIcR0Td0k4kQjdU","address":"1410
         Grant Street, Denver","lat":39.73881100000001,"lng":-104.9832898,"rating":null,"image_url":null,"price_level":null}}]}'
-  recorded_at: Wed, 08 Jun 2022 18:28:43 GMT
+  recorded_at: Thu, 09 Jun 2022 18:44:02 GMT
 recorded_with: VCR 6.1.0

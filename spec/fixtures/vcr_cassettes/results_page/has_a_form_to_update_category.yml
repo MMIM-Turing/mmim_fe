@@ -21,28 +21,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3de3e102e4b818398f22a119112c5cb4"
+      - W/"828ef9a116286ace8e38caa68208ed8d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 46b5f060-ebc4-4e48-9568-d778ccd0e17e
+      - 609c0e02-7e07-489d-bb00-cecd4d388e57
       X-Runtime:
-      - '0.738787'
+      - '0.452427'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1847","type":"location","attributes":{"id":1847,"name":"Morey
+      string: '{"data":[{"id":"341","type":"location","attributes":{"id":341,"name":"Morey
         Middle School Community Garden","place_id":"ChIJ_WLjHNN-bIcR8OLahVEj9p4","address":"840
-        East 14th Avenue, Denver","lat":39.7377335,"lng":-104.977059,"rating":3.0,"image_url":null,"price_level":null}},{"id":"1848","type":"location","attributes":{"id":1848,"name":"Dominick
+        East 14th Avenue, Denver","lat":39.7377335,"lng":-104.977059,"rating":3.0,"image_url":null,"price_level":null}},{"id":"342","type":"location","attributes":{"id":342,"name":"Dominick
         Park","place_id":"ChIJES3IOdN-bIcRza7ZiHd9Jes","address":"729 East 14th Avenue,
-        Denver","lat":39.7386691,"lng":-104.9780975,"rating":4.3,"image_url":"Aap_uEDu_4FiKKZZa7dx2zJkOH4MUxKjxO87qnJYD6yMFOXE8I0e7EjMcgkBwtz-Q-roHsGVxHjFqRVs9vOv61aBweNvLi4HJ29jPS900NTaVEas3-25-UqwqUtACQZVvAJuFLDmpMwOZWBICDz4PT-GzFD-7QsHzv5WAVxhnGUsR5RYWdiO","price_level":null}},{"id":"1849","type":"location","attributes":{"id":1849,"name":"Corona
+        Denver","lat":39.7386691,"lng":-104.9780975,"rating":4.3,"image_url":"Aap_uEB_SyT_IHlUO5m9Y5xck7o7d0UM9ooUGzyfpf5VUEwFNKZO5AuczSgvHKvxNzEfQnasnT01JLbSRd0pYEztCZHwa5-ItSeQ9ztnYnla8mD9wy8xl8xKjVJkKdeZPHnOqZvhmow5CP7lxG6uLE5K6xJD1T2KNg_UIeuCBF8x0zOeVBJf","price_level":null}},{"id":"343","type":"location","attributes":{"id":343,"name":"Corona
         Park","place_id":"ChIJOXMfetJ-bIcRhSsoQPmPywY","address":"1086 East 13th Avenue,
-        Denver","lat":39.73677929999999,"lng":-104.9743332,"rating":4.3,"image_url":"Aap_uEDoJioHRjD7c7nJzUcpyz1tSLEpdWzY6Bh5L_hukelMHHa2WbaJcLpzSjA-WYmbnxvSwaeEoq6gTJUqS8z_HJPVtAxp5sEK7G6VtMdrzEH21aZsYihOOTdUcf3MdWshJT3I3Llms5oifvNy6RBQDJpkVI6lnCkf25m6fFOR4ZJEiNVm","price_level":null}},{"id":"1850","type":"location","attributes":{"id":1850,"name":"Swallow
-        Hill Historic District","place_id":"ChIJiXB0DS15bIcRrBIk3TKBt4A","address":"Denver","lat":39.7416667,"lng":-104.9755556,"rating":null,"image_url":null,"price_level":null}},{"id":"1851","type":"location","attributes":{"id":1851,"name":"Colorado
+        Denver","lat":39.73677929999999,"lng":-104.9743332,"rating":4.3,"image_url":"Aap_uEB8n5TnxXjflKKOKDeRml62C0Lrl6ZSLOx9YbayzLuvQf_O6EzkVa9rQfg4TlOoy0sZsBIqmLMrPSQg5Ys6Z3VjEzP_Ju2Gsr5K_kgXiFz-PK-oPzKSJ6KMtQMqaNH5MdhD2pFxfJPDJT3_eQgL-lM2KMBdaD9ql3cRbbPD3v7Bx4HB","price_level":null}},{"id":"344","type":"location","attributes":{"id":344,"name":"Swallow
+        Hill Historic District","place_id":"ChIJiXB0DS15bIcRrBIk3TKBt4A","address":"Denver","lat":39.7416667,"lng":-104.9755556,"rating":null,"image_url":null,"price_level":null}},{"id":"345","type":"location","attributes":{"id":345,"name":"Colorado
         Wildlife Federation","place_id":"ChIJVVXl0ip5bIcR0Td0k4kQjdU","address":"1410
         Grant Street, Denver","lat":39.73881100000001,"lng":-104.9832898,"rating":null,"image_url":null,"price_level":null}}]}'
-  recorded_at: Wed, 08 Jun 2022 18:28:45 GMT
+  recorded_at: Thu, 09 Jun 2022 18:44:03 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/search?params=%7B%22address_1%22:%222300%20Steele%20St,%20Denver,%20CO%2080205%22,%22address_2%22:%221155%20W%205th%20Ave,%20Denver,%20CO%2080204%22,%22category%22:%22bar%22%7D
@@ -64,27 +64,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"cda38ae7a4ddfab2aa010007cf887b5c"
+      - W/"df1b9bce9f4d6f130beb9f6679e2b8a7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f1b5da18-a9d6-4050-90b1-87c8d2c996e8
+      - 9c5c85d5-4fbf-408c-837d-7a1dcb6727ca
       X-Runtime:
-      - '0.806476'
+      - '0.464231'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1867","type":"location","attributes":{"id":1867,"name":"Hudson
+      string: '{"data":[{"id":"361","type":"location","attributes":{"id":361,"name":"Hudson
         Hill","place_id":"ChIJzUQzedN-bIcRwhZQzex-bBQ","address":"619 East 13th Avenue,
-        Denver","lat":39.736974,"lng":-104.9793807,"rating":4.6,"image_url":"Aap_uECb60xkk4sv6n7b7_ts7dlHuUfvf0J_RqwnYK9PY0olcoTbUjSRQ4nC1ECH-M008pmOESMrdpGWSNN1fgimyx_F-XqINVqewvsAR7ozbEPsnZHFqO0AtiOFeOrw4x44d2LpczHAr-AdL5NdAcuV6j9pEUQEgIMjFdX7t4qoZ_xct0YX","price_level":2}},{"id":"1868","type":"location","attributes":{"id":1868,"name":"Your
+        Denver","lat":39.736974,"lng":-104.9793807,"rating":4.6,"image_url":"Aap_uECXFZlHdWRjlkVdOlaJlhLgoksRntRRYIt9iq2mygKeaO5Ewn2uMnjCOJpMRios8xoMTWcCwMD3LlsSpJTz9lxiKJMdl-dX5hrpkBICenFDE21Hyeag-E7XbMM1TYdUAxOUduLElNdnIJROnOzNVtvS7Syq_P9mbfMwELa7v7MB0NBr","price_level":2}},{"id":"362","type":"location","attributes":{"id":362,"name":"Your
         Mom''s House","place_id":"ChIJe8lrf9N-bIcRFCugBtF5cFI","address":"608 East
-        13th Avenue, Denver","lat":39.7367324,"lng":-104.9795145,"rating":4.5,"image_url":"Aap_uEC2aS-NWAuDe7JPXdm59tnIldqBp3wOslX3kc3pel9ncmbV3-HY1kBO3wRPbWpwJAGHfPxI5mQpKD7oi9bEqtzfevN2wLQRt5V7Z3FaBEbSymvKkiWG30SpEPDpQVgbc-MhDFvU2HG_SygY-1ZzI1JyCuxh3vUo8njxbJGinmkskK5M","price_level":null}},{"id":"1869","type":"location","attributes":{"id":1869,"name":"Jelly
+        13th Avenue, Denver","lat":39.7367324,"lng":-104.9795145,"rating":4.5,"image_url":"Aap_uEAkqgh8whJDgWMdb1AdZIktm4xod9rq9bNrZ0Ry8Ne9PRHriddOLJJi_V1Khh-uO_DyCQyKHZw1MShUlyu-aY49dbetIu0LUVYHDiU9zy_8ToY_POJTp8Q-XXcq4RYjSZaGi8PyOn8ixLv9mxrz2TqejFbxXuMLd8ZQ3qLWxet_JwA_","price_level":null}},{"id":"363","type":"location","attributes":{"id":363,"name":"Jelly
         Cafe - 13th Ave","place_id":"ChIJKf_Bb9R_bIcRbTDH4sDJNCM","address":"600 East
-        13th Avenue, Denver","lat":39.7367423,"lng":-104.9797069,"rating":4.4,"image_url":"Aap_uEAI9wYdhg9XHwCkeeV4KpdXdSMPSeqWkf0S8n5rzSHHWyJCX4XrG4B_GFBALp-5zociIEQJBu-nLxUMTyTqN01IKYdnSjevva3lmuT2OtOYjX162vtrhHMjk2XqT5XSdmqeYMihoUf0xoTjs0-f3LD3yDYBK4cmW7ItsW1HfdE2nJk1","price_level":null}},{"id":"1870","type":"location","attributes":{"id":1870,"name":"Charlie''s
+        13th Avenue, Denver","lat":39.7367423,"lng":-104.9797069,"rating":4.4,"image_url":"Aap_uEAczGHJeCjqZPm_Yfb3V2O0HNmRksJQsiL5a-iihVRP8gOakMT-PeaQDCs7qA9dOiIX5qZFmq540YoRhqJZX0VoycMo8h4SyAjccC5177vvnijH-1oTYqzo-zJCOlf0C1Ww-v0rX3qct_CAfkq3nMiMD40RV3rYtB1yKl4h_Fw6VKHY","price_level":null}},{"id":"364","type":"location","attributes":{"id":364,"name":"Charlie''s
         Denver","place_id":"ChIJydsjLC15bIcRcnnY3EIbTgs","address":"900 East Colfax
-        Avenue, Denver","lat":39.7397694,"lng":-104.9762033,"rating":3.6,"image_url":"Aap_uEDfMEwJaKOExbq0kQoAU5W3yAourML-UCCiZUAyFo4T5PxAoF2fbg-Gd-YWRX8TILg113qXy0aYJzpXM8NATlrxz134XaPG5C99ebFcA2mqRnF8qzz-bb3-3-mCNgGvCS78TTmrXYdmLWJrurpaRBjr9Zqiizt7Rq0ll6vTdSIbR0h7","price_level":1}},{"id":"1871","type":"location","attributes":{"id":1871,"name":"Pub
+        Avenue, Denver","lat":39.7397694,"lng":-104.9762033,"rating":3.6,"image_url":"Aap_uEBTjZtEn-YVvX2kp-gcikbgCQYBfRvKABsILjE_cJciGQODeqpEOheshSnXsno_k1Q2mggYM-DvexlTGY6Ga3fhuDwWhBPfK6GtRooYRyozD_fTLsZrR2Qmp44Gu8NFVGu7NWhEc09RSRiuzhRO_lTXzCiAJvH3j8ATw4Hsf8B0Z06H","price_level":1}},{"id":"365","type":"location","attributes":{"id":365,"name":"Pub
         on Penn","place_id":"ChIJ5e74itR-bIcRBymHHQRL9jE","address":"1278 Pennsylvania
-        Street, Denver","lat":39.7367753,"lng":-104.980827,"rating":4.1,"image_url":"Aap_uECeDXNxP5ddbyExJoWN7ZfXK-3AIhhAuqgesXEduFOwZOeuoaGw2r7G5VzEDz8KWB8O2jeWE3w0s6zcDoNXU8i4vWGfta46rXCOz3M8FTjtIlWOcRL9eUAl7TnY1CARATzPcnOloqm-puAVA0L1hcY_5UL6SQqWczMnR8unus3zu2tp","price_level":1}}]}'
-  recorded_at: Wed, 08 Jun 2022 18:28:46 GMT
+        Street, Denver","lat":39.7367753,"lng":-104.980827,"rating":4.1,"image_url":"Aap_uEBRiBjM7Nl-8aMPbumYsp5IXrlcEANV5N0yt4OQGqkBN6FKTG6HcBjyzsN0rgATNYK9N_-wv6DNMIvz3TqwRxckOCKzDx1Yt0FVDUnFWKlQQESKP8HwSTk2K0s-l9gKh6_6nLe0C9UzGGLyfJfbBtOgiRTXyqSIBBkqpn0OLtO_DAgx","price_level":1}}]}'
+  recorded_at: Thu, 09 Jun 2022 18:44:04 GMT
 recorded_with: VCR 6.1.0
