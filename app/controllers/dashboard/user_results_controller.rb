@@ -2,7 +2,7 @@ class Dashboard::UserResultsController < ApplicationController
   before_action :require_address, except: :update
   before_action :default_category
 
-  def index
+    def index
     if current_user.email == search_params[:user_b_email]
       redirect_to dashboard_path
       flash[:alert] = "You've entered your own email. Please try again!"

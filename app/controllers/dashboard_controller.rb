@@ -17,6 +17,7 @@ class DashboardController < ApplicationController
 
   def accept_meeting
     MeetingsFacade.create_meeting(accepted_meeting_params)
+    Rails.cache.delete(suggested_meeting_key)
     redirect_to dashboard_path
   end
 
@@ -49,6 +50,11 @@ class DashboardController < ApplicationController
   def accepted_meeting_params
     { host_email: params[:host_email], guest_email: params[:guest_email], location_name: params[:location_name],
       location_address: params[:location_address] }
+  end
+
+  def suggested_meeting_key
+    info = { host_email: params[:host_email], guest_email: params[:guest_email], place_ids: params[:place_ids] }
+    info.values.join.delete(' ')
   end
 
   def new_meeting_params
