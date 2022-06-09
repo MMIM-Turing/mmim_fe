@@ -17,7 +17,6 @@ class DashboardController < ApplicationController
 
   def accept_meeting
     MeetingsFacade.create_meeting(accepted_meeting_params)
-    require 'pry'; binding.pry
     Rails.cache.delete(suggested_meeting_key)
     redirect_to dashboard_path
   end
