@@ -7,13 +7,14 @@ class Dashboard::UserResultsController < ApplicationController
       redirect_to dashboard_path
       flash[:alert] = "You've entered your own email. Please try again!"
     else
-      @user_b = UsersFacade.find_user({email: search_params[:user_b_email]})
+      @user_b = UsersFacade.find_user({ email: search_params[:user_b_email] })
       if @user_b == 'invalid email'
         redirect_to dashboard_path
         flash[:alert] = 'Invalid user email. Please try again!'
-      elsif @user_b.address == nil
+      elsif @user_b.address.nil?
         redirect_to dashboard_path
-        flash[:alert] = "#{search_params[:user_b_email]} has not set a default address, please search by address instead!"
+        flash[:alert] =
+          "#{search_params[:user_b_email]} has not set a default address, please search by address instead!"
       else
         @locations = Rails.cache.fetch("locations - #{search_params}") do
           LocationsFacade.user_search(search_params)
@@ -36,16 +37,12 @@ class Dashboard::UserResultsController < ApplicationController
 
   def require_address
     if search_params[:address_1].empty? || search_params[:user_b_email].empty?
-      flash[:alert] = "Please fill out both address fields"
+      flash[:alert] = 'Please fill out both address fields'
       redirect_to '/dashboard'
-    else
     end
   end
 
   def default_category
-    if search_params[:category].empty?
-      params[:category] = "cafe"
-    else
-    end
+    params[:category] = 'cafe' if search_params[:category].empty?
   end
 end

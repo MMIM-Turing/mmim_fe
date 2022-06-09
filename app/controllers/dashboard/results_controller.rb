@@ -20,16 +20,12 @@ class Dashboard::ResultsController < ApplicationController
 
   def require_address
     if search_params[:address_1].empty? || search_params[:address_2].empty?
-      flash[:alert] = "Please fill out both address fields"
+      flash[:alert] = 'Please fill out both address fields'
       redirect_to '/dashboard'
-    else
     end
   end
 
   def default_category
-    if search_params[:category].empty?
-      params[:category] = "cafe"
-    else
-    end
+    params[:category] = 'cafe' if search_params[:category].empty?
   end
 end

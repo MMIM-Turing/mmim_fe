@@ -5,10 +5,12 @@ ruby '2.7.4'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
+gem 'dalli'
 gem 'faraday'
 gem 'figaro'
 gem 'jbuilder', '~> 2.5'
 gem 'json'
+gem 'memcachier'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection'
@@ -18,8 +20,6 @@ gem 'rails', '~> 5.2.8'
 gem 'rspec_junit_formatter'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'dalli'
-gem 'memcachier'
 
 group :development, :test do
   gem 'capybara'

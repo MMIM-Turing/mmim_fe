@@ -10,9 +10,9 @@ class UsersFacade
   end
 
   def self.find_user(params)
-     data = UsersService.find_user(params)
-    if data[:data] == nil 
-      return 'invalid email'
+    data = UsersService.find_user(params)
+    if data[:data].nil?
+      'invalid email'
     else
       User.new(data[:data][:attributes])
     end
