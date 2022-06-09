@@ -6,6 +6,9 @@ RSpec.describe 'user results page' do
     data = JSON.parse(File.read('spec/fixtures/user.json'), symbolize_names: true)
     allow(UsersService).to receive(:find_or_create_user).and_return(data)
     visit '/login'
+    allow(MeetingsFacade).to receive(:get_meetings).and_return([])
+    allow(BackendService).to receive(:get_meetings).and_return({data: []})
+    allow_any_instance_of(DashboardController).to receive(:suggested_meetings).and_return([]) 
     click_on 'Log in with Google'
     allow(PhotoService).to receive(:get_url).and_return('http//url')
   end
