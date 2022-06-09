@@ -1,12 +1,13 @@
-  <h1 class="display-6">Pending Meeting:</h1>
-<% if @suggested_meetings %>
-  <% @suggested_meetings.each do |meeting| %>
+<% if !@suggested_meetings.empty? %>
   <div class="card" style="width: 25rem;">
         <div class="card-body">
           <div class="mb-3">
+            <h1 class="display-6">Pending Meetings:</h1>
+            <% @suggested_meetings.each do |meeting| %>
+            <hr>
       <% if current_user.email == meeting.host_email %>
       <% elsif current_user.email == meeting.guest_email %>
-        <h1>You've Been Invited!</h1>
+        <h1 class="display-6">You've Been Invited!</h1>
       <% end %>
       <p><strong><%= meeting.host_email %></strong> has invited<br>
       <strong><%= meeting.guest_email %></strong> to meet at:</p>
@@ -28,6 +29,6 @@
   <% end %>
   <% end %>
 <% end %>
-
+</div>
     </div>
   </div>
