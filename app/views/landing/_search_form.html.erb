@@ -3,19 +3,19 @@
   <div class="card-body">
     <div class="mb-3">
   <ul>
-    <%= form.text_field :address_1, { class: "form-control", placeholder: 'enter address' } %>
-    <strong><%= form.label "Address 1" %></strong>
+    <strong><%= form.label "1st location" %></strong>
+    <%= form.text_field :address_1, { class: "form-control", placeholder: 'Enter an address - or a city, zip, or state' } %>
   </ul>
   <ul>
-    <%= form.text_field :address_2, { class: "form-control", placeholder: 'enter address' } %>
-    <strong><%= form.label "Address 2" %></strong>
+    <strong><%= form.label "2nd location" %></strong>
+    <%= form.text_field :address_2, { class: "form-control", placeholder: 'Enter an address - or a city, zip, or state' } %>
   </ul>
   <ul>
   <%= select_tag(:category, options_for_select(['cafe', 'restaurant', 'bar', 'park','library'], 'cafe')) %><br>
-  <strong><%= form.label "Category" %></strong>
+  <strong><%= form.label "Select the type of place" %></strong>
 </ul>
 <ul>
-  <%= form.submit "Search", class: "btn btn-success" %>
+  <%= form.submit "Find a middle place", class: "btn btn-success" %>
 </ul>
 <% end %>
     </div>

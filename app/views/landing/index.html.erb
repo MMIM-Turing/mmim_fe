@@ -1,5 +1,10 @@
 <%= render partial: 'partials/navbar_landing' %>
-<h4 style="text-align:center; padding:10px">Find a Place in the Middle</h4>
-<div style="position: fixed; right: 50%; left: 35%;">
-<%= render 'search_form' %>
+<div style="float:right">
+  <%= render 'accordion' %>
+</div>
+<h2 style="text-align:center; padding-top:160px">Find a place in the middle</h2>
+<h6 style="text-align:center; padding:10px">Meet with friends, family, or coworkers at a place in the middle that meets your needs</h6>
+<!-- <div style="position: fixed; right: 50%; left: 35%;"> -->
+<div style="margin:auto; width:35%"
+  <%= render 'search_form' %>
 </div>
