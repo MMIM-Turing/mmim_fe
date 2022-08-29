@@ -33,7 +33,7 @@ RSpec.describe 'landing page' do
       fill_in :address_2, with: '3643 W Colfax Ave, Denver, CO 80204'
       select 'cafe', from: :category
 
-      click_button 'Search'
+      click_button 'Find a middle place'
 
       expect(current_path).to eq('/results')
     end
@@ -43,7 +43,7 @@ RSpec.describe 'landing page' do
     it 'redirects user to landing page with flash message' do
       visit '/'
 
-      click_button 'Search'
+      click_button 'Find a middle place'
       expect(current_path).to eq('/')
       expect(page).to have_content('Please fill out both address fields')
     end
