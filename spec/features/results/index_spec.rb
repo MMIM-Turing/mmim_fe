@@ -13,7 +13,7 @@ RSpec.describe 'results page' do
 
   describe 'map card', :vcr do
     it 'displays a map' do
-      click_button 'Search'
+      click_button 'Find a middle place'
 
       expect(page).to have_css('#map')
     end
@@ -24,7 +24,7 @@ RSpec.describe 'results page' do
       visit '/'
       fill_in :address_1, with: ''
       fill_in :address_2, with: ''
-      click_button 'Search'
+      click_button 'Find a middle place'
 
       expect(current_path).to eq(root_path)
       expect(page).to have_content('Please fill out both address fields')
@@ -36,7 +36,7 @@ RSpec.describe 'results page' do
       visit '/'
       fill_in :address_1, with: '123 st'
       fill_in :address_2, with: '249 st'
-      click_button 'Search'
+      click_button 'Find a middle place'
 
       expect(current_path).to eq(root_path)
       expect(page).to have_content('No midpoints found-please try different addresses')
@@ -47,21 +47,21 @@ RSpec.describe 'results page' do
     context 'category' do
       it 'displays category', :vcr do
         select 'park', from: :category
-        click_button 'Search'
+        click_button 'Find a middle place'
 
         expect(page).to have_content('Park')
         expect(page).to have_no_content('Coffee shop')
       end
 
       it 'displays coffee shop as the default category', :vcr do
-        click_button 'Search'
+        click_button 'Find a middle place'
 
         # NOTE: that we didn't fill out :category in the before block
         expect(page).to have_content('Cafe')
       end
 
       it 'has a form to update category', :vcr do
-        click_button 'Search'
+        click_button 'Find a middle place'
         select 'bar', from: :category
         click_button 'Update Category'
 
